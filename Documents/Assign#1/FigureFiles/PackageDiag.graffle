@@ -44,11 +44,42 @@
 	<key>Creator</key>
 	<string>Rashna Razdan</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>8</integer>
 	<key>GraphicsList</key>
 	<array>
+		<dict>
+			<key>Class</key>
+			<string>LineGraphic</string>
+			<key>Head</key>
+			<dict>
+				<key>ID</key>
+				<integer>28</integer>
+			</dict>
+			<key>ID</key>
+			<integer>44</integer>
+			<key>Points</key>
+			<array>
+				<string>{289.38181, 274.63004}</string>
+				<string>{449.61819, 98.369972}</string>
+			</array>
+			<key>Style</key>
+			<dict>
+				<key>stroke</key>
+				<dict>
+					<key>HeadArrow</key>
+					<string>0</string>
+					<key>TailArrow</key>
+					<string>0</string>
+				</dict>
+			</dict>
+			<key>Tail</key>
+			<dict>
+				<key>ID</key>
+				<integer>13</integer>
+			</dict>
+		</dict>
 		<dict>
 			<key>Class</key>
 			<string>LineGraphic</string>
@@ -92,8 +123,8 @@
 			<integer>42</integer>
 			<key>Points</key>
 			<array>
-				<string>{314.49988, 300.83026}</string>
-				<string>{424.50018, 298.25677}</string>
+				<string>{314.49985, 300.81155}</string>
+				<string>{424.50015, 298.19696}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -123,8 +154,8 @@
 			<integer>41</integer>
 			<key>Points</key>
 			<array>
-				<string>{424.50015, 298.19696}</string>
-				<string>{314.49988, 300.83026}</string>
+				<string>{424.50015, 298.1911}</string>
+				<string>{314.49985, 300.81155}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -185,8 +216,8 @@
 			<integer>39</integer>
 			<key>Points</key>
 			<array>
-				<string>{321.62741, 143.78496}</string>
-				<string>{424.54843, 94.754234}</string>
+				<string>{321.64862, 143.78502}</string>
+				<string>{424.54855, 94.782639}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -216,8 +247,8 @@
 			<integer>38</integer>
 			<key>Points</key>
 			<array>
-				<string>{142.5, 302.00018}</string>
-				<string>{214.5, 302.00046}</string>
+				<string>{142.5, 302.00003}</string>
+				<string>{214.5, 302.00006}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -247,8 +278,8 @@
 			<integer>37</integer>
 			<key>Points</key>
 			<array>
-				<string>{92.522827, 393.5}</string>
-				<string>{92.575951, 329.5}</string>
+				<string>{92.50206, 393.5}</string>
+				<string>{92.506859, 329.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -278,8 +309,8 @@
 			<integer>36</integer>
 			<key>Points</key>
 			<array>
-				<string>{92.499802, 98.5}</string>
-				<string>{92.498482, 274.5}</string>
+				<string>{92.5, 98.5}</string>
+				<string>{92.499977, 274.5}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -777,7 +808,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-05-26 18:58:49 +0000</string>
+	<string>2013-05-26 20:50:35 +0000</string>
 	<key>Modifier</key>
 	<string>Rashna Razdan</string>
 	<key>NotesVisible</key>
