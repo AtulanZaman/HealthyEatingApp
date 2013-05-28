@@ -44,7 +44,7 @@
 	<key>Creator</key>
 	<string>Rashna Razdan</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>8</integer>
 	<key>GraphicsList</key>
@@ -61,8 +61,8 @@
 			<integer>41376</integer>
 			<key>Points</key>
 			<array>
-				<string>{152.0006, 211.02052}</string>
-				<string>{190.50966, 218.70399}</string>
+				<string>{152.0006, 211.02054}</string>
+				<string>{190.50966, 218.70403}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -123,8 +123,8 @@
 			<integer>41364</integer>
 			<key>Points</key>
 			<array>
-				<string>{304.47922, 213.10806}</string>
-				<string>{359.52081, 196.71811}</string>
+				<string>{304.47919, 213.10645}</string>
+				<string>{359.52081, 196.71489}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -185,8 +185,8 @@
 			<integer>41362</integer>
 			<key>Points</key>
 			<array>
-				<string>{248.1498, 140.65001}</string>
-				<string>{248.44463, 100.07498}</string>
+				<string>{248.14992, 140.65001}</string>
+				<string>{248.44481, 100.07498}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -237,7 +237,7 @@
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{209.28101, 54.149994}, {78.718994, 24}}</string>
+			<string>{{203.78156, 54.149994}, {89.717896, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -322,7 +322,7 @@
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
-Reports}</string>
+Report Management}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -513,7 +513,7 @@ Food Optimization}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{365.49945, 162.575}, {89.717896, 24}}</string>
+			<string>{{365.49945, 162.575}, {89.717896, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -598,7 +598,8 @@ Food Optimization}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
-Social Media}</string>
+Social Media\
+Management}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -929,7 +930,7 @@ System}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{65.998901, 54.149994}, {78.718994, 24}}</string>
+			<string>{{60.499451, 54.149994}, {89.717896, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -1014,7 +1015,7 @@ System}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
-Food Log}</string>
+Food Log Management}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1152,7 +1153,7 @@ Food Log}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
-User Dashboard}</string>
+User Profile}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1258,7 +1259,7 @@ User Dashboard}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-05-26 21:16:52 +0000</string>
+	<string>2013-05-28 01:10:46 +0000</string>
 	<key>Modifier</key>
 	<string>Rashna Razdan</string>
 	<key>NotesVisible</key>
@@ -1339,7 +1340,7 @@ User Dashboard}</string>
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{243, -169}, {710, 874}}</string>
+		<string>{{243, 4}, {710, 874}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
