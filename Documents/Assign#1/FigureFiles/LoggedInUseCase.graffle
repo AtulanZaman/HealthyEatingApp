@@ -44,7 +44,7 @@
 	<key>Creator</key>
 	<string>Rashna Razdan</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>8</integer>
 	<key>GraphicsList</key>
@@ -175,8 +175,8 @@
 			<integer>38</integer>
 			<key>Points</key>
 			<array>
-				<string>{75, 363.76636}</string>
-				<string>{280.32904, 342.97766}</string>
+				<string>{75, 363.76642}</string>
+				<string>{280.32925, 342.97818}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -206,8 +206,8 @@
 			<integer>37</integer>
 			<key>Points</key>
 			<array>
-				<string>{75, 356.66852}</string>
-				<string>{287.85117, 279.16336}</string>
+				<string>{75, 356.66873}</string>
+				<string>{287.85269, 279.16461}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -237,8 +237,8 @@
 			<integer>36</integer>
 			<key>Points</key>
 			<array>
-				<string>{75, 349.57083}</string>
-				<string>{296.58435, 210.63605}</string>
+				<string>{75, 349.57104}</string>
+				<string>{296.58615, 210.6369}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -268,8 +268,8 @@
 			<integer>35</integer>
 			<key>Points</key>
 			<array>
-				<string>{75, 342.47318}</string>
-				<string>{303.2507, 139.35683}</string>
+				<string>{75, 342.47333}</string>
+				<string>{303.25208, 139.35735}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -772,6 +772,8 @@
 						<key>r</key>
 						<string>0.950192</string>
 					</dict>
+					<key>Draws</key>
+					<string>NO</string>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -843,7 +845,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-05-27 01:20:17 +0000</string>
+	<string>2013-05-28 02:00:44 +0000</string>
 	<key>Modifier</key>
 	<string>Rashna Razdan</string>
 	<key>NotesVisible</key>
