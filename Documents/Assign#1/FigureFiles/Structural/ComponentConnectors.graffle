@@ -61,8 +61,8 @@
 			<integer>41376</integer>
 			<key>Points</key>
 			<array>
-				<string>{152.0006, 211.02054}</string>
-				<string>{190.50966, 218.70403}</string>
+				<string>{148.7303, 229.50436}</string>
+				<string>{190.55058, 209.34221}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -92,8 +92,8 @@
 			<integer>41374</integer>
 			<key>Points</key>
 			<array>
-				<string>{304.48538, 244.17256}</string>
-				<string>{365.01407, 259.14673}</string>
+				<string>{247.93468, 222.49997}</string>
+				<string>{248.23022, 250.3251}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -123,8 +123,8 @@
 			<integer>41364</integer>
 			<key>Points</key>
 			<array>
-				<string>{304.47919, 213.10645}</string>
-				<string>{359.52081, 196.71489}</string>
+				<string>{304.46558, 203.88173}</string>
+				<string>{348.53458, 221.13838}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -154,8 +154,8 @@
 			<integer>41363</integer>
 			<key>Points</key>
 			<array>
-				<string>{304.35403, 173.37775}</string>
-				<string>{378.00684, 99.92807}</string>
+				<string>{304.42505, 146.3082}</string>
+				<string>{357.7597, 113.26573}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -185,8 +185,8 @@
 			<integer>41362</integer>
 			<key>Points</key>
 			<array>
-				<string>{248.14992, 140.65001}</string>
-				<string>{248.44481, 100.07498}</string>
+				<string>{247.23888, 140.65001}</string>
+				<string>{246.98, 100.07491}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -216,8 +216,8 @@
 			<integer>41361</integer>
 			<key>Points</key>
 			<array>
-				<string>{129.62965, 99.945572}</string>
-				<string>{190.66434, 167.32816}</string>
+				<string>{140.19363, 99.879379}</string>
+				<string>{193.58704, 140.84862}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -327,7 +327,7 @@ Report Management}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{198.2821, 46.724991}, {100.7168, 52.850006}}</string>
+			<string>{{191, 46.724991}, {113, 52.850006}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -338,8 +338,15 @@ Report Management}</string>
 			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
+					</dict>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -375,7 +382,7 @@ Report Management}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{368.24918, 252.72498}, {95.217346, 38}}</string>
+			<string>{{201.03183, 258.24991}, {95.217346, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -465,7 +472,7 @@ Food Optimization}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{365.49945, 245.29999}, {100.7168, 52.850006}}</string>
+			<string>{{191, 250.82494}, {113, 52.850006}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -476,8 +483,15 @@ Food Optimization}</string>
 			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
+					</dict>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -513,7 +527,7 @@ Food Optimization}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{365.49945, 162.575}, {89.717896, 38}}</string>
+			<string>{{354.50055, 221.72499}, {89.717896, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -604,7 +618,7 @@ Management}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{360, 155.14999}, {100.7168, 52.850006}}</string>
+			<string>{{349.0011, 214.29999}, {100.7168, 52.850006}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -615,8 +629,15 @@ Management}</string>
 			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
+					</dict>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -652,7 +673,7 @@ Management}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{61.792358, 184}, {78.718994, 38}}</string>
+			<string>{{58.562012, 235}, {78.718994, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -743,7 +764,7 @@ Feedback}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{50.793457, 174.44998}, {100.7168, 52.850006}}</string>
+			<string>{{47.56311, 227.575}, {100.7168, 52.850006}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -754,8 +775,15 @@ Feedback}</string>
 			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
+					</dict>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -791,7 +819,7 @@ Feedback}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{365.49945, 54.149994}, {84.500549, 38}}</string>
+			<string>{{365.49945, 54.149994}, {95.217346, 52}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -877,12 +905,12 @@ Feedback}</string>
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
 Scoring\
-System}</string>
+System Management}</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{354.50055, 46.724991}, {100.7168, 52.850006}}</string>
+			<string>{{354.50055, 46.724991}, {113, 66.275009}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -893,8 +921,15 @@ System}</string>
 			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
+					</dict>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -1031,8 +1066,15 @@ Food Log Management}</string>
 			<dict>
 				<key>fill</key>
 				<dict>
-					<key>Draws</key>
-					<string>NO</string>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
+					</dict>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -1068,7 +1110,7 @@ Food Log Management}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{209.28101, 156.19995}, {78.718994, 38}}</string>
+			<string>{{209.28101, 162.575}, {78.718994, 38}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -1158,7 +1200,7 @@ User Profile}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{191, 141.14999}, {113, 177.85001}}</string>
+			<string>{{191, 141.14999}, {113, 80.850006}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
@@ -1177,6 +1219,13 @@ User Profile}</string>
 						<string>0.863345</string>
 						<key>r</key>
 						<string>0.863345</string>
+					</dict>
+					<key>FillType</key>
+					<integer>3</integer>
+					<key>GradientColor</key>
+					<dict>
+						<key>w</key>
+						<string>0.666667</string>
 					</dict>
 				</dict>
 				<key>shadow</key>
@@ -1259,7 +1308,7 @@ User Profile}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-05-28 01:10:46 +0000</string>
+	<string>2013-06-01 21:23:14 +0000</string>
 	<key>Modifier</key>
 	<string>Rashna Razdan</string>
 	<key>NotesVisible</key>
