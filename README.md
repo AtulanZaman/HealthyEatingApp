@@ -1,1 +1,1 @@
-Testing
+ECE 452 course project
