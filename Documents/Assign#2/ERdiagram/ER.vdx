@@ -1,0 +1,3871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument xmlns="http://schemas.microsoft.com/visio/2003/core"><DocumentSettings><GlueSettings>12</GlueSettings>
+<SnapSettings>52</SnapSettings>
+</DocumentSettings>
+<PrintSetup><PaperWidth>8.5</PaperWidth>
+<PaperHeight>11</PaperHeight>
+<PrintLandscape>0</PrintLandscape>
+<PageLeftMargin>0.25</PageLeftMargin>
+<PageRightMargin>0.25</PageRightMargin>
+<PageTopMargin>0.25</PageTopMargin>
+<PageBottomMargin>0.5694444</PageBottomMargin>
+<PrintCenteredH>1</PrintCenteredH>
+<PrintCenteredV>1</PrintCenteredV>
+</PrintSetup>
+<Fonts><FontEntry ID="0" Name="Helvetica"/>
+</Fonts>
+<FaceNames><FaceName ID="0" Name="Helvetica"/>
+</FaceNames>
+<Pages><Page ID="0" NameU="Canvas 1"><PageSheet><RulerGrid><XGridSpacing>0.1111111</XGridSpacing>
+<YGridSpacing>0.1111111</YGridSpacing>
+</RulerGrid>
+<PageProps><PageScale>1</PageScale>
+<DrawingScale>1</DrawingScale>
+<PageWidth>8</PageWidth>
+<PageHeight>10.18056</PageHeight>
+<DrawingSizeType>3</DrawingSizeType>
+<ShdwOffsetX>0</ShdwOffsetX>
+<ShdwOffsetY>0.05555556</ShdwOffsetY>
+</PageProps>
+<Layer IX="0"><Name>Layer 1</Name>
+<Visible>1</Visible>
+<Print>1</Print>
+<Lock>0</Lock>
+</Layer>
+</PageSheet>
+<Shapes><Shape ID="1" Type="Shape" Name="Rectangle Fill:Chalk.1"><XForm><Angle>-0</Angle>
+<PinX>2.520833</PinX>
+<PinY>6.555555</PinY>
+<Width>1.125</Width>
+<Height>0.5</Height>
+<LocPinX>0.5625</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.125</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="4"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="5"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="6"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="7"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="8"><X F="Width*0.000000">0</X>
+<Y F="Height*0.733518">0.366759</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="9"><X F="Width*0.008558">0.009627872</X>
+<Y F="Height*0.239937">0.1199684</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="10"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.720940">0.3604702</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="11"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.236571">0.1182857</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="12"><X F="Width*0.225690">0.2539012</X>
+<Y F="Height*0.974028">0.4870139</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="13"><X F="Width*0.779780">0.8772526</X>
+<Y F="Height*0.978478">0.4892389</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="14"><X F="Width*0.770639">0.8669688</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="15"><X F="Width*0.241577">0.2717737</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>User</Text>
+</Shape>
+
+<Shape ID="2" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.2"><XForm><Angle>-0</Angle>
+<PinX>1.458333</PinX>
+<PinY>7.486111</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.09999996</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>First Name</Text>
+</Shape>
+
+<Shape ID="3" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.3"><XForm><Angle>-0</Angle>
+<PinX>0.8263889</PinX>
+<PinY>6.986111</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Last Name</Text>
+</Shape>
+
+<Shape ID="4" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.4"><XForm><Angle>-0</Angle>
+<PinX>0.8263889</PinX>
+<PinY>6.013889</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>5</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>ID</Text>
+</Shape>
+
+<Shape ID="5" Type="Shape" Name="Graphic.5"><XForm><Angle>-0</Angle>
+<PinX>1.95015</PinX>
+<PinY>7.03645</PinY>
+<Width>0.4934455</Width>
+<Height>0.4511503</Height>
+<LocPinX>0.2467228</LocPinX>
+<LocPinY>0.2255751</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.703427</BeginX>
+<BeginY>7.262026</BeginY>
+<EndX>2.196872</EndX>
+<EndY>6.810875</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.4934455</TxtWidth>
+<TxtHeight F="Height*1.000000">0.4511503</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.4511503</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.4934455</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="6" Type="Shape" Name="Graphic.6"><XForm><Angle>-0</Angle>
+<PinX>1.634014</PinX>
+<PinY>6.857287</PinY>
+<Width>0.6486397</Width>
+<Height>0.1034639</Height>
+<LocPinX>0.3243198</LocPinX>
+<LocPinY>0.05173196</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.309694</BeginX>
+<BeginY>6.909019</BeginY>
+<EndX>1.958333</EndX>
+<EndY>6.805555</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.6486397</TxtWidth>
+<TxtHeight F="Height*1.000000">0.1034639</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.1034639</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.6486397</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="7" Type="Shape" Name="Graphic.7"><XForm><Angle>-0</Angle>
+<PinX>1.595225</PinX>
+<PinY>6.290939</PinY>
+<Width>0.7132199</Width>
+<Height>0.2570089</Height>
+<LocPinX>0.35661</LocPinX>
+<LocPinY>0.1285044</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.238616</BeginX>
+<BeginY>6.162435</BeginY>
+<EndX>1.951835</EndX>
+<EndY>6.419443</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.7132199</TxtWidth>
+<TxtHeight F="Height*1.000000">0.2570089</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.7132199</X>
+<Y F="Height*1.000000">0.2570089</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="8" Type="Shape" Name="Diamond Fill:Chalk Fill:Chalk.8"><XForm><Angle>-0</Angle>
+<PinX>2.833333</PinX>
+<PinY>5.402778</PinY>
+<Width>1</Width>
+<Height>0.625</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.3125</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.135000">0.135</TxtPinX>
+<TxtPinY F="Height*0.135000">0.08437517</TxtPinY>
+<TxtWidth F="Width*0.750000">0.75</TxtWidth>
+<TxtHeight F="Height*0.750000">0.46875</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*0.500000">0.5</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*0.500000">0.5</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*1.000000">1</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1388889</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Writes</Text>
+</Shape>
+
+<Shape ID="9" Type="Shape" Name="Rectangle Fill:Chalk.9"><XForm><Angle>-0</Angle>
+<PinX>2.833333</PinX>
+<PinY>4.277778</PinY>
+<Width>1.125</Width>
+<Height>0.5</Height>
+<LocPinX>0.5625</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.125</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="4"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="5"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="6"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="7"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="8"><X F="Width*0.000000">0</X>
+<Y F="Height*0.733518">0.366759</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="9"><X F="Width*0.008558">0.009627872</X>
+<Y F="Height*0.239937">0.1199684</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="10"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.720941">0.3604707</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="11"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.236571">0.1182857</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="12"><X F="Width*0.225690">0.2539012</X>
+<Y F="Height*0.974028">0.4870139</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="13"><X F="Width*0.779780">0.8772526</X>
+<Y F="Height*0.978478">0.4892392</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="14"><X F="Width*0.770639">0.8669692</X>
+<Y F="Height*-0.000001">-4.238553e-07</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="15"><X F="Width*0.241577">0.2717741</X>
+<Y F="Height*0.000001">4.238553e-07</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Food Log</Text>
+</Shape>
+
+<Shape ID="10" Type="Shape" Name="Graphic.10"><XForm><Angle>-0</Angle>
+<PinX>2.840278</PinX>
+<PinY>6.010417</PinY>
+<Width>0.01388889</Width>
+<Height>0.5902778</Height>
+<LocPinX>0.006944444</LocPinX>
+<LocPinY>0.2951389</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.833333</BeginX>
+<BeginY>5.715278</BeginY>
+<EndX>2.847222</EndX>
+<EndY>6.305555</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.01388889</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5902778</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.01388889</X>
+<Y F="Height*1.000000">0.5902778</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="11" Type="Shape" Name="Graphic.11"><XForm><Angle>-0</Angle>
+<PinX>2.840278</PinX>
+<PinY>4.809028</PinY>
+<Width>0.01388889</Width>
+<Height>0.5625</Height>
+<LocPinX>0.006944444</LocPinX>
+<LocPinY>0.28125</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.833333</BeginX>
+<BeginY>4.527778</BeginY>
+<EndX>2.833333</EndX>
+<EndY>5.090278</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.01388889</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5625</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+<BeginArrow>27</BeginArrow>
+<BeginArrowSize>2</BeginArrowSize>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5625</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="12" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.12"><XForm><Angle>-0</Angle>
+<PinX>1</PinX>
+<PinY>4.840278</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Date</Text>
+</Shape>
+
+<Shape ID="13" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.13"><XForm><Angle>-0</Angle>
+<PinX>0.8263889</PinX>
+<PinY>4.069445</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Title</Text>
+</Shape>
+
+<Shape ID="14" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.14"><XForm><Angle>-0</Angle>
+<PinX>0.8888889</PinX>
+<PinY>3.333333</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>5</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>LogID</Text>
+</Shape>
+
+<Shape ID="15" Type="Shape" Name="Graphic.15"><XForm><Angle>-0</Angle>
+<PinX>1.843391</PinX>
+<PinY>4.544461</PinY>
+<Width>0.8548844</Width>
+<Height>0.2998479</Height>
+<LocPinX>0.4274422</LocPinX>
+<LocPinY>0.149924</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.415949</BeginX>
+<BeginY>4.694385</BeginY>
+<EndX>2.270833</EndX>
+<EndY>4.394537</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.8548844</TxtWidth>
+<TxtHeight F="Height*1.000000">0.2998479</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">1.059638e-07</X>
+<Y F="Height*1.000000">0.2998479</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.8548846</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="16" Type="Shape" Name="Graphic.16"><XForm><Angle>-0</Angle>
+<PinX>1.797182</PinX>
+<PinY>4.121722</PinY>
+<Width>0.933433</Width>
+<Height>0.05026542</Height>
+<LocPinX>0.4667165</LocPinX>
+<LocPinY>0.02513271</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.330466</BeginX>
+<BeginY>4.096589</BeginY>
+<EndX>2.263899</EndX>
+<EndY>4.146854</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.933433</TxtWidth>
+<TxtHeight F="Height*1.000000">0.05026542</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">1.059638e-07</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.9334331</X>
+<Y F="Height*1.000000">0.05026542</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="17" Type="Shape" Name="Graphic.17"><XForm><Angle>-0</Angle>
+<PinX>1.759296</PinX>
+<PinY>3.770724</PinY>
+<Width>1.023074</Width>
+<Height>0.5141072</Height>
+<LocPinX>0.511537</LocPinX>
+<LocPinY>0.2570536</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.247759</BeginX>
+<BeginY>3.513671</BeginY>
+<EndX>2.270833</EndX>
+<EndY>4.027778</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.023074</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5141072</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000001">4.238553e-07</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.023074</X>
+<Y F="Height*1.000001">0.5141076</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="18" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.18"><XForm><Angle>-0</Angle>
+<PinX>5.743055</PinX>
+<PinY>5.402778</PinY>
+<Width>1.458333</Width>
+<Height>0.625</Height>
+<LocPinX>0.7291667</LocPinX>
+<LocPinY>0.3125</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1458333</TxtPinX>
+<TxtPinY F="Height*0.150000">0.09375</TxtPinY>
+<TxtWidth F="Width*0.800000">1.166667</TxtWidth>
+<TxtHeight F="Height*0.700000">0.4375</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">1.244765</X>
+<Y F="Height*0.853553">0.5334706</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">1.244765</X>
+<Y F="Height*0.146447">0.09152942</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.2135684</X>
+<Y F="Height*0.146447">0.09152942</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.2135684</X>
+<Y F="Height*0.853553">0.5334706</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">1.244765</X>
+<Y F="Height*0.853553">0.5334706</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Date
+(determinant)</Text>
+</Shape>
+
+<Shape ID="19" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.19"><XForm><Angle>-0</Angle>
+<PinX>7.152778</PinX>
+<PinY>5.340278</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1000002</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Value</Text>
+</Shape>
+
+<Shape ID="20" Type="Shape" Name="Rectangle Fill:Chalk.20"><XForm><Angle>-0</Angle>
+<PinX>6.951389</PinX>
+<PinY>6.5625</PinY>
+<Width>1.541667</Width>
+<Height>0.5</Height>
+<LocPinX>0.7708333</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.541667</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.05555556</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>1</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="4"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="5"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="6"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="7"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="8"><X F="Width*0.000000">0</X>
+<Y F="Height*0.733518">0.366759</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="9"><X F="Width*0.008558">0.01319377</X>
+<Y F="Height*0.239937">0.1199684</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="10"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.720940">0.3604702</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="11"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.236571">0.1182857</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="12"><X F="Width*0.225690">0.3479385</X>
+<Y F="Height*0.974028">0.4870139</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="13"><X F="Width*0.779780">1.202161</X>
+<Y F="Height*0.978478">0.4892389</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="14"><X F="Width*0.770639">1.188069</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="15"><X F="Width*0.241577">0.3724306</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>PointsEarned</Text>
+</Shape>
+
+<Shape ID="21" Type="Shape" Name="Diamond Fill:Chalk.21"><XForm><Angle>-0</Angle>
+<PinX>5.173611</PinX>
+<PinY>6.5625</PinY>
+<Width>1</Width>
+<Height>0.625</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.3125</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.135000">0.135</TxtPinX>
+<TxtPinY F="Height*0.135000">0.08437496</TxtPinY>
+<TxtWidth F="Width*0.750000">0.75</TxtWidth>
+<TxtHeight F="Height*0.750000">0.46875</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.05555556</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>1</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*0.500000">0.5</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*0.500000">0.5</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*1.000000">1</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1388889</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Earns</Text>
+</Shape>
+
+<Shape ID="22" Type="Shape" Name="Graphic.22"><XForm><Angle>-0</Angle>
+<PinX>3.878472</PinX>
+<PinY>6.555555</PinY>
+<Width>1.590278</Width>
+<Height>0.01388889</Height>
+<LocPinX>0.7951389</LocPinX>
+<LocPinY>0.006944444</LocPinY>
+</XForm>
+<XForm1D><BeginX>4.673611</BeginX>
+<BeginY>6.5625</BeginY>
+<EndX>3.083333</EndX>
+<EndY>6.555555</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.590278</TxtWidth>
+<TxtHeight F="Height*1.000000">0.01388889</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*1.000000">1.590278</X>
+<Y F="Height*1.000000">0.01388889</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.006944444</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="23" Type="Shape" Name="Graphic.23"><XForm><Angle>-0</Angle>
+<PinX>5.927083</PinX>
+<PinY>6.555555</PinY>
+<Width>0.5069444</Width>
+<Height>0.01388889</Height>
+<LocPinX>0.2534722</LocPinX>
+<LocPinY>0.006944444</LocPinY>
+</XForm>
+<XForm1D><BeginX>5.673611</BeginX>
+<BeginY>6.5625</BeginY>
+<EndX>6.180555</EndX>
+<EndY>6.5625</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.5069444</TxtWidth>
+<TxtHeight F="Height*1.000000">0.01388889</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.05555556</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.01388889</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.5069444</X>
+<Y F="Height*1.000000">0.01388889</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="24" Type="Shape" Name="Graphic.24"><XForm><Angle>-0</Angle>
+<PinX>6.270854</PinX>
+<PinY>5.996038</PinY>
+<Width>0.5266846</Width>
+<Height>0.5920075</Height>
+<LocPinX>0.2633423</LocPinX>
+<LocPinY>0.2960038</LocPinY>
+</XForm>
+<XForm1D><BeginX>6.007512</BeginX>
+<BeginY>5.700034</BeginY>
+<EndX>6.534197</EndX>
+<EndY>6.292041</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.5266846</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5920075</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*-0.000001">-4.238553e-07</X>
+<Y F="Height*-0.000001">-4.238553e-07</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.999999">0.5266842</X>
+<Y F="Height*0.999999">0.5920071</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="25" Type="Shape" Name="Graphic.25"><XForm><Angle>-0</Angle>
+<PinX>7.025623</PinX>
+<PinY>5.954128</PinY>
+<Width>0.1484684</Width>
+<Height>0.7167443</Height>
+<LocPinX>0.07423422</LocPinX>
+<LocPinY>0.3583722</LocPinY>
+</XForm>
+<XForm1D><BeginX>7.099857</BeginX>
+<BeginY>5.595756</BeginY>
+<EndX>6.951389</EndX>
+<EndY>6.3125</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.1484684</TxtWidth>
+<TxtHeight F="Height*1.000000">0.7167443</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*1.000000">0.1484684</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.7167443</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="26" Type="Shape" Name="Diamond Fill:Chalk.26"><XForm><Angle>-0</Angle>
+<PinX>4.506945</PinX>
+<PinY>4.288195</PinY>
+<Width>1.541667</Width>
+<Height>0.625</Height>
+<LocPinX>0.7708333</LocPinX>
+<LocPinY>0.3125</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.135000">0.2081248</TxtPinX>
+<TxtPinY F="Height*0.135000">0.08437517</TxtPinY>
+<TxtWidth F="Width*0.750000">1.15625</TxtWidth>
+<TxtHeight F="Height*0.750000">0.46875</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.05555556</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>1</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*1.000000">0.625</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*1.000000">0.625</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*0.500000">0.7708333</X>
+<Y F="Height*1.000000">0.625</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*1.000000">1.541667</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1388889</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Has_Comments</Text>
+</Shape>
+
+<Shape ID="27" Type="Shape" Name="Rectangle Fill:Chalk.27"><XForm><Angle>-0</Angle>
+<PinX>6.138889</PinX>
+<PinY>4.305555</PinY>
+<Width>1.125</Width>
+<Height>0.5</Height>
+<LocPinX>0.5625</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.125</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.05555556</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>1</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="4"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="5"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="6"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="7"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="8"><X F="Width*0.000000">0</X>
+<Y F="Height*0.733518">0.366759</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="9"><X F="Width*0.008558">0.009627872</X>
+<Y F="Height*0.239937">0.1199684</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="10"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.720941">0.3604707</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="11"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.236571">0.1182857</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="12"><X F="Width*0.225690">0.2539012</X>
+<Y F="Height*0.974028">0.4870139</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="13"><X F="Width*0.779780">0.8772523</X>
+<Y F="Height*0.978478">0.4892392</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="14"><X F="Width*0.770639">0.8669692</X>
+<Y F="Height*-0.000001">-4.238553e-07</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="15"><X F="Width*0.241577">0.2717739</X>
+<Y F="Height*0.000001">4.238553e-07</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Comments</Text>
+</Shape>
+
+<Shape ID="28" Type="Shape" Name="Graphic.28"><XForm><Angle>-0</Angle>
+<PinX>5.427083</PinX>
+<PinY>4.296875</PinY>
+<Width>0.2986111</Width>
+<Height>0.01736111</Height>
+<LocPinX>0.1493056</LocPinX>
+<LocPinY>0.008680556</LocPinY>
+</XForm>
+<XForm1D><BeginX>5.277778</BeginX>
+<BeginY>4.288195</BeginY>
+<EndX>5.576389</EndX>
+<EndY>4.305555</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.2986111</TxtWidth>
+<TxtHeight F="Height*1.000000">0.01736111</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.05555556</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.2986111</X>
+<Y F="Height*1.000000">0.01736111</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="29" Type="Shape" Name="Graphic.29"><XForm><Angle>-0</Angle>
+<PinX>3.565972</PinX>
+<PinY>4.28125</PinY>
+<Width>0.3402778</Width>
+<Height>0.01388889</Height>
+<LocPinX>0.1701389</LocPinX>
+<LocPinY>0.006944444</LocPinY>
+</XForm>
+<XForm1D><BeginX>3.736111</BeginX>
+<BeginY>4.288195</BeginY>
+<EndX>3.395833</EndX>
+<EndY>4.277778</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.3402778</TxtWidth>
+<TxtHeight F="Height*1.000000">0.01388889</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*1.000000">0.3402778</X>
+<Y F="Height*1.000000">0.01388889</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*0.250000">0.003472222</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="30" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.30"><XForm><Angle>-0</Angle>
+<PinX>7.423611</PinX>
+<PinY>4.350695</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1000002</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Text</Text>
+</Shape>
+
+<Shape ID="31" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.31"><XForm><Angle>-0</Angle>
+<PinX>7.152778</PinX>
+<PinY>3.458333</PinY>
+<Width>1.541667</Width>
+<Height>0.5</Height>
+<LocPinX>0.7708333</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1541668</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">1.233333</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">1.315894</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">1.315894</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.2257724</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.2257724</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">1.315894</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Date
+(determinant)</Text>
+</Shape>
+
+<Shape ID="32" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.32"><XForm><Angle>-0</Angle>
+<PinX>5.930555</PinX>
+<PinY>2.826389</PinY>
+<Width>1.541667</Width>
+<Height>0.7638889</Height>
+<LocPinX>0.7708333</LocPinX>
+<LocPinY>0.3819444</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1541668</TxtPinX>
+<TxtPinY F="Height*0.150000">0.1145833</TxtPinY>
+<TxtWidth F="Width*0.800000">1.233333</TxtWidth>
+<TxtHeight F="Height*0.700000">0.5347222</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">1.315894</X>
+<Y F="Height*0.853553">0.6520195</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">1.315894</X>
+<Y F="Height*0.146447">0.111869</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.2257724</X>
+<Y F="Height*0.146447">0.111869</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.2257724</X>
+<Y F="Height*0.853553">0.6520195</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">1.315894</X>
+<Y F="Height*0.853553">0.6520195</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Commenter Name
+(determinant) </Text>
+</Shape>
+
+<Shape ID="33" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.33"><XForm><Angle>-0</Angle>
+<PinX>4.868055</PinX>
+<PinY>3.458333</PinY>
+<Width>1.458333</Width>
+<Height>0.5</Height>
+<LocPinX>0.7291667</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1458333</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">1.166667</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">1.244765</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">1.244765</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.2135684</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.2135684</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">1.244765</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Time
+(determinant)</Text>
+</Shape>
+
+<Shape ID="34" Type="Shape" Name="Graphic.34"><XForm><Angle>-0</Angle>
+<PinX>6.824819</PinX>
+<PinY>4.312285</PinY>
+<Width>0.1914088</Width>
+<Height>0.01388889</Height>
+<LocPinX>0.0957044</LocPinX>
+<LocPinY>0.006944444</LocPinY>
+</XForm>
+<XForm1D><BeginX>6.920523</BeginX>
+<BeginY>4.31923</BeginY>
+<EndX>6.729115</EndX>
+<EndY>4.307259</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.1914088</TxtWidth>
+<TxtHeight F="Height*1.000000">0.01388889</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*1.000000">0.1914088</X>
+<Y F="Height*1.000000">0.01388889</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*0.138092">0.001917945</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="35" Type="Shape" Name="Graphic.35"><XForm><Angle>-0</Angle>
+<PinX>5.528048</PinX>
+<PinY>3.860483</PinY>
+<Width>0.592801</Width>
+<Height>0.3612086</Height>
+<LocPinX>0.2964005</LocPinX>
+<LocPinY>0.1806043</LocPinY>
+</XForm>
+<XForm1D><BeginX>5.231647</BeginX>
+<BeginY>3.679879</BeginY>
+<EndX>5.824449</EndX>
+<EndY>4.041088</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.592801</TxtWidth>
+<TxtHeight F="Height*1.000000">0.3612086</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*-0.000001">-4.238553e-07</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.999999">0.5928006</X>
+<Y F="Height*1.000000">0.3612086</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="36" Type="Shape" Name="Graphic.36"><XForm><Angle>-0</Angle>
+<PinX>6.833216</PinX>
+<PinY>3.881138</PinY>
+<Width>0.2636545</Width>
+<Height>0.348835</Height>
+<LocPinX>0.1318273</LocPinX>
+<LocPinY>0.1744175</LocPinY>
+</XForm>
+<XForm1D><BeginX>6.965044</BeginX>
+<BeginY>3.706721</BeginY>
+<EndX>6.701389</EndX>
+<EndY>4.055555</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.2636545</TxtWidth>
+<TxtHeight F="Height*1.000000">0.348835</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*1.000000">0.2636545</X>
+<Y F="Height*-0.000001">-4.238553e-07</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*0.999999">0.3488346</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="37" Type="Shape" Name="Graphic.37"><XForm><Angle>-0</Angle>
+<PinX>6.067558</PinX>
+<PinY>3.634702</PinY>
+<Width>0.142662</Width>
+<Height>0.841707</Height>
+<LocPinX>0.07133102</LocPinX>
+<LocPinY>0.4208535</LocPinY>
+</XForm>
+<XForm1D><BeginX>5.996227</BeginX>
+<BeginY>3.213849</BeginY>
+<EndX>6.138889</EndX>
+<EndY>4.055555</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.142662</TxtWidth>
+<TxtHeight F="Height*1.000000">0.841707</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.142662</X>
+<Y F="Height*1.000000">0.841707</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="38" Type="Shape" Name="Rectangle Fill:Chalk.38"><XForm><Angle>-0</Angle>
+<PinX>2.833333</PinX>
+<PinY>2</PinY>
+<Width>1.125</Width>
+<Height>0.5</Height>
+<LocPinX>0.5625</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">1.125</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*1.000000">1.125</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="4"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="5"><X F="Width*0.500000">0.5625</X>
+<Y F="Height*1.000000">0.5</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="6"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="7"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.25</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="8"><X F="Width*0.000000">0</X>
+<Y F="Height*0.733519">0.3667594</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="9"><X F="Width*0.008558">0.009627872</X>
+<Y F="Height*0.239938">0.1199688</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="10"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.720940">0.3604702</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="11"><X F="Width*1.000000">1.125</X>
+<Y F="Height*0.236571">0.1182853</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="12"><X F="Width*0.225690">0.2539012</X>
+<Y F="Height*0.974028">0.4870139</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="13"><X F="Width*0.779780">0.8772526</X>
+<Y F="Height*0.978478">0.4892392</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="14"><X F="Width*0.770639">0.8669692</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="15"><X F="Width*0.241577">0.2717741</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Food Items</Text>
+</Shape>
+
+<Shape ID="39" Type="Shape" Name="Diamond Fill:Chalk.39"><XForm><Angle>-0</Angle>
+<PinX>2.833333</PinX>
+<PinY>3.097222</PinY>
+<Width>1</Width>
+<Height>0.625</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.3125</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.135000">0.135</TxtPinX>
+<TxtPinY F="Height*0.135000">0.08437517</TxtPinY>
+<TxtWidth F="Width*0.750000">0.75</TxtWidth>
+<TxtHeight F="Height*0.750000">0.46875</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">1</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="3"><X F="Width*0.500000">0.5</X>
+<Y F="Height*0.000000">0</Y>
+</LineTo>
+<LineTo IX="4"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+</LineTo>
+<LineTo IX="5"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<Connection ID="0"><X F="Width*0.500000">0.5</X>
+<Y F="Height*0.000000">0</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="1"><X F="Width*0.500000">0.5</X>
+<Y F="Height*1.000000">0.625</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="2"><X F="Width*1.000000">1</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<Connection ID="3"><X F="Width*0.000000">0</X>
+<Y F="Height*0.500000">0.3125</Y>
+<Type>0</Type>
+</Connection>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1388889</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Contains</Text>
+</Shape>
+
+<Shape ID="40" Type="Shape" Name="Graphic.40"><XForm><Angle>-0</Angle>
+<PinX>2.840278</PinX>
+<PinY>3.71875</PinY>
+<Width>0.01388889</Width>
+<Height>0.6180556</Height>
+<LocPinX>0.006944444</LocPinX>
+<LocPinY>0.3090278</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.833333</BeginX>
+<BeginY>3.409722</BeginY>
+<EndX>2.833333</EndX>
+<EndY>4.027778</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.01388889</TxtWidth>
+<TxtHeight F="Height*1.000000">0.6180556</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+<EndArrow>27</EndArrow>
+<EndArrowSize>2</EndArrowSize>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.6180556</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="41" Type="Shape" Name="Graphic.41"><XForm><Angle>-0</Angle>
+<PinX>2.840278</PinX>
+<PinY>2.517361</PinY>
+<Width>0.01388889</Width>
+<Height>0.5347222</Height>
+<LocPinX>0.006944444</LocPinX>
+<LocPinY>0.2673611</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.833333</BeginX>
+<BeginY>2.25</BeginY>
+<EndX>2.833333</EndX>
+<EndY>2.784722</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.01388889</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5347222</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+<BeginArrow>27</BeginArrow>
+<BeginArrowSize>2</BeginArrowSize>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*0.000000">0</X>
+<Y F="Height*1.000000">0.5347222</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="42" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.42"><XForm><Angle>-0</Angle>
+<PinX>1.361111</PinX>
+<PinY>1.826389</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.09999996</TxtPinX>
+<TxtPinY F="Height*0.149999">0.07499968</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.146447</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535531</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Calories</Text>
+</Shape>
+
+<Shape ID="43" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.43"><XForm><Angle>-0</Angle>
+<PinX>2.236111</PinX>
+<PinY>1.111111</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.09999996</TxtPinX>
+<TxtPinY F="Height*0.149999">0.07499968</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>5</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Food Name</Text>
+</Shape>
+
+<Shape ID="44" Type="Shape" Name="Graphic.44"><XForm><Angle>-0</Angle>
+<PinX>2.064863</PinX>
+<PinY>1.859748</PinY>
+<Width>0.3980673</Width>
+<Height>0.01886919</Height>
+<LocPinX>0.1990336</LocPinX>
+<LocPinY>0.009434594</LocPinY>
+</XForm>
+<XForm1D><BeginX>1.865829</BeginX>
+<BeginY>1.850314</BeginY>
+<EndX>2.263897</EndX>
+<EndY>1.869183</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.3980673</TxtWidth>
+<TxtHeight F="Height*1.000000">0.01886919</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000045">8.477105e-07</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.3980673</X>
+<Y F="Height*1.000045">0.01887004</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="45" Type="Shape" Name="Graphic.45"><XForm><Angle>-0</Angle>
+<PinX>2.44768</PinX>
+<PinY>1.552125</PinY>
+<Width>0.1838476</Width>
+<Height>0.3832279</Height>
+<LocPinX>0.09192382</LocPinX>
+<LocPinY>0.1916139</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.355757</BeginX>
+<BeginY>1.360511</BeginY>
+<EndX>2.539604</EndX>
+<EndY>1.743739</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.1838476</TxtWidth>
+<TxtHeight F="Height*1.000000">0.3832279</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.1838476</X>
+<Y F="Height*1.000000">0.3832279</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="46" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.46"><XForm><Angle>-0</Angle>
+<PinX>2.458333</PinX>
+<PinY>7.75</PinY>
+<Width>1</Width>
+<Height>0.5</Height>
+<LocPinX>0.5</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.09999996</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.8</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.1464471</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.8535529</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Type</Text>
+</Shape>
+
+<Shape ID="47" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.47"><XForm><Angle>-0</Angle>
+<PinX>3.663194</PinX>
+<PinY>7.645833</PinY>
+<Width>1.159722</Width>
+<Height>0.5</Height>
+<LocPinX>0.5798611</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1159723</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.9277778</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.9898843</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.9898843</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.169838</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.169838</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.9898843</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Username</Text>
+</Shape>
+
+<Shape ID="48" Type="Shape" Name="Circle Fill:Chalk Fill:Chalk.48"><XForm><Angle>-0</Angle>
+<PinX>4.409722</PinX>
+<PinY>7.145833</PinY>
+<Width>1.125</Width>
+<Height>0.5</Height>
+<LocPinX>0.5625</LocPinX>
+<LocPinY>0.25</LocPinY>
+</XForm>
+<TextXForm><TxtPinX F="Width*0.100000">0.1125001</TxtPinX>
+<TxtPinY F="Height*0.150000">0.0750001</TxtPinY>
+<TxtWidth F="Width*0.800000">0.9</TxtWidth>
+<TxtHeight F="Height*0.700000">0.35</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>1</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>1</FillPattern>
+<FillForegnd>#FFFFFF</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>0</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.853553">0.960247</X>
+<Y F="Height*0.853553">0.4267765</Y>
+</MoveTo>
+<NURBSTo IX="2"><X F="Width*0.853553">0.960247</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)">NURBS(1, 3, 0, 0, 1.048816,0.658291,0,1, 1.048816,0.341709,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="3"><X F="Width*0.146447">0.164753</X>
+<Y F="Height*0.146447">0.07322354</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)">NURBS(1, 3, 0, 0, 0.658291,-0.048816,0,1, 0.341709,-0.048816,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="4"><X F="Width*0.146447">0.164753</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)">NURBS(1, 3, 0, 0, -0.048816,0.341709,0,1, -0.048816,0.658291,0,1)</E>
+</NURBSTo>
+<NURBSTo IX="5"><X F="Width*0.853553">0.960247</X>
+<Y F="Height*0.853553">0.4267765</Y>
+<A>0</A>
+<B>1</B>
+<C>0</C>
+<D>1</D>
+<E Unit="NURBS" F="NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)">NURBS(1, 3, 0, 0, 0.341709,1.048816,0,1, 0.658291,1.048816,0,1)</E>
+</NURBSTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+<TextBlock><LeftMargin>0.06944445</LeftMargin>
+<RightMargin>0.06944445</RightMargin>
+<VerticalAlign>1</VerticalAlign>
+<DefaultTabStop>0.3888889</DefaultTabStop>
+</TextBlock>
+<Char IX="0"><Font>0</Font><Color>0</Color><Style>0</Style><Size>0.1666667</Size><ColorTrans>0</ColorTrans></Char><Para IX="0"><IndFirst>0</IndFirst><IndLeft>0</IndLeft><IndRight>-0</IndRight><SpLine>-1.2</SpLine><SpBefore>0</SpBefore><HorzAlign>1</HorzAlign></Para><Text><cp IX="0"/><pp IX="0"/>Password</Text>
+</Shape>
+
+<Shape ID="49" Type="Shape" Name="Graphic.49"><XForm><Angle>-0</Angle>
+<PinX>2.49808</PinX>
+<PinY>7.149381</PinY>
+<Width>0.04550616</Width>
+<Height>0.6876509</Height>
+<LocPinX>0.02275308</LocPinX>
+<LocPinY>0.3438255</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.520833</BeginX>
+<BeginY>6.805555</BeginY>
+<EndX>2.475327</EndX>
+<EndY>7.493207</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.04550616</TxtWidth>
+<TxtHeight F="Height*1.000000">0.6876509</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.999995">0.04550595</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*-0.000005">-2.119276e-07</X>
+<Y F="Height*1.000000">0.6876509</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="50" Type="Shape" Name="Graphic.50"><XForm><Angle>-0</Angle>
+<PinX>3.142724</PinX>
+<PinY>7.110342</PinY>
+<Width>0.5836404</Width>
+<Height>0.5996192</Height>
+<LocPinX>0.2918202</LocPinX>
+<LocPinY>0.2998096</LocPinY>
+</XForm>
+<XForm1D><BeginX>2.850904</BeginX>
+<BeginY>6.810532</BeginY>
+<EndX>3.434544</EndX>
+<EndY>7.410151</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.5836404</TxtWidth>
+<TxtHeight F="Height*1.000000">0.5996192</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.5836404</X>
+<Y F="Height*1.000000">0.5996192</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+<Shape ID="51" Type="Shape" Name="Graphic.51"><XForm><Angle>-0</Angle>
+<PinX>3.502885</PinX>
+<PinY>6.913189</PinY>
+<Width>0.8256488</Width>
+<Height>0.2118155</Height>
+<LocPinX>0.4128244</LocPinX>
+<LocPinY>0.1059078</LocPinY>
+</XForm>
+<XForm1D><BeginX>3.09006</BeginX>
+<BeginY>6.807281</BeginY>
+<EndX>3.915709</EndX>
+<EndY>7.019097</EndY>
+</XForm1D>
+<Layout><ConLineJumpCode>4</ConLineJumpCode>
+<ConLineJumpStyle>0</ConLineJumpStyle>
+<ShapeRouteStyle>2</ShapeRouteStyle>
+<ConLineRouteExt>1</ConLineRouteExt>
+</Layout>
+<TextXForm><TxtPinX F="Width*0.000000">0</TxtPinX>
+<TxtPinY F="Height*0.000000">0</TxtPinY>
+<TxtWidth F="Width*1.000000">0.8256488</TxtWidth>
+<TxtHeight F="Height*1.000000">0.2118155</TxtHeight>
+<TxtLocPinX>0</TxtLocPinX>
+<TxtLocPinY>0</TxtLocPinY>
+</TextXForm>
+<Misc><ObjType>2</ObjType>
+</Misc>
+<Line><LinePattern>1</LinePattern>
+<LineWeight>0.01388889</LineWeight>
+<LineColor>#000000</LineColor>
+<LineColorTrans>0</LineColorTrans>
+<Rounding>0</Rounding>
+<LineCap>0</LineCap>
+</Line>
+<Fill><FillPattern>0</FillPattern>
+<FillForegnd>0</FillForegnd>
+<FillForegndTrans>0</FillForegndTrans>
+<ShdwPattern>0</ShdwPattern>
+<ShdwForegnd>#000000</ShdwForegnd>
+<ShdwForegndTrans>0.25</ShdwForegndTrans>
+<ShapeShdwType>1</ShapeShdwType>
+<ShapeShdwOffsetX>0</ShapeShdwOffsetX>
+<ShapeShdwOffsetY>-0.05555556</ShapeShdwOffsetY>
+</Fill>
+<Geom IX="0"><NoFill>1</NoFill>
+<NoLine>0</NoLine>
+<MoveTo IX="1"><X F="Width*0.000000">0</X>
+<Y F="Height*0.000000">0</Y>
+</MoveTo>
+<LineTo IX="2"><X F="Width*1.000000">0.8256488</X>
+<Y F="Height*1.000000">0.2118155</Y>
+</LineTo>
+</Geom>
+<LayerMem><LayerMember>0</LayerMember>
+</LayerMem>
+</Shape>
+
+</Shapes>
+<Connects><Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="5" ToSheet="2"/>
+<Connect FromPart="12" ToCell="Connections.Row_2.X" ToPart="102" FromSheet="5" ToSheet="1"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="6" ToSheet="3"/>
+<Connect FromPart="12" ToCell="Connections.Row_2.X" ToPart="102" FromSheet="6" ToSheet="1"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="7" ToSheet="4"/>
+<Connect FromPart="12" ToCell="Connections.Row_9.X" ToPart="109" FromSheet="7" ToSheet="1"/>
+<Connect FromPart="9" ToCell="Connections.Row_1.X" ToPart="101" FromSheet="10" ToSheet="8"/>
+<Connect FromPart="9" ToCell="Connections.Row_5.X" ToPart="105" FromSheet="11" ToSheet="9"/>
+<Connect FromPart="12" ToCell="Connections.Row_0.X" ToPart="100" FromSheet="11" ToSheet="8"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="15" ToSheet="12"/>
+<Connect FromPart="12" ToCell="Connections.Row_2.X" ToPart="102" FromSheet="15" ToSheet="9"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="16" ToSheet="13"/>
+<Connect FromPart="12" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="16" ToSheet="9"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="17" ToSheet="14"/>
+<Connect FromPart="12" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="17" ToSheet="9"/>
+<Connect FromPart="9" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="22" ToSheet="21"/>
+<Connect FromPart="12" ToCell="Connections.Row_6.X" ToPart="106" FromSheet="22" ToSheet="1"/>
+<Connect FromPart="9" ToCell="Connections.Row_2.X" ToPart="102" FromSheet="23" ToSheet="21"/>
+<Connect FromPart="12" ToCell="Connections.Row_7.X" ToPart="107" FromSheet="23" ToSheet="20"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="24" ToSheet="18"/>
+<Connect FromPart="12" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="24" ToSheet="20"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="25" ToSheet="19"/>
+<Connect FromPart="12" ToCell="Connections.Row_4.X" ToPart="104" FromSheet="25" ToSheet="20"/>
+<Connect FromPart="9" ToCell="Connections.Row_2.X" ToPart="102" FromSheet="28" ToSheet="26"/>
+<Connect FromPart="12" ToCell="Connections.Row_7.X" ToPart="107" FromSheet="28" ToSheet="27"/>
+<Connect FromPart="9" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="29" ToSheet="26"/>
+<Connect FromPart="12" ToCell="Connections.Row_6.X" ToPart="106" FromSheet="29" ToSheet="9"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="34" ToSheet="30"/>
+<Connect FromPart="12" ToCell="Connections.Row_6.X" ToPart="106" FromSheet="34" ToSheet="27"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="35" ToSheet="33"/>
+<Connect FromPart="12" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="35" ToSheet="27"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="36" ToSheet="31"/>
+<Connect FromPart="12" ToCell="Connections.Row_0.X" ToPart="100" FromSheet="36" ToSheet="27"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="37" ToSheet="32"/>
+<Connect FromPart="12" ToCell="Connections.Row_4.X" ToPart="104" FromSheet="37" ToSheet="27"/>
+<Connect FromPart="9" ToCell="Connections.Row_1.X" ToPart="101" FromSheet="40" ToSheet="39"/>
+<Connect FromPart="12" ToCell="Connections.Row_4.X" ToPart="104" FromSheet="40" ToSheet="9"/>
+<Connect FromPart="9" ToCell="Connections.Row_5.X" ToPart="105" FromSheet="41" ToSheet="38"/>
+<Connect FromPart="12" ToCell="Connections.Row_0.X" ToPart="100" FromSheet="41" ToSheet="39"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="44" ToSheet="42"/>
+<Connect FromPart="12" ToCell="Connections.Row_9.X" ToPart="109" FromSheet="44" ToSheet="38"/>
+<Connect FromPart="9" ToCell="PinX" ToPart="3" FromSheet="45" ToSheet="43"/>
+<Connect FromPart="12" ToCell="Connections.Row_3.X" ToPart="103" FromSheet="45" ToSheet="38"/>
+<Connect FromPart="9" ToCell="Connections.Row_5.X" ToPart="105" FromSheet="49" ToSheet="1"/>
+<Connect FromPart="12" ToCell="PinX" ToPart="3" FromSheet="49" ToSheet="46"/>
+<Connect FromPart="9" ToCell="Connections.Row_13.X" ToPart="113" FromSheet="50" ToSheet="1"/>
+<Connect FromPart="12" ToCell="PinX" ToPart="3" FromSheet="50" ToSheet="47"/>
+<Connect FromPart="9" ToCell="Connections.Row_1.X" ToPart="101" FromSheet="51" ToSheet="1"/>
+<Connect FromPart="12" ToCell="PinX" ToPart="3" FromSheet="51" ToSheet="48"/>
+</Connects>
+</Page>
+
+
+</Pages>
+<Windows><Window ViewCenterY="5.1875" ViewScale="1" ViewCenterX="4" Page="0" WindowState="134217744" WindowType="Drawing" ID="0" ContainerType="Page"><ShowRulers>1</ShowRulers>
+<ShowGrid>0</ShowGrid>
+<ShowPageBreaks>1</ShowPageBreaks>
+<ShowConnectionPoints>0</ShowConnectionPoints>
+<GlueSettings>12</GlueSettings>
+<SnapSettings>52</SnapSettings>
+<TabSplitterPos>0.5</TabSplitterPos>
+</Window>
+
+</Windows></VisioDocument>
