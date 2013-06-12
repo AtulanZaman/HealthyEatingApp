@@ -21,7 +21,7 @@ public class DB_Conn {
         
         url = url + db;
         
-        //System.out.println("connection url: " + url);
+        System.out.println("connection url: " + url);
         
         try {
 
@@ -44,5 +44,6 @@ public class DB_Conn {
         return conn;
 	}
 
+	
 
 }
