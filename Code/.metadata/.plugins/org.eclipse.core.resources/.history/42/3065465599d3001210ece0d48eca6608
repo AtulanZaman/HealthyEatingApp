@@ -1,0 +1,5 @@
+package com.google.gwt.HealthyEatingApp.server;
+
+public class DB_conn {
+
+}
