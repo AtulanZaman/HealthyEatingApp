@@ -1,0 +1,1 @@
+get scraped data from http://www.calorieking.com/, manually copy over to excel, seperate row data into indiv column based on comma, use excel to generate sql query
