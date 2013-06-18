@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.healthyeatingapp.client.GreetingService
+path: 527154A888AC2954E5F473EDDEE6E994.gwt.rpc
