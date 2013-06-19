@@ -733,3 +733,562 @@ Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_desi
       Compiling...
          Compilation completed in 0.01 seconds
       Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371651801075.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371651801075.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371651801075_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.02 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371651801160.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371651801160.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371651801160_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652033728.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652033728.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652033728_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652043028.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652043028.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652043028_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652047552.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652047552.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652047552_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652082425.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652082425.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652082425_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652082606.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652082606.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652082606_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652088604.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652088604.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652088604_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652099755.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652099755.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652099755_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652106083.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652106083.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652106083_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652111165.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652111165.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652111165_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652115030.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652115030.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652115030_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652121513.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652121513.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652121513_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652132028.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652132028.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652132028_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652140117.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652140117.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652140117_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652148665.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652148665.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652148665_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652156108.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652156108.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652156108_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652196015.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652196015.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652196015_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652198582.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652198582.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652198582_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652212269.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652212269.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652212269_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652217374.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652217374.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652217374_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652224091.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652224091.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652224091_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652228640.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652228640.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652228640_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652232375.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652232375.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652232375_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652262043.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652262043.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652262043_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652265227.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652265227.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652265227_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.03 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652271087.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652271087.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652271087_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652299059.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652299059.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652299059_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652339220.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652339220.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652339220_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652339283.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652339283.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652339283_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log.LogUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0.01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652372731.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652372731.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.sample.healthyeatingapp.client.Log_LogUiBinderImpl_designTime1371652372731_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0.00 seconds
+      Removing invalidated units

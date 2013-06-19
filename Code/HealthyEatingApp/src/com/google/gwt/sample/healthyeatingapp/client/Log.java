@@ -14,6 +14,7 @@ import com.google.gwt.user.client.ui.Widget;
 public class Log extends Composite{
 
 	private static LogUiBinder uiBinder = GWT.create(LogUiBinder.class);
+	@UiField Button button;
 
 	interface LogUiBinder extends UiBinder<Widget, Log> {
 	}
@@ -22,5 +23,7 @@ public class Log extends Composite{
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 
-
+	@UiHandler("button")
+	void onButtonClick(ClickEvent event) {
+	}
 }
