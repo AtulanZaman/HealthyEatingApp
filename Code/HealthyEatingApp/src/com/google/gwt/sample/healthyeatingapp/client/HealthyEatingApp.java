@@ -13,7 +13,7 @@ public class HealthyEatingApp implements EntryPoint {
 	 */
 	public void onModuleLoad() {
 		
-
+		
 
 	}
 }
