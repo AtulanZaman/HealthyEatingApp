@@ -44,7 +44,7 @@
 	<key>Creator</key>
 	<string>Rashna Razdan</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>GraphDocumentVersion</key>
 	<integer>8</integer>
 	<key>GraphicsList</key>
@@ -61,8 +61,8 @@
 			<integer>41351</integer>
 			<key>Points</key>
 			<array>
-				<string>{233.85928, 224.09998}</string>
-				<string>{232.6161, 271.09998}</string>
+				<string>{233.86504, 224.09998}</string>
+				<string>{232.63226, 271.09998}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -113,8 +113,8 @@
 			<integer>41349</integer>
 			<key>Points</key>
 			<array>
-				<string>{133.81299, 198.09142}</string>
-				<string>{196.09399, 198.07654}</string>
+				<string>{133.81299, 198.09879}</string>
+				<string>{196.09399, 198.09671}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -220,7 +220,7 @@
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
 \
-Presenter\
+View\
 }</string>
 			</dict>
 		</dict>
@@ -312,7 +312,7 @@ Presenter\
 
 \f0\b\fs24 \cf1 \expnd0\expndtw0\kerning0
 \
-View\
+Presenter\
 }</string>
 			</dict>
 		</dict>
@@ -456,7 +456,7 @@ Model\
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-06-22 01:15:37 +0000</string>
+	<string>2013-06-22 01:30:08 +0000</string>
 	<key>Modifier</key>
 	<string>Rashna Razdan</string>
 	<key>NotesVisible</key>
