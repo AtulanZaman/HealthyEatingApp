@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.healthyeatingapp.client.DBConnection
+path: 979E560F80E3E527A95847C9E6937E47.gwt.rpc
