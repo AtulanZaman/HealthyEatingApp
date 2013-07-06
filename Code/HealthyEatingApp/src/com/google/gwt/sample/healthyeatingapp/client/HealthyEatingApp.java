@@ -17,10 +17,7 @@ public class HealthyEatingApp implements EntryPoint {
 	 */
 	public void onModuleLoad() {
 		 
-		TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
-		homepage.add(new HTML(""), "Graph");
-		homepage.add(new HTML(""), "Log");
-		homepage.add(new HTML(""), "Social");
-		RootLayoutPanel.get().add(homepage);
+		Homepage homeContainer = new Homepage();
+		RootLayoutPanel.get().add(homeContainer);
 	}
 }
