@@ -18,14 +18,22 @@ import com.google.gwt.sample.healthyeatingapp.client.AuthenticationHandler;
  */
 public class HealthyEatingApp implements EntryPoint 
 {
+
 	//DB Connection tester code  *************************
-	private DBConnectionAsync rpc;
-	private Button dbConnection;
-	private HorizontalPanel addPanel;
+
+	private final HorizontalPanel addPanel;
+	private final DBConnectionAsync rpc;
+	private final Button dbConnection;
+	
+	
+	
 	//****************************************************
 	public HealthyEatingApp()
 	{
+	
+		
 		//DB Connection tester code  *************************
+
 		addPanel = new HorizontalPanel();
 		dbConnection = new Button("Test Connection");
 	    rpc = (DBConnectionAsync) GWT.create(DBConnection.class);
@@ -37,13 +45,34 @@ public class HealthyEatingApp implements EntryPoint
 	/**
 	 * This is the entry point method.
 	 */
+/**
+ * This is the code for the graph. Need to test this with the DB code before running.
+ * */
+/*	public void onModuleLoad() {
+		Runnable onLoadCallBack = new Runnable(){
+		public void run(){
+				TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
+				
+				homepage.add(new Graph().returnGraph(), "Graph");
+				homepage.add(new HTML(""), "Log");
+				homepage.add(new HTML(""), "Social");
+				RootLayoutPanel.get().add(homepage);
+				
+				
+			}
+		}; 
+     //Create a callback to be called when the visualization API
+     //has been loaded.
+		VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
+}*/
+		
 	@Override
 	public void onModuleLoad() 
 	{
-	    
 		Homepage homeContainer = new Homepage();
 		RootLayoutPanel.get().add(homeContainer);
 		//DB Connection tester code  *************************
+
 	    addPanel.add(dbConnection);
 
 		RootPanel.get("dbConnection").add(addPanel);
@@ -57,8 +86,9 @@ public class HealthyEatingApp implements EntryPoint
 	    });
 		
 
+
+
 		//****************************************************
-		 
 	}
 	
  
@@ -80,6 +110,3 @@ public class HealthyEatingApp implements EntryPoint
 	}
 
 }
-
-
- 
