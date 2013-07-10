@@ -3,9 +3,7 @@ import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -69,10 +67,11 @@ public class HealthyEatingApp implements EntryPoint
 	@Override
 	public void onModuleLoad() 
 	{
-		Homepage homeContainer = new Homepage();
+		//Homepage homeContainer = new Homepage();
 		//RootLayoutPanel.get().add(homeContainer);
 		//DB Connection tester code  *************************
 
+		 
 	    addPanel.add(dbConnection);
 		RootPanel.get("dbConnection").add(addPanel);
 		 
@@ -82,13 +81,12 @@ public class HealthyEatingApp implements EntryPoint
 		public void onClick(ClickEvent event) {
 	    	  //test();
 	    	  System.out.print("Hi, reached button");
-				AsyncCallback<User> callback = new AuthenticationHandler<User>();
-				rpc.authenticateUser("rrazdan", callback);
+	    	  AsyncCallback<User> callback = new AuthenticationHandler<User>();
+	    	  rpc.authenticateUser("rrazdan","rrazdan", callback);
+				
 	      }
 	    });
 		
-
-
 
 		//****************************************************
 	}
@@ -99,16 +97,6 @@ public class HealthyEatingApp implements EntryPoint
 		System.out.println("TRIAL");
 	}
 	
-//	//button ClickListener
-//	public void onClick(Widget sender) 
-//	{
-//		 if (sender.equals(dbConnection)) 
-//		 {
-//			System.out.print("Hi, reached button");
-//			addPanel.add(dbConnection);
-//			AsyncCallback<User> callback = new AuthenticationHandler<User>();
-//			rpc.authenticateUser("rrazdan", callback);
-//		 }
-//	}
+
 
 }

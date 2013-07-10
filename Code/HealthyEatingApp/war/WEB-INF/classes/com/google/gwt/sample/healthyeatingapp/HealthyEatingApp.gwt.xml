@@ -26,6 +26,7 @@
   <!-- Database connection ADDED -->
   <servlet class="com.google.gwt.sample.healthyeatingapp.server.MySQLConnection" path="/MySQLConnection" />
   
+
   <!-- Specify the paths for translatable code                    -->
   <source path='client'/>
   <source path='shared'/>

@@ -5,6 +5,6 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 //Asynchronous interface specifies the same methods you have written into the synchronous interface, with two
 //differences: The return type is always void and every method has an additional AsyncCallback parameter
 public interface DBConnectionAsync {
-	public void authenticateUser(String userId, AsyncCallback<User>
+	public void authenticateUser(String userId,String pass, AsyncCallback<User>
 	callback);
 }

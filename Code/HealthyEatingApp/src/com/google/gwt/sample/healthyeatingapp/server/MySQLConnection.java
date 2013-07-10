@@ -33,16 +33,17 @@ public class MySQLConnection extends RemoteServiceServlet implements DBConnectio
 		
 	}
 	@Override
-	public User authenticateUser(String userId) 
+	public User authenticateUser(String userId, String pass) 
 	{
 		 User user = null;
 		 try 
 		 {
-			 PreparedStatement ps = conn.prepareStatement( "select firstName from User where firstName = \"" + dbuser);
+			 System.out.println("inside MySQLConnection");		 
+			 PreparedStatement ps = conn.prepareStatement( "select firstName from User where user = \"" + dbuser + "\" AND " + "password = \"" + pass + "\"");
 			 ResultSet result = ps.executeQuery();
 			 while (result.next()) 
 			 {
-				 user = new User(result.getString(1));
+				 user = new User(result.getString(1), result.getString(2));
 			 }
 			 result.close();
 			 ps.close();

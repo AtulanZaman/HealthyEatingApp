@@ -7,6 +7,6 @@ import com.google.gwt.user.client.rpc.RemoteService;
 //I recommend to make one method for every specific update, insert, delete, whatever
 public interface DBConnection extends RemoteService {
 
-	public User authenticateUser(String userId);
+	public User authenticateUser(String userId, String pass);
 	
 }
