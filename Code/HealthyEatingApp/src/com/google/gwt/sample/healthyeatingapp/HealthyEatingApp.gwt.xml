@@ -18,10 +18,14 @@
   <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
   <!-- Other module inherits                                      -->
+  <inherits name='com.google.gwt.visualization.Visualization'/>
 
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.google.gwt.sample.healthyeatingapp.client.HealthyEatingApp'/>
-
+  
+  <!-- Database connection ADDED -->
+  <servlet class="com.google.gwt.sample.healthyeatingapp.server.MySQLConnection" path="/MySQLConnection" />
+  
   <!-- Specify the paths for translatable code                    -->
   <source path='client'/>
   <source path='shared'/>
