@@ -70,18 +70,20 @@ public class HealthyEatingApp implements EntryPoint
 	public void onModuleLoad() 
 	{
 		Homepage homeContainer = new Homepage();
-		RootLayoutPanel.get().add(homeContainer);
+		//RootLayoutPanel.get().add(homeContainer);
 		//DB Connection tester code  *************************
 
 	    addPanel.add(dbConnection);
-
 		RootPanel.get("dbConnection").add(addPanel);
 		 
 		// Listen for mouse events on the button.
 		dbConnection.addClickHandler(new ClickHandler() {
-	      @Override
+	    @Override
 		public void onClick(ClickEvent event) {
-	    	  test();
+	    	  //test();
+	    	  System.out.print("Hi, reached button");
+				AsyncCallback<User> callback = new AuthenticationHandler<User>();
+				rpc.authenticateUser("rrazdan", callback);
 	      }
 	    });
 		
@@ -97,16 +99,16 @@ public class HealthyEatingApp implements EntryPoint
 		System.out.println("TRIAL");
 	}
 	
-	//button ClickListener
-	public void onClick(Widget sender) 
-	{
-		 if (sender.equals(dbConnection)) 
-		 {
-			System.out.print("Hi, reached button");
-			addPanel.add(dbConnection);
-			AsyncCallback<User> callback = new AuthenticationHandler<User>();
-			rpc.authenticateUser("rrazdan", callback);
-		 }
-	}
+//	//button ClickListener
+//	public void onClick(Widget sender) 
+//	{
+//		 if (sender.equals(dbConnection)) 
+//		 {
+//			System.out.print("Hi, reached button");
+//			addPanel.add(dbConnection);
+//			AsyncCallback<User> callback = new AuthenticationHandler<User>();
+//			rpc.authenticateUser("rrazdan", callback);
+//		 }
+//	}
 
 }
