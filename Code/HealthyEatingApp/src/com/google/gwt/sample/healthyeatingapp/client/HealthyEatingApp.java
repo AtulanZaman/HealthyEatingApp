@@ -11,6 +11,8 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
+import com.google.gwt.visualization.client.VisualizationUtils;
+import com.google.gwt.visualization.client.visualizations.corechart.LineChart;
 import com.google.gwt.sample.healthyeatingapp.client.AuthenticationHandler;
 
 /**
@@ -24,22 +26,28 @@ public class HealthyEatingApp implements EntryPoint
 	private final HorizontalPanel addPanel;
 	private final DBConnectionAsync rpc;
 	private final Button dbConnection;
-	
-	
+	private final Homepage homeContainer;
 	
 	//****************************************************
 	public HealthyEatingApp()
 	{
-	
-		
-		//DB Connection tester code  *************************
-
-		addPanel = new HorizontalPanel();
+		//DB Connection tester code  ************************
 		dbConnection = new Button("Test Connection");
+		dbConnection.addClickHandler(new ClickHandler() {
+		      @Override
+			public void onClick(ClickEvent event) {
+		    	  test();
+		      }
+		});
+		
+		addPanel = new HorizontalPanel();
+	    addPanel.add(dbConnection);
+		
 	    rpc = (DBConnectionAsync) GWT.create(DBConnection.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "MySQLConnection";
 		target.setServiceEntryPoint(moduleRelativeURL); 
+		homeContainer = new Homepage();
 		//****************************************************
 	}
 	/**
@@ -69,26 +77,8 @@ public class HealthyEatingApp implements EntryPoint
 	@Override
 	public void onModuleLoad() 
 	{
-		Homepage homeContainer = new Homepage();
-		RootLayoutPanel.get().add(homeContainer);
-		//DB Connection tester code  *************************
-
-	    addPanel.add(dbConnection);
-
-		RootPanel.get("dbConnection").add(addPanel);
-		 
-		// Listen for mouse events on the button.
-		dbConnection.addClickHandler(new ClickHandler() {
-	      @Override
-		public void onClick(ClickEvent event) {
-	    	  test();
-	      }
-	    });
-		
-
-
-
-		//****************************************************
+				RootLayoutPanel.get().add(homeContainer);
+				RootPanel.get().add(addPanel);	
 	}
 	
  
@@ -96,17 +86,4 @@ public class HealthyEatingApp implements EntryPoint
 		Window.alert("clicked");
 		System.out.println("TRIAL");
 	}
-	
-	//button ClickListener
-	public void onClick(Widget sender) 
-	{
-		 if (sender.equals(dbConnection)) 
-		 {
-			System.out.print("Hi, reached button");
-			addPanel.add(dbConnection);
-			AsyncCallback<User> callback = new AuthenticationHandler<User>();
-			rpc.authenticateUser("rrazdan", callback);
-		 }
-	}
-
 }
