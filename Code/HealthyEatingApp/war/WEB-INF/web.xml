@@ -6,6 +6,16 @@
          xmlns="http://java.sun.com/xml/ns/javaee">
 
   <!-- Servlets -->
+  <servlet>
+  	<servlet-name>DBConnectionServlet</servlet-name> 
+  	<servlet-class>com.google.gwt.sample.healthyeatingapp.server.DBConnectionServiceImpl</servlet-class> 
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>DBConnectionServlet</servlet-name>
+  <url-pattern>/healthyeatingapp/DBConnectionServiceImpl</url-pattern>
+</servlet-mapping>
+
  
   <!-- Default page to serve -->
   <welcome-file-list>

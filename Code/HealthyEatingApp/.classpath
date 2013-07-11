@@ -6,5 +6,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.25-bin.jar"/>
 	<classpathentry kind="lib" path="lib/gwt-visualization.jar"/>
+	<classpathentry kind="lib" path="/Users/Rashna/Documents/4A_Study/ECE452/Project/Code/HealthyEatingApp/lib/mysql-connector-java-5.1.25-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/Rashna/Documents/4A_Study/ECE452/Project/Code/HealthyEatingApp/lib/gwt-servlet.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

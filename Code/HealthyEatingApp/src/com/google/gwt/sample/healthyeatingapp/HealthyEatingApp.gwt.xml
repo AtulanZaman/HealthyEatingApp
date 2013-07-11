@@ -23,8 +23,8 @@
   <!-- Specify the app entry point class.                         -->
   <entry-point class='com.google.gwt.sample.healthyeatingapp.client.HealthyEatingApp'/>
   
-  <!-- Database connection ADDED -->
-  <servlet class="com.google.gwt.sample.healthyeatingapp.server.MySQLConnection" path="/MySQLConnection" />
+  <!-- Database connection Servlet -->
+  <servlet class="com.google.gwt.sample.healthyeatingapp.server.DBConnectionServiceImpl" path="/DBConnectionServiceImpl" />
   
 
   <!-- Specify the paths for translatable code                    -->

@@ -2,14 +2,16 @@ package com.google.gwt.sample.healthyeatingapp.client;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
-import com.google.gwt.sample.healthyeatingapp.client.AuthenticationHandler;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -19,25 +21,28 @@ public class HealthyEatingApp implements EntryPoint
 
 	//DB Connection tester code  *************************
 
-	private final HorizontalPanel addPanel;
-	private final DBConnectionAsync rpc;
+	private final VerticalPanel vertPanel;
+	private final DBConnectionServiceAsync rpc;
 	private final Button dbConnection;
-	
-	
+	private TextBox usernameBox;
+	private TextBox passwordBox;
+	private Label loginLabel;
 	
 	//****************************************************
 	public HealthyEatingApp()
 	{
-	
 		
 		//DB Connection tester code  *************************
-
-		addPanel = new HorizontalPanel();
-		dbConnection = new Button("Test Connection");
-	    rpc = (DBConnectionAsync) GWT.create(DBConnection.class);
+		dbConnection = new Button("Login");
+		usernameBox = new TextBox();
+		passwordBox = new TextBox();
+		loginLabel = new Label("Please sign in to your account to access the Healthy Eating application.");
+		vertPanel = new VerticalPanel();
+	    rpc = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
-		String moduleRelativeURL = GWT.getModuleBaseURL() + "MySQLConnection";
+		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
 		target.setServiceEntryPoint(moduleRelativeURL); 
+		 
 		//****************************************************
 	}
 	/**
@@ -67,23 +72,20 @@ public class HealthyEatingApp implements EntryPoint
 	@Override
 	public void onModuleLoad() 
 	{
-		//Homepage homeContainer = new Homepage();
-		//RootLayoutPanel.get().add(homeContainer);
+	
 		//DB Connection tester code  *************************
-
-		 
-	    addPanel.add(dbConnection);
-		RootPanel.get("dbConnection").add(addPanel);
+		vertPanel.add(loginLabel);
+		vertPanel.add(usernameBox);
+		vertPanel.add(passwordBox);
+		vertPanel.add(dbConnection);
+		
+		RootPanel.get().add(vertPanel);
 		 
 		// Listen for mouse events on the button.
 		dbConnection.addClickHandler(new ClickHandler() {
 	    @Override
 		public void onClick(ClickEvent event) {
-	    	  //test();
-	    	  System.out.print("Hi, reached button");
-	    	  AsyncCallback<User> callback = new AuthenticationHandler<User>();
-	    	  rpc.authenticateUser("rrazdan","rrazdan", callback);
-				
+ 	    	  rpc.authenticateUser(usernameBox.getText(),passwordBox.getText(), new DefaultCallback());			
 	      }
 	    });
 		
@@ -91,12 +93,18 @@ public class HealthyEatingApp implements EntryPoint
 		//****************************************************
 	}
 	
- 
-	public void test(){
-		Window.alert("clicked");
-		System.out.println("TRIAL");
-	}
 	
-
-
-}
+	private class DefaultCallback implements AsyncCallback {
+		public void onFailure(Throwable caught) 
+		{
+			caught.printStackTrace();
+	    	Window.alert("Failure: " + caught.getMessage());        
+		}
+		 
+		@Override
+		public void onSuccess(Object result) {
+			// TODO Auto-generated method stub
+			Window.alert("SUCCESSFULLY CONNECTED TO DB!");  
+		}
+	}
+  }
