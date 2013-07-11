@@ -43,7 +43,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		 try 
 		 {		
 			 
-			 PreparedStatement ps1 = conn.prepareStatement( "select * from User where user = \"" + userId + "\" AND " + "password = \"" + pass + "\"");
+			 PreparedStatement ps1 = conn.prepareStatement( "select * from Login where userName = \"" + userId + "\" AND " + "password = \"" + pass + "\"");
 			 ResultSet result_ps1 = ps1.executeQuery();
 			 while (result_ps1.next()) 
 			 {
