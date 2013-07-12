@@ -1,2 +1,3 @@
 # Module healthyeatingapp
 # RPC service class, partial path of RPC policy file
+com.google.gwt.sample.healthyeatingapp.client.LoginService, 1069E4B02573462CDFEA8341C99AA63C.gwt.rpc
