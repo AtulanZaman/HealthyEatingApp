@@ -24,7 +24,6 @@
   <entry-point class='com.google.gwt.sample.healthyeatingapp.client.HealthyEatingApp'/>
   
   <!-- Database connection Servlet -->
-  <servlet class="com.google.gwt.sample.healthyeatingapp.server.DBConnectionServiceImpl" path="/DBConnectionServiceImpl" />
   
 
   <!-- Specify the paths for translatable code                    -->

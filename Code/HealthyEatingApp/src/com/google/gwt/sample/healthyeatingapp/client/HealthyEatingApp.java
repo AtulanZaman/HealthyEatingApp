@@ -20,18 +20,18 @@ public class HealthyEatingApp implements EntryPoint
 {
 
 	//DB Connection tester code  *************************
-	private User userInfo = null;
+
 	private final VerticalPanel vertPanel;
 	private final DBConnectionServiceAsync rpc;
 	private final Button dbConnection;
 	private TextBox usernameBox;
 	private TextBox passwordBox;
 	private Label loginLabel;
-	
+
 	//****************************************************
 	public HealthyEatingApp()
 	{
-		
+
 		//DB Connection tester code  *************************
 		dbConnection = new Button("Login");
 		usernameBox = new TextBox();
@@ -42,7 +42,7 @@ public class HealthyEatingApp implements EntryPoint
 	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
 		target.setServiceEntryPoint(moduleRelativeURL); 
-		 
+
 		//****************************************************
 	}
 	/**
@@ -68,19 +68,19 @@ public class HealthyEatingApp implements EntryPoint
      //has been loaded.
 		VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
 }*/
-		
+
 	@Override
 	public void onModuleLoad() 
 	{
-	
+
 		//DB Connection tester code  *************************
 		vertPanel.add(loginLabel);
 		vertPanel.add(usernameBox);
 		vertPanel.add(passwordBox);
 		vertPanel.add(dbConnection);
-		
+
 		RootPanel.get().add(vertPanel);
-		 
+
 		// Listen for mouse events on the button.
 		dbConnection.addClickHandler(new ClickHandler() {
 	    @Override
@@ -88,23 +88,23 @@ public class HealthyEatingApp implements EntryPoint
  	    	  rpc.authenticateUser(usernameBox.getText(),passwordBox.getText(), new DefaultCallback());			
 	      }
 	    });
-		
+
 
 		//****************************************************
 	}
-	
-	
+
+
 	private class DefaultCallback implements AsyncCallback {
 		public void onFailure(Throwable caught) 
 		{
 			caught.printStackTrace();
 	    	Window.alert("Failure: " + caught.getMessage());        
 		}
-		 
+
 		@Override
 		public void onSuccess(Object result) {
-			userInfo = (User)result;
-			Window.alert("Welcome " + userInfo.getUserName());  
+			// TODO Auto-generated method stub
+			Window.alert("SUCCESSFULLY CONNECTED TO DB!");  
 		}
 	}
   }
