@@ -1,112 +1,75 @@
 package com.google.gwt.sample.healthyeatingapp.client;
 import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.rpc.ServiceDefTarget;
-import com.google.gwt.sample.healthyeatingapp.client.AuthenticationHandler;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.Anchor;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class HealthyEatingApp implements EntryPoint 
 {
+	private LoginInfo loginInfo = null;
+    private VerticalPanel loginPanel = new VerticalPanel();
+    private Label loginLabel = new Label("Please sign in to your Google Account to access the Healthy Eating application.");
+    private Label welcomeLabel;
+    private Anchor signInLink = new Anchor("Sign In");
+    private Anchor signOutLink = new Anchor("Sign Out");
+    private VerticalPanel mainOrganizer = new VerticalPanel();
 
-	//DB Connection tester code  *************************
-
-	private final HorizontalPanel addPanel;
-	private final DBConnectionAsync rpc;
-	private final Button dbConnection;
-	
-	
-	
-	//****************************************************
-	public HealthyEatingApp()
-	{
-	
-		
-		//DB Connection tester code  *************************
-
-		addPanel = new HorizontalPanel();
-		dbConnection = new Button("Test Connection");
-	    rpc = (DBConnectionAsync) GWT.create(DBConnection.class);
-	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
-		String moduleRelativeURL = GWT.getModuleBaseURL() + "MySQLConnection";
-		target.setServiceEntryPoint(moduleRelativeURL); 
-		//****************************************************
-	}
-	/**
-	 * This is the entry point method.
-	 */
-/**
- * This is the code for the graph. Need to test this with the DB code before running.
- * */
-/*	public void onModuleLoad() {
-		Runnable onLoadCallBack = new Runnable(){
-		public void run(){
-				TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
-				
-				homepage.add(new Graph().returnGraph(), "Graph");
-				homepage.add(new HTML(""), "Log");
-				homepage.add(new HTML(""), "Social");
-				RootLayoutPanel.get().add(homepage);
-				
-				
-			}
-		}; 
-     //Create a callback to be called when the visualization API
-     //has been loaded.
-		VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
-}*/
-		
 	@Override
 	public void onModuleLoad() 
 	{
-		Homepage homeContainer = new Homepage();
-		RootLayoutPanel.get().add(homeContainer);
-		//DB Connection tester code  *************************
-
-	    addPanel.add(dbConnection);
-
-		RootPanel.get("dbConnection").add(addPanel);
-		 
-		// Listen for mouse events on the button.
-		dbConnection.addClickHandler(new ClickHandler() {
-	      @Override
-		public void onClick(ClickEvent event) {
-	    	  test();
-	      }
-	    });
+		// Check login status using login service.
+	    LoginServiceAsync loginService = GWT.create(LoginService.class);
+	    
+	    loginService.login(GWT.getHostPageBaseURL(), new LoginCallback());
 		
-
-
-
-		//****************************************************
 	}
 	
- 
-	public void test(){
-		Window.alert("clicked");
-		System.out.println("TRIAL");
-	}
-	
-	//button ClickListener
-	public void onClick(Widget sender) 
-	{
-		 if (sender.equals(dbConnection)) 
-		 {
-			System.out.print("Hi, reached button");
-			addPanel.add(dbConnection);
-			AsyncCallback<User> callback = new AuthenticationHandler<User>();
-			rpc.authenticateUser("rrazdan", callback);
-		 }
-	}
+	private class LoginCallback implements AsyncCallback {
+		
+		public void onFailure(Throwable caught) 
+		{
+			caught.printStackTrace();
+	    	 
+		}
 
+		@Override
+		public void onSuccess(Object result) {
+			loginInfo = (LoginInfo)result;
+	        if(loginInfo.isLoggedIn()) {
+	          loadWelcomePage();
+	        } else {
+	          loadLogin();
+	        }	
+		}
+			
+	}	
+	
+	private void loadWelcomePage() {
+		    // Set up sign out hyperlink.
+		    signOutLink.setHref(loginInfo.getLogoutUrl());
+		    welcomeLabel = new Label("Welcome " + this.loginInfo.getNickname());
+		    Homepage menubar = new Homepage();
+	    	mainOrganizer.add(signOutLink); 
+	    	mainOrganizer.add(welcomeLabel);
+	    	RootPanel.get().add(mainOrganizer);
+	    	RootPanel.get().add(menubar);
+
+	    }
+	
+	private void loadLogin() {
+	    // Assemble login panel.
+	    signInLink.setHref(loginInfo.getLoginUrl());
+	    loginPanel.add(loginLabel);
+	    loginPanel.add(signInLink);
+	    RootPanel.get().add(loginPanel);
+	  }
+
+	
 }
+   
