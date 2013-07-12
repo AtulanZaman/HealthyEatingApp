@@ -38,12 +38,15 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	public User authenticateUser(String userId, String pass)  
 	{
 		
-		 User user = new User("rrazdan", "rrazdan");
+		 User user = new User("test", "test");
 		 	
 		 try 
 		 {		
 			 
-			 PreparedStatement ps1 = conn.prepareStatement( "select * from Login where userName = \"" + userId + "\" AND " + "password = \"" + pass + "\"");
+			 
+			 PreparedStatement ps1 = conn.prepareStatement( "select userName, password from Login where userName = ? AND password = ?;");
+			 ps1.setString(1, userId);
+			 ps1.setString(2, pass);
 			 ResultSet result_ps1 = ps1.executeQuery();
 			 while (result_ps1.next()) 
 			 {

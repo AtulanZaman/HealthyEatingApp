@@ -20,7 +20,7 @@ public class HealthyEatingApp implements EntryPoint
 {
 
 	//DB Connection tester code  *************************
-
+	private User userInfo = null;
 	private final VerticalPanel vertPanel;
 	private final DBConnectionServiceAsync rpc;
 	private final Button dbConnection;
@@ -103,8 +103,8 @@ public class HealthyEatingApp implements EntryPoint
 		 
 		@Override
 		public void onSuccess(Object result) {
-			// TODO Auto-generated method stub
-			Window.alert("SUCCESSFULLY CONNECTED TO DB!");  
+			userInfo = (User)result;
+			Window.alert("Welcome " + userInfo.getUserName());  
 		}
 	}
   }
