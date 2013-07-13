@@ -7,7 +7,7 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 public interface DBConnectionService extends RemoteService {
 
 	public User authenticateUser(String username, String password);
-	
+	public void logout();		
 	//public Points GetFriendsPoints(String username);	
 	
 	

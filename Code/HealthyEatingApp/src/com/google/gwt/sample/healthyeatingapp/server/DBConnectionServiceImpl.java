@@ -12,8 +12,10 @@ import com.google.gwt.sample.healthyeatingapp.client.User;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 
 
@@ -35,7 +37,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		} 
 		catch (Exception e) 
 		{
-			System.out.println("DID NOT CONNECT TO DB");
+			System.out.println("Did not connect to DB");
 		}
 		
 	}
@@ -43,13 +45,17 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	@Override
 	public User authenticateUser(String userId, String pass)  
 	{	
-		
+		 if (userId == null || pass == null)
+		 {
+			 return null;
+		 }
+
 		User user  = null;
 		
 		 try 
 
 		 {			 
-			 PreparedStatement ps1 = conn.prepareStatement( "select userName, password from Login where userName = ? AND password = ?;");
+			 PreparedStatement ps1 = conn.prepareStatement("select userName, password from Login where userName = ? AND password = ?;");
 			 ps1.setString(1, userId);
 			 ps1.setString(2, pass);
 			 ResultSet result_ps1 = ps1.executeQuery();
@@ -62,16 +68,44 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			 result_ps1.close();
 			 ps1.close();
 			 
+             if (user.getPassword() != null || user.getUserName() != null)
+             {
+                 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
+             }
+
 			 //conn.close();
 		 } 
 		 catch (SQLException sqle) 
 		 {
 	         sqle.printStackTrace();
-		 }  
+		 } 
+		 storeUserInSession(user);
 		 return user;
 	}
 
-	 
+	private void storeUserInSession(User user)
+    {
+        HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
+        HttpSession session = httpServletRequest.getSession(true);
+        session.setAttribute("user", user);
+    }
+	
+	
+	public void logout()
+	{
+		deleteUserFromSession();
+	}
+	
+    private void deleteUserFromSession()
+    {
+    	 HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
+         HttpSession session = httpServletRequest.getSession();
+         session.removeAttribute("user");
+
+    }
+
+	
+	
 	
 //	@SuppressWarnings("deprecation")
 //	public Points GetFriendsPoints(String userName){

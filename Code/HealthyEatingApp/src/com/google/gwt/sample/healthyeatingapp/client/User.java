@@ -1,11 +1,13 @@
 package com.google.gwt.sample.healthyeatingapp.client;
+import javax.servlet.http.HttpSession;
+
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 public class User implements IsSerializable {
 	@SuppressWarnings("unused")
 	private String username = null;	 
 	private String password = null;
-	
+	private String httpSession;
 	
 	@SuppressWarnings("unused")
 	 private User() {
@@ -21,9 +23,14 @@ public class User implements IsSerializable {
 	 
 	 public String getPassword() {
 		    return password;
-		  }
+	 }
 	 public String getUserName() {
 		    return username;
-		  }
-	 
+	 }
+	 public String getSessionId(){
+            return httpSession;
+     }
+	 public String setSessionId(String sessionID){
+            return httpSession = sessionID;
+	 }
 }
