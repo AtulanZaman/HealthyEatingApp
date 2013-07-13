@@ -17,7 +17,7 @@ public class Homepage extends Composite  {
 		// Add a home tab
 		tp.add(new HTML("Graph"), "Graph");
 	    tp.add(new HTML("Food Log"), "Food Log");
-	    tp.add(new HTML("Social Media"), "Social Media");
+	    tp.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");
 
 	}	
 }

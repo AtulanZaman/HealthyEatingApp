@@ -140,7 +140,7 @@ public class HealthyEatingApp implements EntryPoint
 		
 		public void onFailure(Throwable caught){
 			caught.printStackTrace();
-	    	Window.alert("Failure: " + caught.getMessage());        
+	    	//Window.alert("Failure: " + caught.getMessage());        
 		}
 
 		@Override
@@ -168,12 +168,12 @@ public class HealthyEatingApp implements EntryPoint
 	}
 	
 	public void loadHomepage() {
-		 RootPanel.get().clear();	
+		 RootLayoutPanel.get().clear();	
 		 Homepage menubar = new Homepage();
 		 
 		 homePageOrganizerPanel.add(logoutButton); 
-	 	 RootPanel.get().add(homePageOrganizerPanel);
-		 RootPanel.get().add(menubar);
+	 	 RootLayoutPanel.get().add(homePageOrganizerPanel);
+		 RootLayoutPanel.get().add(menubar);
 		 
 		 System.out.println("in home");
 		// Listen for mouse events on the button.
