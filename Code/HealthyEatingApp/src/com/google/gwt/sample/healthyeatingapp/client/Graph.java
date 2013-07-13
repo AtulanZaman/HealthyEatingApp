@@ -34,8 +34,6 @@ public class Graph extends Composite{
 		data.setValue(1,1, 50);
 		data.setValue(1,2, 90);
 		
-		System.out.println(data);
-		
 		return data;
 	}
 	
@@ -43,7 +41,6 @@ public class Graph extends Composite{
 	    Options options = Options.create();
 	    options.setWidth(400);
 	    options.setHeight(240);
-	//		    options.set3D(true);
 	    options.setTitle("My Daily Activities");
 	    return options;
 	}
