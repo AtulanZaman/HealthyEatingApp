@@ -11,11 +11,13 @@ import com.google.gwt.user.client.Cookies;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.StackLayoutPanel;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
@@ -36,7 +38,7 @@ public class HealthyEatingApp implements EntryPoint
 	//login code  *************************
 	String sessionID;
 	private final VerticalPanel loginOrganizerPanel;
-	private final VerticalPanel homePageOrganizerPanel;
+	private final StackLayoutPanel homePageOrganizerPanel;
 	private final DBConnectionServiceAsync rpcLogin;
 	private final Button loginButton;
 	private final Button logoutButton;
@@ -57,7 +59,7 @@ public class HealthyEatingApp implements EntryPoint
 		passwordBox = new PasswordTextBox();
 		loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. Username and password are case sensitive.");
 		loginOrganizerPanel = new VerticalPanel();
-		homePageOrganizerPanel = new VerticalPanel();
+		homePageOrganizerPanel = new StackLayoutPanel(Unit.EM);
 	    	rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpcLogin;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
@@ -82,12 +84,12 @@ public class HealthyEatingApp implements EntryPoint
 
 	public void loadLogin() {
 	//Login code  *************************
-	RootPanel.get().clear();
+	RootLayoutPanel.get().clear();
 	loginOrganizerPanel.add(loginLabel);
 	loginOrganizerPanel.add(usernameBox);
 	loginOrganizerPanel.add(passwordBox);
 	loginOrganizerPanel.add(loginButton);
-	RootPanel.get().add(loginOrganizerPanel);
+	RootLayoutPanel.get().add(loginOrganizerPanel);
 
 	// Listen for mouse events on the button.
 	loginButton.addClickHandler(new ClickHandler() {
@@ -133,12 +135,15 @@ public class HealthyEatingApp implements EntryPoint
 	}
 	
 	public void loadHomepage() {
-		 RootLayoutPanel.get().clear();	
+		 RootLayoutPanel.get().clear();
+		 homePageOrganizerPanel.clear();
 		 Homepage menubar = new Homepage();
 		 
-		 homePageOrganizerPanel.add(logoutButton); 
+		 //homePageOrganizerPanel.add(logoutButton);
+		 homePageOrganizerPanel.add(menubar, new HTML("Menu"), 2);
+		 homePageOrganizerPanel.add(logoutButton, new HTML("Logout"), 4);
 	 	 RootLayoutPanel.get().add(homePageOrganizerPanel);
-		 RootLayoutPanel.get().add(menubar);
+		 
 		 
 		 System.out.println("in home");
 		// Listen for mouse events on the button.
