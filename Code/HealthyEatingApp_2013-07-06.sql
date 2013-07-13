@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.1.63)
 # Database: HealthyEatingApp
-# Generation Time: 2013-07-06 05:30:43 +0000
+# Generation Time: 2013-07-13 17:11:57 +0000
 # ************************************************************
 
 
@@ -1474,15 +1474,17 @@ DROP TABLE IF EXISTS `Login`;
 CREATE TABLE `Login` (
   `userName` varchar(10) NOT NULL,
   `password` varchar(16) NOT NULL,
+  `userID` int(11) NOT NULL,
   PRIMARY KEY (`userName`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `Login` WRITE;
 /*!40000 ALTER TABLE `Login` DISABLE KEYS */;
 
-INSERT INTO `Login` (`userName`, `password`)
+INSERT INTO `Login` (`userName`, `password`, `userID`)
 VALUES
-	('rrazdan','rrazdan');
+	('rrazdan','rrazdan',0),
+	('tcook','tcook',1);
 
 /*!40000 ALTER TABLE `Login` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1517,6 +1519,16 @@ CREATE TABLE `User` (
   KEY `userName` (`userName`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `User` WRITE;
+/*!40000 ALTER TABLE `User` DISABLE KEYS */;
+
+INSERT INTO `User` (`userID`, `firstName`, `lastName`, `type`, `userName`)
+VALUES
+	(0,'rashna','razdan',NULL,'rrazdan'),
+	(1,'terry','cook',NULL,'tcook');
+
+/*!40000 ALTER TABLE `User` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 

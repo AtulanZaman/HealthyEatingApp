@@ -23,6 +23,8 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
+import com.google.gwt.visualization.client.VisualizationUtils;
+import com.google.gwt.visualization.client.visualizations.corechart.LineChart;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -43,7 +45,6 @@ public class HealthyEatingApp implements EntryPoint
 
 	//social media code  *************************
 	public SocialMedia SM;
-	//****************************************************
 	
 	public HealthyEatingApp()
 	{
@@ -55,52 +56,13 @@ public class HealthyEatingApp implements EntryPoint
 		loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. Username and password are case sensitive.");
 		loginOrganizerPanel = new VerticalPanel();
 		homePageOrganizerPanel = new VerticalPanel();
-	    rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
+	    	rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpcLogin;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
 		target.setServiceEntryPoint(moduleRelativeURL); 
 		//****************************************************
 	}
 	
-/**
- * This is the code for the graph. Need to test this with the DB code before running.
- * */
-/*	public void onModuleLoad() {
-		Runnable onLoadCallBack = new Runnable(){
-		public void run(){
-				TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
-				
-				homepage.add(new Graph().returnGraph(), "Graph");
-				homepage.add(new HTML(""), "Log");
-				homepage.add(new HTML(""), "Social");
-				RootLayoutPanel.get().add(homepage);
-				
-				
-			}
-		}; 
-     //Create a callback to be called when the visualization API
-     //has been loaded.
-		VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
-}*/
-	
-	/*
-	public void onModuleLoad() {
-				//RootLayoutPanel.get().add(Window.alert("hello"));
-			TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
-			
-			homepage.add(new HTML(""), "Graph");
-			homepage.add(new HTML(""), "Log");
-			homepage.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");
-				
-			RootLayoutPanel.get().add(homepage);
-				
-		 
-     //Create a callback to be called when the visualization API
-     //has been loaded.
-		//VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
-}
-
-*/
 	@Override
 	public void onModuleLoad() 
 	{
@@ -140,6 +102,7 @@ public class HealthyEatingApp implements EntryPoint
 		
 		public void onFailure(Throwable caught){
 			caught.printStackTrace();
+
 	    	//Window.alert("Failure: " + caught.getMessage());        
 		}
 
