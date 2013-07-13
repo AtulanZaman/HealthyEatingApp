@@ -8,14 +8,15 @@
   <!-- Servlets -->
 
   <servlet>
-    <servlet-name>loginService</servlet-name>
-    <servlet-class>com.google.gwt.sample.healthyeatingapp.server.LoginServiceImpl</servlet-class>
+  	<servlet-name>DBConnectionServlet</servlet-name> 
+  	<servlet-class>com.google.gwt.sample.healthyeatingapp.server.DBConnectionServiceImpl</servlet-class> 
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>loginService</servlet-name>
-    <url-pattern>/healthyeatingapp/login</url-pattern>
+    <servlet-name>DBConnectionServlet</servlet-name>
+    <url-pattern>/healthyeatingapp/DBConnectionServiceImpl</url-pattern>
   </servlet-mapping>
+   
 
  
   <!-- Default page to serve -->
