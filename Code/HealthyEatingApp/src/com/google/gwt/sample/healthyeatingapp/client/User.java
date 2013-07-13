@@ -1,6 +1,4 @@
 package com.google.gwt.sample.healthyeatingapp.client;
-import javax.servlet.http.HttpSession;
-
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 public class User implements IsSerializable {

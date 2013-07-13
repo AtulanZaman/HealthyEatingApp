@@ -1,34 +1,21 @@
 package com.google.gwt.sample.healthyeatingapp.client;
 import java.util.Date;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import com.google.gwt.sample.healthyeatingapp.client.SocialMedia.SocialMedia;
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Cookies;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
-import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.StackLayoutPanel;
-import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
-import com.google.gwt.visualization.client.VisualizationUtils;
-import com.google.gwt.visualization.client.visualizations.corechart.LineChart;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -38,7 +25,7 @@ public class HealthyEatingApp implements EntryPoint
 	//login code  *************************
 	String sessionID;
 	private final VerticalPanel loginOrganizerPanel;
-	private final StackLayoutPanel homePageOrganizerPanel;
+	private final FlowPanel homePageOrganizerPanel;
 	private final DBConnectionServiceAsync rpcLogin;
 	private final Button loginButton;
 	private final Button logoutButton;
@@ -59,7 +46,7 @@ public class HealthyEatingApp implements EntryPoint
 		passwordBox = new PasswordTextBox();
 		loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. Username and password are case sensitive.");
 		loginOrganizerPanel = new VerticalPanel();
-		homePageOrganizerPanel = new StackLayoutPanel(Unit.EM);
+		homePageOrganizerPanel = new FlowPanel();
 	    	rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpcLogin;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
@@ -104,6 +91,7 @@ public class HealthyEatingApp implements EntryPoint
 
 	private class LoginButtonCallback implements AsyncCallback {
 		
+		@Override
 		public void onFailure(Throwable caught){
 			caught.printStackTrace();
 
@@ -137,11 +125,9 @@ public class HealthyEatingApp implements EntryPoint
 	public void loadHomepage() {
 		 RootLayoutPanel.get().clear();
 		 homePageOrganizerPanel.clear();
-		 Homepage menubar = new Homepage();
-		 
-		 //homePageOrganizerPanel.add(logoutButton);
-		 homePageOrganizerPanel.add(menubar, new HTML("Menu"), 2);
-		 homePageOrganizerPanel.add(logoutButton, new HTML("Logout"), 4);
+		 Homepage menubar = new Homepage();		 
+		 homePageOrganizerPanel.add(logoutButton);
+		 homePageOrganizerPanel.add(menubar);
 	 	 RootLayoutPanel.get().add(homePageOrganizerPanel);
 		 
 		 
