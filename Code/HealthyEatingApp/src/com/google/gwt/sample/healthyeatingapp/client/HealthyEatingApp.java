@@ -24,7 +24,8 @@ public class HealthyEatingApp implements EntryPoint
 {
 
 	//login code  *************************
-	private final VerticalPanel vertPanel;
+	private final VerticalPanel loginOrganizerPanel;
+	private final VerticalPanel homePageOrganizerPanel;
 	private final DBConnectionServiceAsync rpc;
 	private final Button dbConnection;
 	private TextBox usernameBox;
@@ -44,7 +45,8 @@ public class HealthyEatingApp implements EntryPoint
 		usernameBox = new TextBox();
 		passwordBox = new TextBox();
 		loginLabel = new Label("Please sign in to your account to access the Healthy Eating application.");
-		vertPanel = new VerticalPanel();
+		loginOrganizerPanel = new VerticalPanel();
+		homePageOrganizerPanel = new VerticalPanel();
 	    rpc = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
@@ -96,11 +98,11 @@ public class HealthyEatingApp implements EntryPoint
 	{
 
 		//Login code  *************************
-		vertPanel.add(loginLabel);
-		vertPanel.add(usernameBox);
-		vertPanel.add(passwordBox);
-		vertPanel.add(dbConnection);
-		RootPanel.get().add(vertPanel);
+		loginOrganizerPanel.add(loginLabel);
+		loginOrganizerPanel.add(usernameBox);
+		loginOrganizerPanel.add(passwordBox);
+		loginOrganizerPanel.add(dbConnection);
+		RootPanel.get().add(loginOrganizerPanel);
 
 		// Listen for mouse events on the button.
 		dbConnection.addClickHandler(new ClickHandler() {
@@ -125,16 +127,27 @@ public class HealthyEatingApp implements EntryPoint
 				loadLogin();
 			}
 			else{
-				User userInfo = (User) result;
-				usernameLabel = new Label("Welcome " + userInfo.getUserName());
+				//Window.open( "http://127.0.0.1:8888/Home.html?gwt.codesvr=127.0.0.1:9997", "_self", ""); 
+				 Homepage menubar = new Homepage();
+				 User userInfo = (User) result;
+				 usernameLabel = new Label("Welcome " + userInfo.getUserName());
+				 signOutLink.setHref("http://127.0.0.1:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997");
+				 homePageOrganizerPanel.add(signOutLink); 
+				 homePageOrganizerPanel.add(usernameLabel);
+				 loginOrganizerPanel.clear();
+			     RootPanel.get().add(homePageOrganizerPanel);
+			     RootPanel.get().add(menubar);
+				 
+				 
 			}
-			vertPanel.add(usernameLabel);
+			homePageOrganizerPanel.add(usernameLabel);
 		}
 
 		
 		private void loadLogin() {
 		    // Assemble login panel.
 			loginLabel.setText("Username or password was incorrect. Please try again");
+			 
  		  }
 
 	}
