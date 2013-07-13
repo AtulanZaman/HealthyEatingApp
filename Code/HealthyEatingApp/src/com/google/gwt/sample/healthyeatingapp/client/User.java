@@ -16,7 +16,7 @@ public class User implements IsSerializable {
 	 }
 	
 	 public User(String username, String password) {
-		 
+		 this.password = password;
 		 this.username = username; 
 	 }
 	 

@@ -1,13 +1,17 @@
 package com.google.gwt.sample.healthyeatingapp.client;
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.sample.healthyeatingapp.client.SocialMedia.SocialMedia;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -27,6 +31,7 @@ public class HealthyEatingApp implements EntryPoint
 	private TextBox usernameBox;
 	private TextBox passwordBox;
 	private Label loginLabel;
+	public SocialMedia SM;
 
 	//****************************************************
 	public HealthyEatingApp()
@@ -68,8 +73,23 @@ public class HealthyEatingApp implements EntryPoint
      //has been loaded.
 		VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
 }*/
+	public void onModuleLoad() {
+				//RootLayoutPanel.get().add(Window.alert("hello"));
+			TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
+			
+			homepage.add(new HTML(""), "Graph");
+			homepage.add(new HTML(""), "Log");
+			homepage.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");
+				
+			RootLayoutPanel.get().add(homepage);
+				
+		 
+     //Create a callback to be called when the visualization API
+     //has been loaded.
+		//VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
+}
 
-	@Override
+/*	@Override
 	public void onModuleLoad() 
 	{
 
@@ -106,5 +126,5 @@ public class HealthyEatingApp implements EntryPoint
 			// TODO Auto-generated method stub
 			Window.alert("SUCCESSFULLY CONNECTED TO DB!");  
 		}
-	}
+	}*/
   }
