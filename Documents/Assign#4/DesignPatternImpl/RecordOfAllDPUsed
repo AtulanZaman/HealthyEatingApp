@@ -1,0 +1,2 @@
+-Observer, in the form of Listeners
+-TabPanel uses the composite design pattern (a composite of a TabBar and a DeckPanel)
