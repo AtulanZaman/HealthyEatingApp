@@ -9,6 +9,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
 import com.google.gwt.sample.healthyeatingapp.client.User;
 import java.sql.SQLException;
+import java.util.Date;
 
 
 @SuppressWarnings("serial")
@@ -61,5 +62,37 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		 }  
 		  
 		 return user;
-	}	
+	}
+	
+	@SuppressWarnings("deprecation")
+	public int GetFriendsPoints(String userName){
+		int points = 0;
+		Date currentDate = new Date();
+		Date previousDate = new Date();
+		previousDate.setDate(currentDate.getDate() - 7);
+		String currentDateString = Integer.toString(currentDate.getYear()) + "-" + Integer.toString(currentDate.getMonth()) + "-" + Integer.toString(currentDate.getDate());
+		String previousDateString = Integer.toString(previousDate.getYear()) + "-" + Integer.toString(previousDate.getMonth()) + "-" + Integer.toString(previousDate.getDate());
+		try{
+			PreparedStatement ps1 = conn.prepareStatement("select userID from user where userName = \"" + userName + "\"");
+			ResultSet result_ps1 = ps1.executeQuery();
+			int userID = result_ps1.getInt(0);
+			result_ps1.close();
+			ps1.close();
+			
+			PreparedStatement ps2 = conn.prepareStatement("select * from pointsearned where userID = \"" + userID + "\" AND DATE(date) Between \"" + previousDateString + "\" AND \"" + currentDateString + "\"");
+			ResultSet result_ps2 = ps2.executeQuery();
+			while(result_ps2.next()){
+				points += result_ps2.getInt(0);
+			}
+			result_ps2.close();
+			ps2.close();
+			
+			conn.close();
+				
+		}
+		catch(SQLException sqle){
+			sqle.printStackTrace();
+		}
+		return points;
+	}
 }
