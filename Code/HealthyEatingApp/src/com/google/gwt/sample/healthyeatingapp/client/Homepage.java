@@ -11,7 +11,8 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.visualization.client.VisualizationUtils;
 import com.google.gwt.visualization.client.visualizations.corechart.LineChart;
-import com.google.gwt.sample.healthyeatingapp.client.Graph;;
+import com.google.gwt.sample.healthyeatingapp.client.Graph;
+import com.google.gwt.sample.healthyeatingapp.client.SocialMedia.SocialMedia;;
 
 public class Homepage extends Composite  {
 	

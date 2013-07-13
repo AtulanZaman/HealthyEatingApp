@@ -3,6 +3,8 @@ import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
+import com.google.gwt.sample.healthyeatingapp.client.SocialMedia.SocialMedia;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Cookies;

@@ -1,4 +1,4 @@
-package com.google.gwt.sample.healthyeatingapp.client;
+package com.google.gwt.sample.healthyeatingapp.client.SocialMedia;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,6 +29,9 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.sample.healthyeatingapp.*;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
+import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
+import com.google.gwt.sample.healthyeatingapp.client.DBConnectionServiceAsync;
+import com.google.gwt.sample.healthyeatingapp.client.Points;
 
 
 

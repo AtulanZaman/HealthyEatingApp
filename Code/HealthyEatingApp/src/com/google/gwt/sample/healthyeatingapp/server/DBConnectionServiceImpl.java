@@ -28,7 +28,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	private Connection conn = null;
 	//private String status;
-	private String url = "jdbc:mysql://localhost/HealthyEatingApp";
+	private String url = "jdbc:mysql://localhost/healthyeatingapp";
 	private String dbuser = "rrazdan";
 	private String pass = "rrazdan";
 	private String currentYear = "";
