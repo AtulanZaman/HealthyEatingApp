@@ -81,7 +81,6 @@ public class HealthyEatingApp implements EntryPoint
 				RootPanel.get().add(addPanel);	
 	}
 	
- 
 	public void test(){
 		Window.alert("clicked");
 		System.out.println("TRIAL");
