@@ -5,10 +5,13 @@ import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -29,6 +32,8 @@ public class HealthyEatingApp implements EntryPoint
 	private Label loginLabel;
 	private Label usernameLabel;
 	private Anchor signOutLink = new Anchor("Sign Out");
+	public SocialMedia SM;
+
 	//****************************************************
 	
 	public HealthyEatingApp()
@@ -46,9 +51,7 @@ public class HealthyEatingApp implements EntryPoint
 		target.setServiceEntryPoint(moduleRelativeURL); 
 		//****************************************************
 	}
-	/**
-	 * This is the entry point method.
-	 */
+	
 /**
  * This is the code for the graph. Need to test this with the DB code before running.
  * */
@@ -69,7 +72,25 @@ public class HealthyEatingApp implements EntryPoint
      //has been loaded.
 		VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
 }*/
+	
+	/*
+	public void onModuleLoad() {
+				//RootLayoutPanel.get().add(Window.alert("hello"));
+			TabLayoutPanel homepage = new TabLayoutPanel(2.5, Unit.EM);
+			
+			homepage.add(new HTML(""), "Graph");
+			homepage.add(new HTML(""), "Log");
+			homepage.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");
+				
+			RootLayoutPanel.get().add(homepage);
+				
+		 
+     //Create a callback to be called when the visualization API
+     //has been loaded.
+		//VisualizationUtils.loadVisualizationApi(onLoadCallBack, LineChart.PACKAGE);
+}
 
+*/
 	@Override
 	public void onModuleLoad() 
 	{
@@ -109,6 +130,7 @@ public class HealthyEatingApp implements EntryPoint
 			}
 			vertPanel.add(usernameLabel);
 		}
+
 		
 		private void loadLogin() {
 		    // Assemble login panel.
@@ -116,5 +138,5 @@ public class HealthyEatingApp implements EntryPoint
  		  }
 
 	}
-	
+
   }

@@ -8,4 +8,7 @@ public interface DBConnectionService extends RemoteService {
 
 	public User authenticateUser(String username, String password);
 	
+	//public Points GetFriendsPoints(String username);	
+	
+	
 }

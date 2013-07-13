@@ -7,9 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
+//import com.google.gwt.sample.healthyeatingapp.client.Points;
 import com.google.gwt.sample.healthyeatingapp.client.User;
+//import com.google.gwt.sample.healthyeatingapp.client.Points;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import java.util.Date;
+
 
 
 @SuppressWarnings("serial")
@@ -17,7 +22,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	private Connection conn = null;
 	//private String status;
-	private String url = "jdbc:mysql://localhost/HealthyEatingApp";
+	private String url = "jdbc:mysql://localhost/healthyeatingapp";
 	private String dbuser = "rrazdan";
 	private String pass = "rrazdan";
 	
@@ -42,7 +47,8 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		User user  = null;
 		
 		 try 
-		 {					 
+
+		 {			 
 			 PreparedStatement ps1 = conn.prepareStatement( "select userName, password from Login where userName = ? AND password = ?;");
 			 ps1.setString(1, userId);
 			 ps1.setString(2, pass);
@@ -63,5 +69,49 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	         sqle.printStackTrace();
 		 }  
 		 return user;
-	}	
+	}
+
+	 
+	
+//	@SuppressWarnings("deprecation")
+//	public Points GetFriendsPoints(String userName){
+//		Points points = new Points("test", "test", "test", 0);
+//		int point = 0;
+//		Date currentDate = new Date();
+//		Date previousDate = new Date();
+//		previousDate.setDate(currentDate.getDate() - 7);
+//		String currentDateString = Integer.toString(currentDate.getYear()) + "-" + Integer.toString(currentDate.getMonth()) + "-" + Integer.toString(currentDate.getDate());
+//		String previousDateString = Integer.toString(previousDate.getYear()) + "-" + Integer.toString(previousDate.getMonth()) + "-" + Integer.toString(previousDate.getDate());
+//		try{
+//			PreparedStatement ps1 = conn.prepareStatement("select userID from user where userName = \"" + userName + "\"");
+//			ResultSet result_ps1 = ps1.executeQuery();			
+//			int userID = result_ps1.getInt(0);
+//			result_ps1.close();
+//			ps1.close();
+//			
+//			PreparedStatement ps2 = conn.prepareStatement("select * from pointsearned where userID = \"" + userID + "\" AND DATE(date) Between \"" + previousDateString + "\" AND \"" + currentDateString + "\"");
+//			ResultSet result_ps2 = ps2.executeQuery();
+//			while(result_ps2.next()){
+//				point += result_ps2.getInt(0);
+//			}
+//			result_ps2.close();
+//			ps2.close();
+//			
+//			PreparedStatement ps3 = conn.prepareStatement("select * from user where userName = \"" + userName + "\"");
+//			ResultSet result_ps3 = ps3.executeQuery();
+//			String firstName = result_ps3.getString(1);
+//			String lastName = result_ps3.getString(2);
+//			result_ps3.close();
+//			ps3.close();
+//			
+//			points = new Points(userName, firstName, lastName, point);			
+//			
+//			conn.close();
+//				
+//		}
+//		catch(SQLException sqle){
+//			sqle.printStackTrace();
+//		}
+//		return points;
+//	}	
 }
