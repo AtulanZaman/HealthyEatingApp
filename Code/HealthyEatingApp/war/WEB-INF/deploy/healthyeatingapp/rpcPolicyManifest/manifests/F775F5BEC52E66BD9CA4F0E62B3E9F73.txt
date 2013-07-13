@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.healthyeatingapp.client.LoginService
+path: 1069E4B02573462CDFEA8341C99AA63C.gwt.rpc

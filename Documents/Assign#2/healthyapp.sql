@@ -36,6 +36,7 @@ CREATE TABLE `FoodLog` (
 CREATE TABLE `Login` (
   `userName` varchar(10) NOT NULL,
   `password` varchar(16) NOT NULL,
+  `userID` int(11) NOT NULL,
   PRIMARY KEY (`userName`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
