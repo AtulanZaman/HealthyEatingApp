@@ -9,6 +9,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
 import com.google.gwt.sample.healthyeatingapp.client.User;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 @SuppressWarnings("serial")
@@ -36,33 +37,31 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	@Override
 	public User authenticateUser(String userId, String pass)  
-	{
+	{	
 		
-		 User user = new User("test", "test");
-		 	
+		User user  = null;
+		
 		 try 
-		 {		
-			 
-			 
+		 {					 
 			 PreparedStatement ps1 = conn.prepareStatement( "select userName, password from Login where userName = ? AND password = ?;");
 			 ps1.setString(1, userId);
 			 ps1.setString(2, pass);
 			 ResultSet result_ps1 = ps1.executeQuery();
 			 while (result_ps1.next()) 
 			 {
-				 user = new User(result_ps1.getString(1), result_ps1.getString(2));
+				 String username = result_ps1.getString("userName");
+				 String password = result_ps1.getString("password");
+				 user = new User(username, password);  
 			 }
 			 result_ps1.close();
 			 ps1.close();
 			 
-			  
-			 conn.close();
+			 //conn.close();
 		 } 
 		 catch (SQLException sqle) 
 		 {
 	         sqle.printStackTrace();
 		 }  
-		  
 		 return user;
 	}	
 }

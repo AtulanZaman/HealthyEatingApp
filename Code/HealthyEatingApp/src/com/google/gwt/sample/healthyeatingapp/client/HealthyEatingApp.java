@@ -1,6 +1,7 @@
 package com.google.gwt.sample.healthyeatingapp.client;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
@@ -19,20 +20,21 @@ import com.google.gwt.user.client.rpc.ServiceDefTarget;
 public class HealthyEatingApp implements EntryPoint 
 {
 
-	//DB Connection tester code  *************************
-
+	//login code  *************************
 	private final VerticalPanel vertPanel;
 	private final DBConnectionServiceAsync rpc;
 	private final Button dbConnection;
 	private TextBox usernameBox;
 	private TextBox passwordBox;
 	private Label loginLabel;
-
+	private Label usernameLabel;
+	private Anchor signOutLink = new Anchor("Sign Out");
 	//****************************************************
+	
 	public HealthyEatingApp()
 	{
 
-		//DB Connection tester code  *************************
+		//login code  *************************
 		dbConnection = new Button("Login");
 		usernameBox = new TextBox();
 		passwordBox = new TextBox();
@@ -42,7 +44,6 @@ public class HealthyEatingApp implements EntryPoint
 	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
 		target.setServiceEntryPoint(moduleRelativeURL); 
-
 		//****************************************************
 	}
 	/**
@@ -73,38 +74,47 @@ public class HealthyEatingApp implements EntryPoint
 	public void onModuleLoad() 
 	{
 
-		//DB Connection tester code  *************************
+		//Login code  *************************
 		vertPanel.add(loginLabel);
 		vertPanel.add(usernameBox);
 		vertPanel.add(passwordBox);
 		vertPanel.add(dbConnection);
-
 		RootPanel.get().add(vertPanel);
 
 		// Listen for mouse events on the button.
 		dbConnection.addClickHandler(new ClickHandler() {
 	    @Override
 		public void onClick(ClickEvent event) {
- 	    	  rpc.authenticateUser(usernameBox.getText(),passwordBox.getText(), new DefaultCallback());			
+ 	    	  rpc.authenticateUser(usernameBox.getText(),passwordBox.getText(), new LoginButtonCallback());			
 	      }
 	    });
-
-
 		//****************************************************
 	}
 
 
-	private class DefaultCallback implements AsyncCallback {
-		public void onFailure(Throwable caught) 
-		{
+	private class LoginButtonCallback implements AsyncCallback {
+		public void onFailure(Throwable caught){
 			caught.printStackTrace();
 	    	Window.alert("Failure: " + caught.getMessage());        
 		}
 
 		@Override
-		public void onSuccess(Object result) {
-			// TODO Auto-generated method stub
-			Window.alert("SUCCESSFULLY CONNECTED TO DB!");  
+		public void onSuccess(Object result) {		 
+			if(result == null){
+				loadLogin();
+			}
+			else{
+				User userInfo = (User) result;
+				usernameLabel = new Label("Welcome " + userInfo.getUserName());
+			}
+			vertPanel.add(usernameLabel);
 		}
+		
+		private void loadLogin() {
+		    // Assemble login panel.
+			loginLabel.setText("Username or password was incorrect. Please try again");
+ 		  }
+
 	}
+	
   }

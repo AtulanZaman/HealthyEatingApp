@@ -3,11 +3,11 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 public class User implements IsSerializable {
 	@SuppressWarnings("unused")
-	private String username;
+	private String username = null;
 	private boolean loggedIn = false;
 	private String loginUrl;
 	private String logoutUrl;
-	private String password;
+	private String password = null;
 	
 	
 	@SuppressWarnings("unused")
@@ -17,10 +17,13 @@ public class User implements IsSerializable {
 	
 	 public User(String username, String password) {
 		 
-		 this.username = username; 
+		 this.username = username;
+		 this.password = password; 
 	 }
 	 
-	 
+	 public String getPassword() {
+		    return password;
+		  }
 	 public String getUserName() {
 		    return username;
 		  }
