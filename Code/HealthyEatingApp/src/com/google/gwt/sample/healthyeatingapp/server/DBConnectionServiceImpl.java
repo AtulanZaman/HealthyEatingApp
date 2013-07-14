@@ -55,12 +55,13 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	@Override
 	public User authenticateUser(String userId, String pass)  
 	{	
+		User user  = null;
 		 if (userId == null || pass == null)
 		 {
-			 return null;
+			 return user;
 		 }
 
-		User user  = null;
+		 
 		
 		 try 
 
@@ -75,19 +76,25 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 				 String password = result_ps1.getString("password");
 				 user = new User(username, password);  
 			 }
-			 result_ps1.close();
-			 ps1.close();
+			  
 			 
-             if (user.getPassword() != null || user.getUserName() != null)
+             if (!result_ps1.isBeforeFirst())
              {
-                 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
+            	 //no match found in database
+            	 //user.setLoggedIn(false);
              }
-
+             else{
+            	 user.setLoggedIn(true);
+            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());   
+             }
+             result_ps1.close();
+			 ps1.close();
 			 //conn.close();
 		 } 
 		 catch (SQLException sqle) 
 		 {
-	         sqle.printStackTrace();
+			  
+	         //sqle.printStackTrace();
 		 } 
 		 storeUserInSession(user);
 		 return user;
@@ -103,7 +110,8 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	public void logout()
 	{
-		deleteUserFromSession();
+		deleteUserFromSession();		
+		getThreadLocalRequest().getSession().invalidate();
 	}
 	
     private void deleteUserFromSession()
@@ -113,6 +121,21 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
          session.removeAttribute("user");
 
     }
+    
+    public String getUserName()  
+    {  
+        HttpSession session = getThreadLocalRequest().getSession(true);  
+        if (session.getAttribute("user") != null)  
+        {  
+           User user = (User) session.getAttribute("user"); 
+           System.out.println(user.getUserName());
+           return user.getUserName();
+        }  
+        else   
+        {  
+            return "";  
+        }  
+    }  
 
 		
 	public Points GetFriendsPoints(String userName){

@@ -18,7 +18,6 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class LoginControl {
 
-	//login code  *************************
 		String sessionID;
 		private final VerticalPanel loginOrganizerPanel;
 		private final FlowPanel homePageOrganizerPanel;
@@ -28,26 +27,27 @@ public class LoginControl {
 		private TextBox usernameBox;
 		private PasswordTextBox passwordBox;
 		private Label loginLabel;
-		//****************************************************
+		private User userLoginTrack;
 
 		public LoginControl(){
-			//login code  *************************
 			loginButton = new Button("Login");
 			logoutButton = new Button("Logout");
 			usernameBox = new TextBox();
 			passwordBox = new PasswordTextBox();
-			loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. Username and password are case sensitive.");
+			loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. " + "\n" +
+									"Username and password are case sensitive.");
 			loginOrganizerPanel = new VerticalPanel();
 			homePageOrganizerPanel = new FlowPanel();
 		    	rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 		 	ServiceDefTarget target = (ServiceDefTarget) rpcLogin;
 			String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
 			target.setServiceEntryPoint(moduleRelativeURL); 
-			//****************************************************
 		}
 		
+		
+		//Login methods  ***************************************************************************
+		
 		public void loadLogin() {
-			//Login code  *************************
 			RootLayoutPanel.get().clear();
 			loginOrganizerPanel.add(loginLabel);
 			loginOrganizerPanel.add(usernameBox);
@@ -59,12 +59,10 @@ public class LoginControl {
 			loginButton.addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
-				  rpcLogin.authenticateUser(usernameBox.getText(),passwordBox.getText(), new LoginButtonCallback());			
+				  rpcLogin.authenticateUser(usernameBox.getText(),passwordBox.getText(), new LoginButtonCallback());
 			  }
 			});
-			//****************************************************
 		}
-		
 		
 		public void loadHomepage() {
 			 RootLayoutPanel.get().clear();
@@ -74,8 +72,6 @@ public class LoginControl {
 			 homePageOrganizerPanel.add(menubar);
 		 	 RootLayoutPanel.get().add(homePageOrganizerPanel);
 			 
-			 
-			 System.out.println("in home");
 			// Listen for mouse events on the button.
 			logoutButton.addClickHandler(new ClickHandler() {
 			@Override
@@ -87,22 +83,25 @@ public class LoginControl {
 		}
 		
 		public void loadLoginAgain() {
-		    // Assemble login panel.
+		    System.out.println("in load login");
 			loginLabel.setText("Username or password was incorrect. Please try again");
 			 
 		}
 		
-		
+
+
+		//Callbacks methods  ***************************************************************************
+
 		private class LogoutButtonCallback implements AsyncCallback {
 
 			@Override
 			public void onFailure(Throwable caught) {
-				System.out.print("fail logout");
+				System.out.println("fail logout");
 			}
 
 			@Override
 			public void onSuccess(Object result) {
-				System.out.print("clicked logout");
+				//System.out.print("clicked logout");
 				loadLogin();
 			}
 			
@@ -117,23 +116,31 @@ public class LoginControl {
 
 			@Override
 			public void onSuccess(Object result) {		 
-				if(result == null){
+				
+				userLoginTrack = (User)result;
+				
+				if(userLoginTrack == null){
 					loadLoginAgain();
 				}
-				else{
-					 User userInfo = (User) result;	
+				
+				else if (userLoginTrack.getLoggedIn()){
+					 
+					loadHomepage();
+					 
 					 //cookie stuff  *************************
-					 String sessionID = userInfo.getSessionId();
+					 String sessionID = userLoginTrack.getSessionId();
 					 //set session cookie for 1 day expiry.
 	                 final long DURATION = 1000 * 60 * 60 * 24 * 1;
 	                 Date expires = new Date(System.currentTimeMillis() + DURATION);
 	                 Cookies.setCookie("sid", sessionID, expires, null, "/", false);
 					 //****************************************************
-					
-					 loadHomepage();
+				}
+				else{	
+					loadLoginAgain();
 				}
 				 
-				System.out.print(sessionID);
+				 
+				System.out.println("Session ID: " + sessionID);
 			 
 			}
 		}		

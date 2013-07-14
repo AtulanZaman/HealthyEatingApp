@@ -6,6 +6,7 @@ public class User implements IsSerializable {
 	private String username = null;	 
 	private String password = null;
 	private String httpSession;
+	private boolean loggedIn = false;
 	
 	@SuppressWarnings("unused")
 	 private User() {
@@ -28,7 +29,13 @@ public class User implements IsSerializable {
 	 public String getSessionId(){
             return httpSession;
      }
-	 public String setSessionId(String sessionID){
-            return httpSession = sessionID;
+	 public void setSessionId(String sessionID){
+            this.httpSession = sessionID;
+	 }
+	 public boolean getLoggedIn(){
+		 return loggedIn;
+	 }
+	 public void setLoggedIn(boolean loggedIn){
+		 this.loggedIn = loggedIn;
 	 }
 }

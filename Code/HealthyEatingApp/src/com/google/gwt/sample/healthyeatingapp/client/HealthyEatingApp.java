@@ -41,6 +41,9 @@ public class HealthyEatingApp implements EntryPoint
 	    else{
 	    	
 	    	loginControl.loadHomepage();
-	    }   
+	    }
+	    
 	}
+
+
 }
