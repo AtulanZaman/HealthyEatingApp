@@ -78,12 +78,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			 }
 			  
 			 
-             if (!result_ps1.isBeforeFirst())
-             {
-            	 //no match found in database
-            	 //user.setLoggedIn(false);
-             }
-             else{
+             if (result_ps1 != null ){
             	 user.setLoggedIn(true);
             	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());   
              }
