@@ -52,47 +52,34 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		
 	}
 	
+	// Login, Logout, Register server side handling **********************************************************************
 	@Override
 	public User authenticateUser(String userId, String pass)  
 	{	
-		User user  = null;
+		 User user  = null;
 		 if (userId == null || pass == null)
 		 {
 			 return user;
 		 }
 
-		 
-		
 		 try 
-
 		 {			 
-			 PreparedStatement ps1 = conn.prepareStatement("select userName, password from Login where userName = ? AND password = ?;");
-			 ps1.setString(1, userId);
-			 ps1.setString(2, pass);
-			 ResultSet result_ps1 = ps1.executeQuery();
-			 if (result_ps1.next()) 
+			 PreparedStatement psAuthorize = conn.prepareStatement("select userName, password from Login where userName = ? AND password = ?;");
+			 psAuthorize.setString(1, userId);
+			 psAuthorize.setString(2, pass);
+			 ResultSet result_psAuthorize = psAuthorize.executeQuery();
+			 if (result_psAuthorize.next()) 
 			 {
-				 String username = result_ps1.getString("userName");
-				 String password = result_ps1.getString("password");
+				 String username = result_psAuthorize.getString("userName");
+				 String password = result_psAuthorize.getString("password");
 				 user = new User(username, password);  
 				 user.setLoggedIn(true);
             	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
         		 storeUserInSession(user);
 			 }
 			  
-			 
-//             if (!result_ps1.isBeforeFirst())
-//             {
-//            	 //no match found in database
-//             }
-//             else{
-//            	 user.setLoggedIn(true);
-//            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
-//        		 storeUserInSession(user);
-//             }
-             result_ps1.close();
-			 ps1.close();
-			 //conn.close();
+			 result_psAuthorize.close();
+             psAuthorize.close();
 		 } 
 		 catch (SQLException sqle) 
 		 {
@@ -139,7 +126,26 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
         }  
     }  
 
+    @Override
+	public void register(String newusername, String newpassword) {
+		System.out.println("in register server side");
+		try{
+			
+			PreparedStatement psRegister = conn.prepareStatement("insert into Login(userName, password) values (?, ?);");
+			psRegister.setString(1, newusername);
+			psRegister.setString(2, newpassword);
+			psRegister.close();
+		}
+		catch (SQLException sqle) {
+	         //sqle.printStackTrace();
+		} 
 		
+	}	   
+    // end of Login, Logout, Register server side handling *******************************************************************
+    
+    
+    
+    
 	public Points GetFriendsPoints(String userName){
 		Points points = new Points("test", "test", "test", 0);
 		int point = 0;
@@ -196,12 +202,13 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			
 			points = new Points(userName, firstName, lastName, point);			
 			
-			//conn.close();
 		}
 		catch(SQLException sqle){
 			sqle.printStackTrace();
 		}
 		return points;
-	}	
+	}
+
+	
 
 }

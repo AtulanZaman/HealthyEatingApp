@@ -6,6 +6,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Cookies;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
 import com.google.gwt.user.client.ui.Button;
@@ -23,22 +24,31 @@ public class LoginControl {
 		private final FlowPanel homePageOrganizerPanel;
 		private final DBConnectionServiceAsync rpcLogin;
 		private final Button loginButton;
+		private final Button registerButton;
 		private final Button logoutButton;
+		private final Button addMeButton;
 		private TextBox usernameBox;
 		private PasswordTextBox passwordBox;
 		private Label loginLabel;
 		private User userLoginTrack;
-
+		private TextBox newusernameBox;
+		private TextBox newpasswordBox;
+		
+		
 		public LoginControl(){
 			loginButton = new Button("Login");
 			logoutButton = new Button("Logout");
+			registerButton = new Button("Register");
+			addMeButton = new Button("Add me");
 			usernameBox = new TextBox();
 			passwordBox = new PasswordTextBox();
 			loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. " + "\n" +
 									"Username and password are case sensitive.");
+			newusernameBox = new TextBox();
+			newpasswordBox = new TextBox();	
 			loginOrganizerPanel = new VerticalPanel();
 			homePageOrganizerPanel = new FlowPanel();
-		    	rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
+		    rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 		 	ServiceDefTarget target = (ServiceDefTarget) rpcLogin;
 			String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";
 			target.setServiceEntryPoint(moduleRelativeURL); 
@@ -53,17 +63,46 @@ public class LoginControl {
 			loginOrganizerPanel.add(usernameBox);
 			loginOrganizerPanel.add(passwordBox);
 			loginOrganizerPanel.add(loginButton);
+			loginOrganizerPanel.add(registerButton);
 			RootLayoutPanel.get().add(loginOrganizerPanel);
 
-			// Listen for mouse events on the button.
+			// Listen for mouse events on the login button.
 			loginButton.addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
 				  rpcLogin.authenticateUser(usernameBox.getText(),passwordBox.getText(), new LoginButtonCallback());
 			  }
 			});
-		}
+		 
 		
+			// Listen for mouse events on the register button.
+			registerButton.addClickHandler(new ClickHandler() {
+			@Override
+			public void onClick(ClickEvent event) {
+					
+				  System.out.println("in register event");
+				  loginOrganizerPanel.add(newusernameBox);
+				  loginOrganizerPanel.add(newpasswordBox);
+				  loginOrganizerPanel.add(addMeButton);
+			  }
+			});
+			
+			// Listen for mouse events on the add me button.
+			addMeButton.addClickHandler(new ClickHandler() {
+			@Override
+			public void onClick(ClickEvent event) {
+					
+				  System.out.println("in add me event");  
+				  if(newusernameBox.getText().isEmpty() || newpasswordBox.getText().isEmpty()){
+					 Window.alert("You must enter a username and password");
+				  }
+				  else{
+					  rpcLogin.register(newusernameBox.getText(), newpasswordBox.getText(), new RegisterButtonCallback());			  
+				  }
+			  }
+			});
+						
+		}
 		public void loadHomepage() {
 			 RootLayoutPanel.get().clear();
 			 homePageOrganizerPanel.clear();
@@ -111,7 +150,7 @@ public class LoginControl {
 			
 			@Override
 			public void onFailure(Throwable caught){
-				caught.printStackTrace();
+				System.out.println("fail login");
 			}
 
 			@Override
@@ -139,9 +178,26 @@ public class LoginControl {
 					loadLoginAgain();
 				}
 				 
-				 
 				System.out.println("Session ID: " + sessionID);
 			 
+			}
+		}		
+		
+		
+		private class RegisterButtonCallback implements AsyncCallback {
+			
+			@Override
+			public void onFailure(Throwable caught){
+				System.out.println("fail register");
+			}
+
+			@Override
+			public void onSuccess(Object result) {
+				newusernameBox.setText("");
+				newpasswordBox.setText("");
+				Window.alert("You are now a registered user!");
+                loginOrganizerPanel.clear();
+				loadLogin();	
 			}
 		}		
 }
