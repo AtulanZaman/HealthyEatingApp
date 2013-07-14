@@ -70,18 +70,26 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			 ps1.setString(1, userId);
 			 ps1.setString(2, pass);
 			 ResultSet result_ps1 = ps1.executeQuery();
-			 while (result_ps1.next()) 
+			 if (result_ps1.next()) 
 			 {
 				 String username = result_ps1.getString("userName");
 				 String password = result_ps1.getString("password");
 				 user = new User(username, password);  
+				 user.setLoggedIn(true);
+            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
+        		 storeUserInSession(user);
 			 }
 			  
 			 
-             if (result_ps1 != null ){
-            	 user.setLoggedIn(true);
-            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());   
-             }
+//             if (!result_ps1.isBeforeFirst())
+//             {
+//            	 //no match found in database
+//             }
+//             else{
+//            	 user.setLoggedIn(true);
+//            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
+//        		 storeUserInSession(user);
+//             }
              result_ps1.close();
 			 ps1.close();
 			 //conn.close();
@@ -91,7 +99,6 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			  
 	         //sqle.printStackTrace();
 		 } 
-		 storeUserInSession(user);
 		 return user;
 	}
 
