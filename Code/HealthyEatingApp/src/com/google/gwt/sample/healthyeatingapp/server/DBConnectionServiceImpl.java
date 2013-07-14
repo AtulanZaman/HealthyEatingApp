@@ -131,10 +131,24 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		System.out.println("in register server side");
 		try{
 			
-			PreparedStatement psRegister = conn.prepareStatement("insert into Login(userName, password) values (?, ?);");
-			psRegister.setString(1, newusername);
-			psRegister.setString(2, newpassword);
-			psRegister.close();
+			//check if duplicate
+			User IfExists = authenticateUser(newusername, newpassword); 
+			PreparedStatement psRegister;
+            //only insert new user if not a duplicate
+            if(IfExists == null)
+            {
+				psRegister = conn.prepareStatement("insert into Login(userName, password) values (?, ?);");
+				
+				psRegister.setString(1, newusername);
+				psRegister.setString(2, newpassword);
+				
+				psRegister.execute();
+				psRegister.close();
+            }
+            else{
+            	Window.alert("ERROR: user with these credentials already exists");
+            }
+			 
 		}
 		catch (SQLException sqle) {
 	         //sqle.printStackTrace();

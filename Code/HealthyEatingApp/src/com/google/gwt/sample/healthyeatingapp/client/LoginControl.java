@@ -33,7 +33,7 @@ public class LoginControl {
 		private User userLoginTrack;
 		private TextBox newusernameBox;
 		private TextBox newpasswordBox;
-		
+		private Label attentionLabel;
 		
 		public LoginControl(){
 			loginButton = new Button("Login");
@@ -44,6 +44,8 @@ public class LoginControl {
 			passwordBox = new PasswordTextBox();
 			loginLabel = new Label("Please sign in to your account to access the Healthy Eating application. " + "\n" +
 									"Username and password are case sensitive.");
+			attentionLabel = new Label("ATTENTION: you must enter a username and password!");
+
 			newusernameBox = new TextBox();
 			newpasswordBox = new TextBox();	
 			loginOrganizerPanel = new VerticalPanel();
@@ -94,7 +96,7 @@ public class LoginControl {
 					
 				  System.out.println("in add me event");  
 				  if(newusernameBox.getText().isEmpty() || newpasswordBox.getText().isEmpty()){
-					 Window.alert("You must enter a username and password");
+					  loginOrganizerPanel.add(attentionLabel); 
 				  }
 				  else{
 					  rpcLogin.register(newusernameBox.getText(), newpasswordBox.getText(), new RegisterButtonCallback());			  
@@ -189,6 +191,10 @@ public class LoginControl {
 			@Override
 			public void onFailure(Throwable caught){
 				System.out.println("fail register");
+				Window.alert("ERROR: user with these credentials already exists!");
+                loginOrganizerPanel.clear();
+				loadLogin();	
+
 			}
 
 			@Override
