@@ -82,7 +82,7 @@ public class HealthyEatingApp implements EntryPoint
 	loginButton.addClickHandler(new ClickHandler() {
 	@Override
 	public void onClick(ClickEvent event) {
-		  rpcLogin.authenticateUser(usernameBox.getText(),passwordBox.getText(), new LoginButtonCallback());			
+		  rpcLogin.authenticateUser(usernameBox.getText(),passwordBox.getText(), new LoginButtonCallback());
 	  }
 	});
 	//****************************************************
@@ -111,6 +111,7 @@ public class HealthyEatingApp implements EntryPoint
                  final long DURATION = 1000 * 60 * 60 * 24 * 1;
                  Date expires = new Date(System.currentTimeMillis() + DURATION);
                  Cookies.setCookie("sid", sessionID, expires, null, "/", false);
+                 Cookies.setCookie("healthy_app_user", userInfo.getUserName());
 				 //****************************************************
 				
 				 loadHomepage();
@@ -129,7 +130,6 @@ public class HealthyEatingApp implements EntryPoint
 		 homePageOrganizerPanel.add(logoutButton);
 		 homePageOrganizerPanel.add(menubar);
 	 	 RootLayoutPanel.get().add(homePageOrganizerPanel);
-		 
 		 
 		 System.out.println("in home");
 		// Listen for mouse events on the button.

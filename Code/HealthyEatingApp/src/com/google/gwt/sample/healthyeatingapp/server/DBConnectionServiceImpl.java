@@ -8,12 +8,18 @@ import java.sql.SQLException;
 
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.google.gwt.i18n.client.DateTimeFormat;
+import com.google.visualization.datasource.base.TypeMismatchException;
+import com.google.visualization.datasource.datatable.ColumnDescription;
+//import com.google.gwt.visualization.client.DataTable;
+import com.google.visualization.datasource.datatable.DataTable;
+import com.google.visualization.datasource.datatable.value.ValueType;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
 import com.google.gwt.sample.healthyeatingapp.client.Points;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
 import com.google.gwt.sample.healthyeatingapp.client.User;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
+import com.google.visualization.datasource.render.JsonRenderer;
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -100,6 +106,12 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
         session.setAttribute("user", user);
     }
 	
+	private User getUserInSession(String username){
+		HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
+        HttpSession session = httpServletRequest.getSession(true);
+        return (User)session.getAttribute("user");
+	}
+	
 	
 	public void logout()
 	{
@@ -177,6 +189,31 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			sqle.printStackTrace();
 		}
 		return points;
-	}	
+	}
+	@Override
+	public String getUserCalories(String username){
+		DataTable data = new DataTable();	
+		try{
+			PreparedStatement ps1 = conn.prepareStatement("SELECT FoodLog.date, FoodItems.Calories  FROM HealthyEatingApp.FoodLog, HealthyEatingApp.FoodItems, HealthyEatingApp.user, HealthyEatingApp.FoodItemFoodLog Where user.userName = \"" + username +"\" and user.userID = FoodLog.userID and FoodLog.logID = FoodItemFoodLog.logID and FoodItemFoodLog.foodName = FoodItems.foodName;");
+			ResultSet result_ps2 = ps1.executeQuery();
+			
+			data.addColumn(new ColumnDescription("date", ValueType.TEXT, "date"));
+			data.addColumn(new ColumnDescription("calorie", ValueType.NUMBER, "calorie"));
+			
+			result_ps2.last();
+			int size = result_ps2.getRow();
+			result_ps2.first();
+			int i = result_ps2.getRow();
+			
+			for(; i <= size; i++){
+				data.addRowFromValues(result_ps2.getDate(1).toString(), result_ps2.getInt(2));
+				result_ps2.next();
+			}
+			
+		}catch(SQLException | TypeMismatchException sqle){
+			sqle.printStackTrace();
+		}
+	    return JsonRenderer.renderDataTable(data, true, false, false).toString();
+	}
 
 }

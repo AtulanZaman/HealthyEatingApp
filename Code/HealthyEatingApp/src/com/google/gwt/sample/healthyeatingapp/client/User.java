@@ -2,7 +2,7 @@ package com.google.gwt.sample.healthyeatingapp.client;
 import com.google.gwt.user.client.rpc.IsSerializable;
 
 public class User implements IsSerializable {
-	@SuppressWarnings("unused")
+
 	private String username = null;	 
 	private String password = null;
 	private String httpSession;
