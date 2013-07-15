@@ -1,5 +1,7 @@
 package com.google.gwt.sample.healthyeatingapp.server;
 
+import java.net.URL;
+import java.net.URLConnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -10,6 +12,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
+import com.google.gwt.sample.healthyeatingapp.client.FriendUser;
 import com.google.gwt.sample.healthyeatingapp.client.Points;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
 import com.google.gwt.sample.healthyeatingapp.client.User;
@@ -112,9 +115,67 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
          HttpSession session = httpServletRequest.getSession();
          session.removeAttribute("user");
 
+    }  
+    
+    @Override
+    public User authenticateFacebookUser(String firstName, String lastName){
+		User user = null;
+		String userName = "";
+		String passWord = "";
+    	try
+    	{
+    		PreparedStatement ps = conn.prepareStatement("select * from user where firstName = \"" + firstName + "\" and lastName = \"" + lastName + "\"");
+    		ResultSet result_ps = ps.executeQuery();	
+			while(result_ps.next()){
+				userName = result_ps.getString(5);
+			}
+			ps.close();
+			if(userName.length() != 0)
+			{
+				PreparedStatement ps1 = conn.prepareStatement("select * from login where userName = \"" + userName + "\"");
+				ResultSet result_ps1 = ps1.executeQuery();
+				while(result_ps1.next())
+				{
+					passWord = result_ps1.getString(2);
+				}
+				ps1.close();
+				user = new User(userName, passWord);
+			}
+    	}
+    	catch(SQLException sqle)
+    	{
+    		sqle.printStackTrace();
+    	}
+    	return user;    	
     }
-
 		
+    public FriendUser IsFriendUser(String firstName, String lastName){
+    	FriendUser friendUser = new FriendUser();
+    	//System.out.println("In IsFriendUser");
+    	String userName = "";
+    	try{
+    		PreparedStatement ps = conn.prepareStatement("select * from user where firstName = \"" + firstName + "\" and lastName = \"" + lastName + "\"");
+    		ResultSet result_ps = ps.executeQuery();
+			while(result_ps.next()){
+				userName = result_ps.getString(5);
+			}
+			ps.close();
+			if(userName.length() == 0){
+				friendUser.setUserName("empty");
+				friendUser.setIsUser(false);
+			}else{
+			friendUser.setUserName(userName);
+			friendUser.setIsUser(true);
+			}
+
+			return friendUser;
+    	}
+    	catch(SQLException sqle){
+    		sqle.printStackTrace();
+    	}
+    	return friendUser;
+    }
+    
 	public Points GetFriendsPoints(String userName){
 		Points points = new Points("test", "test", "test", 0);
 		int point = 0;

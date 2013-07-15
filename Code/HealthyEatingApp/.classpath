@@ -11,5 +11,6 @@
 			<attribute name="javadoc_location" value="http://gwt-google-apis.googlecode.com/svn/javadoc/visualization/1.1/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/gwt-oauth2-0.2-alpha.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

@@ -6,7 +6,8 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 //differences: The return type is always void and every method has an additional AsyncCallback parameter
 public interface DBConnectionServiceAsync {
 	public void authenticateUser(String username, String password, AsyncCallback<User> callback);
+	public void authenticateFacebookUser(String firstName, String lastName, AsyncCallback<User> callback);
 	public void logout(AsyncCallback callback);
-	public void GetFriendsPoints(String username, AsyncCallback<Points> callback);	
-	
+	public void GetFriendsPoints(String username, AsyncCallback<Points> callback);
+	public void IsFriendUser(String firstName, String lastName, AsyncCallback<FriendUser> callback);
 }

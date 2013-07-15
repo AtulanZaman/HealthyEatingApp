@@ -1,5 +1,7 @@
 package com.google.gwt.sample.healthyeatingapp.client;
 
+import com.google.api.gwt.oauth2.client.Auth;
+import com.google.api.gwt.oauth2.client.AuthRequest;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.dom.client.Style.Unit;
@@ -18,11 +20,13 @@ public class Homepage extends Composite  {
 	
 	//create our own custom widget for Navigation container
 	private final TabLayoutPanel tp = new TabLayoutPanel(2.5, Unit.EM);
+	
+
 	 	
 	public Homepage()
-	{
+	{		
 		initWidget(tp);
-		// Add a home tab
+		// Add a home tab		
 	    tp.add(new HTML("Food Log"), "Food Log");
 	    tp.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");	
 	    
