@@ -29,7 +29,7 @@ public class LoginControl {
 		private final Button addMeButton;
 		private TextBox usernameBox;
 		private PasswordTextBox passwordBox;
-		private Label loginLabel;
+		public static Label loginLabel;
 		private User userLoginTrack;
 		private TextBox newusernameBox;
 		private TextBox newpasswordBox;
@@ -191,16 +191,22 @@ public class LoginControl {
 			@Override
 			public void onFailure(Throwable caught){
 				System.out.println("fail register");
-                loginOrganizerPanel.clear();
+				loginOrganizerPanel.clear();
 				loadLogin();	
 
 			}
 
 			@Override
 			public void onSuccess(Object result) {
+				User testIfNull = (User)result;
+				if(testIfNull == null){
+				   loginLabel.setText("Welcome new user!!");
+				}
+				else{
+				   loginLabel.setText("Already a user!");				   
+				}
 				newusernameBox.setText("");
 				newpasswordBox.setText("");
-				Window.alert("You are now a registered user!");
                 loginOrganizerPanel.clear();
 				loadLogin();	
 			}

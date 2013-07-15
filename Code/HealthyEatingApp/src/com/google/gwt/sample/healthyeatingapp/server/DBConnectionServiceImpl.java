@@ -76,7 +76,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 				 //this is a hashed version from the DB
 				 String password = result_psAuthorize.getString("password");
 				 boolean valid = BCrypt.checkpw(pass, password);
-				 if ( valid ){
+				 if (valid){
 					 user = new User(username, password);  
 					 user.setLoggedIn(true);
 	            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
@@ -138,12 +138,13 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
     }  
 
     @Override
-	public void register(String newusername, String newpassword) {
+	public User register(String newusername, String newpassword) {
 		System.out.println("in register server side");
+		User IfExists = null;
 		try{
 			String hash = BCrypt.hashpw(newpassword, BCrypt.gensalt());
 			//check if duplicate
-			User IfExists = authenticateUser(newusername, hash); 
+			IfExists = authenticateUser(newusername, newpassword); 
 			PreparedStatement psRegister;
             //only insert new user if not a duplicate
             if(IfExists == null)
@@ -152,20 +153,19 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 				
 				psRegister.setString(1, newusername);
 				psRegister.setString(2, hash);
-				
 				psRegister.execute();
 				psRegister.close();
             }
-            else{
-            	Window.alert("ERROR: user with these credentials already exists");
-            }
-			 
+            
 		}
 		catch (SQLException sqle) {
-	         //sqle.printStackTrace();
-		} 
-		
+			
+ 		} 
+		return IfExists;	
 	}	   
+    
+    
+  
     // end of Login, Logout, Register server side handling *******************************************************************
     
     
