@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.google.gwt.i18n.client.DateTimeFormat;
+import com.google.gwt.sample.healthyeatingapp.client.BCrypt;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
 import com.google.gwt.sample.healthyeatingapp.client.Points;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
@@ -56,6 +57,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	@Override
 	public User authenticateUser(String userId, String pass)  
 	{	
+		
 		 User user  = null;
 		 if (userId == null || pass == null)
 		 {
@@ -64,18 +66,27 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 
 		 try 
 		 {			 
-			 PreparedStatement psAuthorize = conn.prepareStatement("select userName, password from Login where userName = ? AND password = ?;");
+			 PreparedStatement psAuthorize = conn.prepareStatement("select userName, password from Login where userName = ?;");
 			 psAuthorize.setString(1, userId);
-			 psAuthorize.setString(2, pass);
+			// psAuthorize.setString(2, pass);
 			 ResultSet result_psAuthorize = psAuthorize.executeQuery();
 			 if (result_psAuthorize.next()) 
 			 {
 				 String username = result_psAuthorize.getString("userName");
+				 //this is a hashed version from the DB
 				 String password = result_psAuthorize.getString("password");
-				 user = new User(username, password);  
-				 user.setLoggedIn(true);
-            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
-        		 storeUserInSession(user);
+				 boolean valid = BCrypt.checkpw(pass, password);
+				 if ( valid ){
+					 user = new User(username, password);  
+					 user.setLoggedIn(true);
+	            	 user.setSessionId(this.getThreadLocalRequest().getSession().getId());
+	        		 storeUserInSession(user);
+				 }
+				 else{
+					 
+					 //return null
+					 return user;
+				 }
 			 }
 			  
 			 result_psAuthorize.close();
@@ -130,9 +141,9 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	public void register(String newusername, String newpassword) {
 		System.out.println("in register server side");
 		try{
-			
+			String hash = BCrypt.hashpw(pass, BCrypt.gensalt());
 			//check if duplicate
-			User IfExists = authenticateUser(newusername, newpassword); 
+			User IfExists = authenticateUser(newusername, hash); 
 			PreparedStatement psRegister;
             //only insert new user if not a duplicate
             if(IfExists == null)
@@ -140,7 +151,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 				psRegister = conn.prepareStatement("insert into Login(userName, password) values (?, ?);");
 				
 				psRegister.setString(1, newusername);
-				psRegister.setString(2, newpassword);
+				psRegister.setString(2, hash);
 				
 				psRegister.execute();
 				psRegister.close();
