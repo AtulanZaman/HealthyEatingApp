@@ -191,7 +191,6 @@ public class LoginControl {
 			@Override
 			public void onFailure(Throwable caught){
 				System.out.println("fail register");
-				Window.alert("ERROR: user with these credentials already exists!");
                 loginOrganizerPanel.clear();
 				loadLogin();	
 
