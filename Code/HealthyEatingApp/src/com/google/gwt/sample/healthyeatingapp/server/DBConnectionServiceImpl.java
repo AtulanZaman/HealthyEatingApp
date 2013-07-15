@@ -141,7 +141,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	public void register(String newusername, String newpassword) {
 		System.out.println("in register server side");
 		try{
-			String hash = BCrypt.hashpw(pass, BCrypt.gensalt());
+			String hash = BCrypt.hashpw(newpassword, BCrypt.gensalt());
 			//check if duplicate
 			User IfExists = authenticateUser(newusername, hash); 
 			PreparedStatement psRegister;
