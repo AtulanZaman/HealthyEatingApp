@@ -8,6 +8,6 @@ public interface DBConnectionServiceAsync {
 	public void authenticateUser(String username, String password, AsyncCallback<User> callback);
 	public void logout(AsyncCallback callback);
 	public void register(String newusername, String newpassword, AsyncCallback callback);
-	public void GetFriendsPoints(String username, AsyncCallback<Points> callback);	
-	
+	public void GetFriendsPoints(String username, AsyncCallback<Points> callback);
+	public void getUserCalories(String username, AsyncCallback<String> callback);
 }
