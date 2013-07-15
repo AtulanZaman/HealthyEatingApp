@@ -29,7 +29,7 @@ public class LoginControl {
 		private final Button addMeButton;
 		private TextBox usernameBox;
 		private PasswordTextBox passwordBox;
-		public static Label loginLabel;
+		private Label loginLabel;
 		private User userLoginTrack;
 		private TextBox newusernameBox;
 		private TextBox newpasswordBox;
