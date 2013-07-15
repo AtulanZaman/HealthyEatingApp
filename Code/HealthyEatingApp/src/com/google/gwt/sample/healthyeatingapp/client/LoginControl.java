@@ -143,6 +143,8 @@ public class LoginControl {
 			@Override
 			public void onSuccess(Object result) {
 				//System.out.print("clicked logout");
+				loginLabel.setText("Please sign in to your account to access the Healthy Eating application. " + "\n" +
+						"Username and password are case sensitive."); 
 				loadLogin();
 			}
 			
@@ -203,7 +205,7 @@ public class LoginControl {
 				   loginLabel.setText("Welcome new user!!");
 				}
 				else{
-				   loginLabel.setText("Already a user!");				   
+				   loginLabel.setText("Should be able to login with credentials submitted!");				   
 				}
 				newusernameBox.setText("");
 				newpasswordBox.setText("");
