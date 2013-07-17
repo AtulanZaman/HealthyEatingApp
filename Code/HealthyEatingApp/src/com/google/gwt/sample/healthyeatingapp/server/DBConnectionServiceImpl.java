@@ -42,10 +42,13 @@ import javax.servlet.http.HttpSession;
 public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBConnectionService {
 	
 	private Connection conn = null;
-	//private String status;
-	private String url = "jdbc:mysql://localhost/HealthyEatingApp";
-	private String dbuser = "rrazdan";
-	private String pass = "rrazdan";
+	// private String status;
+	// private String url = "jdbc:mysql://localhost/healthyeatingapp";
+	private String url = "jdbc:mysql://eceweb.uwaterloo.ca:3306/hospital_n9ahmad";
+	// private String dbuser = "rrazdan";
+	private String dbuser = "user_n2ahmad";
+	// private String pass = "rrazdan";
+	private String pass = "ece356prj";
 	private String currentYear = "";
 	private String currentMonth = "";
 	private String currentDate = "";
@@ -366,4 +369,132 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	    return JsonRenderer.renderDataTable(data, true, false, false).toString();
 	}
 
+	
+	
+	public String GetFoodNames() {
+		String ret = "";
+
+		PreparedStatement stmt = null;
+		try {
+
+			String query;
+			query = "Select * from FoodItems";
+
+			stmt = conn.prepareStatement(query);
+
+			ResultSet resultSet = stmt.executeQuery();
+
+			while (resultSet.next()) {
+				ret += resultSet.getString("foodName") + ":";
+				ret += resultSet.getInt("calories") + ":";
+				ret += resultSet.getString("foodGroup") + ";";
+
+			}
+
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+		}
+		return ret;
+	}
+
+	public void InsertFoodLog(String userName, String foodName, String date,
+			int calories) {
+		PreparedStatement stmt = null;
+		PreparedStatement stmt2 = null;
+		PreparedStatement stmt3 = null;
+
+		int userID = 0;
+		try {
+
+			String query;
+
+			query = "Select * from Login where userName=?";
+
+			stmt3 = conn.prepareStatement(query);
+
+			stmt3.setString(1, userName);
+
+			ResultSet resultSet = stmt3.executeQuery();
+
+			while (resultSet.next()) {
+				userID = resultSet.getInt("userID");
+
+			}
+
+			String insert;
+			insert = "INSERT INTO FoodLog(userID, foodName, date) VALUES "
+					+ "(?,?,?)";
+
+			stmt = conn.prepareStatement(insert);
+			stmt.setInt(1, userID);
+			stmt.setString(2, foodName);
+			stmt.setString(3, date);
+
+			stmt.executeUpdate();
+
+			String insert2;
+			insert2 = "INSERT INTO pointsearned(value, date, userID) VALUES "
+					+ "(?,?,?)";
+
+			stmt2 = conn.prepareStatement(insert2);
+			stmt2.setInt(1, calories);
+			stmt2.setString(2, date);
+			stmt2.setInt(3, userID);
+
+			stmt2.executeUpdate();
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+		}
+
+	}
+
+	public String QueryFoodLog(String userName, String date) {
+		String ret = "";
+
+		PreparedStatement stmt = null;
+		PreparedStatement stmt3 = null;
+		int userID=0;
+		try {
+
+			String query2;
+
+			query2 = "Select * from Login where userName=?";
+
+			stmt3 = conn.prepareStatement(query2);
+
+			stmt3.setString(1, userName);
+
+			ResultSet resultSet = stmt3.executeQuery();
+
+			while (resultSet.next()) {
+				userID = resultSet.getInt("userID");
+
+			}
+
+			String query;
+			query = "Select * from (FoodLog, Login, FoodItems) where "
+					+ "FoodLog.foodName=FoodItems.foodName AND "
+					+ "FoodLog.userID=Login.userID AND Login.userID=? AND date=?";
+
+			stmt = conn.prepareStatement(query);
+
+			stmt.setInt(1, userID);
+			stmt.setString(2, date);
+
+			ResultSet resultSet2 = stmt.executeQuery();
+
+			while (resultSet2.next()) {
+				ret += resultSet2.getString("foodName") + ":";
+				ret += resultSet2.getInt("calories") + ":";
+				ret += resultSet2.getString("foodGroup") + ";";
+
+			}
+
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+		}
+		return ret;
+
+	}
+	
 }

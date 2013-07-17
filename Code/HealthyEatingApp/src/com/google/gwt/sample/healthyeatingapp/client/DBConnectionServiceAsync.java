@@ -15,4 +15,8 @@ public interface DBConnectionServiceAsync {
 
 	
 	public void IsFriendUser(String firstName, String lastName, AsyncCallback<FriendUser> callback);
+	public void GetFoodNames(AsyncCallback<String> callback);
+	public void QueryFoodLog(String userName, String date, AsyncCallback<String> callback);
+	public void getUserName(AsyncCallback<String> callback);
+	public void InsertFoodLog(String userID, String foodName, String date, int calories, AsyncCallback callback);
 }

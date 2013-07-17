@@ -11,6 +11,7 @@ import com.google.gwt.visualization.client.VisualizationUtils;
 import com.google.gwt.visualization.client.visualizations.corechart.CoreChart;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.sample.healthyeatingapp.client.Graph;
+import com.google.gwt.sample.healthyeatingapp.client.FoodLog.FoodLog;
 import com.google.gwt.sample.healthyeatingapp.client.SocialMedia.SocialMedia;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
@@ -25,7 +26,7 @@ public class Homepage extends Composite  {
 	{
 		initWidget(tp);
 		// Add a home tab
-	    tp.add(new HTML("Food Log"), "Food Log");
+		tp.add(new FoodLog().onModuleLoad(), "Food Log");
 	    tp.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");	
 	    
 		this.rpc = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);

@@ -11,6 +11,11 @@ public interface DBConnectionService extends RemoteService {
 	public User register(String newusername, String newpassword);		
 	public Points GetFriendsPoints(String username);	
 	public String getUserCalories(String username);	
-	public FriendUser IsFriendUser(String firstName, String lastName);	
+	public FriendUser IsFriendUser(String firstName, String lastName);
+	public String QueryFoodLog(String userName, String date);
+	public void InsertFoodLog(String userID, String foodName,  String date, int calories);
+	public String getUserName();
+	public String GetFoodNames();
+	
 
 }
