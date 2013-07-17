@@ -2,10 +2,16 @@ package com.google.gwt.sample.healthyeatingapp.client;
 
 import java.util.Date;
 
+import com.google.api.gwt.oauth2.client.Auth;
+import com.google.api.gwt.oauth2.client.Callback;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.json.client.JSONObject;
 import com.google.gwt.user.client.Cookies;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
@@ -65,6 +71,7 @@ public class LoginControl {
 			loginOrganizerPanel.add(usernameBox);
 			loginOrganizerPanel.add(passwordBox);
 			loginOrganizerPanel.add(loginButton);
+			//addFacebookAuth(loginOrganizerPanel);
 			loginOrganizerPanel.add(registerButton);
 			RootLayoutPanel.get().add(loginOrganizerPanel);
 
@@ -129,7 +136,56 @@ public class LoginControl {
 			 
 		}
 		
+		private void addFacebookAuth(VerticalPanel lp) {
+			 Button button = new Button("Authenticate with Facebook");
+			    button.addClickHandler(new ClickHandler() {
+			      @Override
+			      public void onClick(ClickEvent event) {
+			        
+			        	  FacebookGraph.getStaticObject().RequestAuthorizationAndQueryGraph("me", new Callback<JSONObject, Throwable>(){
 
+							@Override
+							public void onFailure(Throwable reason) {
+								// TODO Auto-generated method stub
+								System.out.println(reason.getMessage());
+							}
+
+							@Override
+							public void onSuccess(JSONObject result) {		
+								System.out.println("FB Logged In");
+								String Name = result.get("name").toString().replaceAll("\"", "");
+								String [] NameSegments = Name.split(" ");
+								String firstName = NameSegments[0];
+								String lastName = NameSegments[NameSegments.length - 1];
+								System.out.println(firstName + " " + lastName);
+								rpcLogin.authenticateFacebookUser(firstName, lastName, new FBLoginCallback());
+								//System.out.println(result.toString());
+								//System.out.println(Name);
+								//loadHomepage();
+							}
+			        		  
+			        	  });	        	  
+			        	  //loadHomepage();	            
+			          }	    
+			    	});
+			    lp.add(button);
+			}
+			private class FBLoginCallback implements AsyncCallback{
+
+				@Override
+				public void onFailure(Throwable caught) {
+					// TODO Auto-generated method stub
+					
+				}
+
+				@Override
+				public void onSuccess(Object result) {
+					User user = (User) result;
+					System.out.println(user.getUserName() + " " + user.getPassword());
+					rpcLogin.authenticateUser(user.getUserName(), user.getPassword(), new LoginButtonCallback());			
+				}
+				
+			}
 
 		//Callbacks methods  ***************************************************************************
 
@@ -137,6 +193,7 @@ public class LoginControl {
 
 			@Override
 			public void onFailure(Throwable caught) {
+				System.out.println(caught.getMessage());
 				System.out.println("fail logout");
 			}
 
@@ -144,7 +201,28 @@ public class LoginControl {
 			public void onSuccess(Object result) {
 				//System.out.print("clicked logout");
 				loginLabel.setText("Please sign in to your account to access the Healthy Eating application. " + "\n" +
-						"Username and password are case sensitive."); 
+						"Username and password are case sensitive.");
+				
+				
+				Cookies.removeCookie("JSESSIONID");
+				Cookies.removeCookie("sid");				
+				String token = FacebookGraph.getStaticObject().getToken();
+				//Auth.get().clearAllTokens();	
+				Window.Location.replace("https://www.facebook.com/logout.php?next=http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997&access_token=" + token);
+				
+				/*Scheduler.get().scheduleDeferred(new ScheduledCommand() {
+
+				    @Override
+				    public void execute() {
+				    	Window.Location.assign("http://127.0.0.1:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997");
+				    }
+				});*/
+				
+				FacebookGraph.getStaticObject().resetToken();
+				/*Window.Location.replace("http://127.0.0.1:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997");*/	
+				//FacebookUtil.getInstance().resetToken();
+				
+				Auth.get().clearAllTokens();	
 				loadLogin();
 			}
 			
@@ -159,7 +237,7 @@ public class LoginControl {
 
 			@Override
 			public void onSuccess(Object result) {		 
-				
+				Window.Location.replace("http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997");
 				userLoginTrack = (User)result;
 				
 				if(userLoginTrack == null){

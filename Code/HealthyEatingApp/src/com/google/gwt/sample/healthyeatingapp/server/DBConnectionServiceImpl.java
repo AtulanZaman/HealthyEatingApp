@@ -16,6 +16,8 @@ import com.google.visualization.datasource.datatable.ColumnDescription;
 import com.google.visualization.datasource.datatable.DataTable;
 import com.google.visualization.datasource.datatable.value.ValueType;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
+import com.google.gwt.sample.healthyeatingapp.client.FacebookGraph;
+import com.google.gwt.sample.healthyeatingapp.client.FriendUser;
 import com.google.gwt.sample.healthyeatingapp.client.Points;
 //import com.google.gwt.sample.healthyeatingapp.client.Points;
 import com.google.gwt.sample.healthyeatingapp.client.User;
@@ -123,7 +125,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	public void logout()
 	{
-		deleteUserFromSession();		
+		deleteUserFromSession();
 		getThreadLocalRequest().getSession().invalidate();
 	}
 	
@@ -131,8 +133,39 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
     {
     	 HttpServletRequest httpServletRequest = this.getThreadLocalRequest();
          HttpSession session = httpServletRequest.getSession();
-         session.removeAttribute("user");
-
+         session.removeAttribute("user");         
+    }
+    
+    @Override
+    public User authenticateFacebookUser(String firstName, String lastName){
+		User user = null;
+		String userName = "";
+		String passWord = "";
+    	try
+    	{
+    		PreparedStatement ps = conn.prepareStatement("select * from user where firstName = \"" + firstName + "\" and lastName = \"" + lastName + "\"");
+    		ResultSet result_ps = ps.executeQuery();	
+			while(result_ps.next()){
+				userName = result_ps.getString(5);
+			}
+			ps.close();
+			if(userName.length() != 0)
+			{
+				PreparedStatement ps1 = conn.prepareStatement("select * from login where userName = \"" + userName + "\"");
+				ResultSet result_ps1 = ps1.executeQuery();
+				while(result_ps1.next())
+				{
+					passWord = result_ps1.getString(2);
+				}
+				ps1.close();
+				user = new User(userName, passWord);
+			}
+    	}
+    	catch(SQLException sqle)
+    	{
+    		sqle.printStackTrace();
+    	}
+    	return user;    	
     }
     
     public String getUserName()  
@@ -183,6 +216,33 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
     
     
     
+    
+    public FriendUser IsFriendUser(String firstName, String lastName){
+    	FriendUser friendUser = new FriendUser();
+    	//System.out.println("In IsFriendUser");
+    	String userName = "";
+    	try{
+    		PreparedStatement ps = conn.prepareStatement("select * from user where firstName = \"" + firstName + "\" and lastName = \"" + lastName + "\"");
+    		ResultSet result_ps = ps.executeQuery();
+			while(result_ps.next()){
+				userName = result_ps.getString(5);
+			}
+			ps.close();
+			if(userName.length() == 0){
+				friendUser.setUserName("empty");
+				friendUser.setIsUser(false);
+			}else{
+			friendUser.setUserName(userName);
+			friendUser.setIsUser(true);
+			}
+
+			return friendUser;
+    	}
+    	catch(SQLException sqle){
+    		sqle.printStackTrace();
+    	}
+    	return friendUser;
+    }
     
 	public Points GetFriendsPoints(String userName){
 		Points points = new Points("test", "test", "test", 0);
@@ -246,6 +306,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 		}
 		return points;
 	}
+	
 	@Override
 	public String getUserCalories(String username){
 		DataTable data = new DataTable();	
@@ -260,13 +321,17 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			int size = result_ps2.getRow();
 			result_ps2.first();
 			int i = result_ps2.getRow();
-			
+			try{
 			for(; i <= size; i++){
 				data.addRowFromValues(result_ps2.getDate(1).toString(), result_ps2.getInt(2));
 				result_ps2.next();
 			}
+			}
+			catch(TypeMismatchException e){
+				e.printStackTrace();
+			}
 			
-		}catch(SQLException | TypeMismatchException sqle){
+		}catch(SQLException sqle){
 			sqle.printStackTrace();
 		}
 	    return JsonRenderer.renderDataTable(data, true, false, false).toString();
