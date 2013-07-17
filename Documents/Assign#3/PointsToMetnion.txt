@@ -1,0 +1,17 @@
+Points to mention
+
+-> User authentication security
+-> Google Web Toolkit Vs. Spring Vs. Servlets Vs. Native HTML
+-> GWT Widgets
+
+
+Design Patterns
+
+GWT
+-> Composite
+-> Singleton
+
+Explicit
+-> Facade
+
+ 
