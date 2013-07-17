@@ -42,7 +42,7 @@ public class Homepage extends Composite  {
 					@Override
 					public void onFailure(Throwable caught) {
 						// Show the RPC error message to the user
-						Window.alert("RPC Call Failure");
+						Window.alert("No log records for user:"+Cookies.getCookie("healthy_app_user"));
 						
 					}
 
