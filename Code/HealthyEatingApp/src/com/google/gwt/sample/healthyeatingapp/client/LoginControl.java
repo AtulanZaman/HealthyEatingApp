@@ -191,7 +191,8 @@ public class LoginControl {
 				
 				
 				Cookies.removeCookie("JSESSIONID");
-				Cookies.removeCookie("sid");				
+				Cookies.removeCookie("sid");	
+				Cookies.removeCookie("healthy_app_user");
 				String token = FacebookGraph.getStaticObject().getToken();
 				//Auth.get().clearAllTokens();	
 				Window.Location.replace("https://www.facebook.com/logout.php?next=http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997&access_token=" + token);
@@ -240,6 +241,7 @@ public class LoginControl {
 	                 final long DURATION = 1000 * 60 * 60 * 24 * 1;
 	                 Date expires = new Date(System.currentTimeMillis() + DURATION);
 	                 Cookies.setCookie("sid", sessionID, expires, null, "/", false);
+	                 Cookies.setCookie("healthy_app_user", userLoginTrack.getUserName());
 					 //****************************************************
 				}
 				else{	

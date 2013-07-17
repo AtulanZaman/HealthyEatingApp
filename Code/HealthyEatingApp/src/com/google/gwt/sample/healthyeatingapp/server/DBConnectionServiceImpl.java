@@ -32,6 +32,10 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.Vector;
+
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -339,53 +343,66 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	public String getUserCalories(String username){
 		DataTable data = new DataTable();	
 		try{
-			PreparedStatement ps1 = conn.prepareStatement("SELECT FoodLog.date, FoodItems.Calories  FROM HealthyEatingApp.FoodLog, HealthyEatingApp.FoodItems, HealthyEatingApp.user, HealthyEatingApp.FoodItemFoodLog Where user.userName = \"" + username +"\" and user.userID = FoodLog.userID and FoodLog.logID = FoodItemFoodLog.logID and FoodItemFoodLog.foodName = FoodItems.foodName;");
+			System.out.println(username);
+			
+			PreparedStatement ps1 = conn.prepareStatement("SELECT FoodLog.date, FoodItems.calories FROM HealthyEatingApp.FoodLog, HealthyEatingApp.user, HealthyEatingApp.FoodItems where user.userName = \""+username+"\" and user.userID = FoodLog.userID and FoodLog.foodName = FoodItems.foodName;");
 			ResultSet result_ps2 = ps1.executeQuery();
 			
 			data.addColumn(new ColumnDescription("date", ValueType.TEXT, "date"));
 			data.addColumn(new ColumnDescription("calorie", ValueType.NUMBER, "calorie"));
 			
-			Hashtable<Date, Integer> Temp = new Hashtable<Date, Integer>();
-			while(result_ps2.next()){
-				if(Temp.containsKey(result_ps2.getDate(1))){
-					int newVal = Temp.get(result_ps2.getDate(1)) + result_ps2.getInt(2);
-					Temp.remove(result_ps2.getDate(1));
-					Temp.put(result_ps2.getDate(1), newVal);
-				}
-				else{
-					Temp.put(result_ps2.getDate(1), result_ps2.getInt(2));
-				}					
-			}
-			ArrayList<Date> DK = new ArrayList<Date>(Temp.keySet());
-			for(int i=0; i<Temp.size(); i++){
-				try {
-					data.addRowFromValues(DK.get(i).toString(), Temp.get(DK.get(i)));
-				} catch (TypeMismatchException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			
-			/*data.addColumn(new ColumnDescription("date", ValueType.TEXT, "date"));
-			data.addColumn(new ColumnDescription("calorie", ValueType.NUMBER, "calorie"));
-			
 			result_ps2.last();
 			int size = result_ps2.getRow();
+			System.out.println("size was " + size);
 			result_ps2.first();
-			int i = result_ps2.getRow();
-			try{
-			for(; i <= size; i++){
-				data.addRowFromValues(result_ps2.getDate(1).toString(), result_ps2.getInt(2));
-				result_ps2.next();
+		
+			Vector<Date> date_vector = new Vector<Date>();
+			Vector<Integer> calorie_vector = new Vector<Integer>();
+			
+			for(int j = 0; j < size; j++){
+				if(date_vector.size() == 0){
+					date_vector.add(result_ps2.getDate(1));
+					calorie_vector.add(result_ps2.getInt(2));
+					System.out.println("Calories were " + result_ps2.getInt(2));
+					result_ps2.next();
+				}else{
+					boolean matched = false;
+					for(Date d: date_vector){
+						if(d.equals(result_ps2.getDate(1))){
+							Integer temp = calorie_vector.get(date_vector.indexOf(d));
+							calorie_vector.add(date_vector.indexOf(d), temp+result_ps2.getInt(2));
+							System.out.println("Calories were " + temp+result_ps2.getInt(2));
+							result_ps2.next();
+							matched = true;
+							break;
+						}
+					}
+					if(!matched){
+						date_vector.add(result_ps2.getDate(1));
+						calorie_vector.add(result_ps2.getInt(2));
+						System.out.println("Calories were " + result_ps2.getInt(2));
+						result_ps2.next();
+					}
+				}	
 			}
+			
+		try{	
+			for(int i = 0; i < date_vector.size(); i++){
+				data.addRowFromValues(date_vector.elementAt(i).toString(), calorie_vector.elementAt(i));
+				System.out.println("Finally: " + calorie_vector + ", " + date_vector);
 			}
-			catch(TypeMismatchException e){
-				e.printStackTrace();
-			}
-			*/
+		}
+		catch(TypeMismatchException sqle){
+			sqle.printStackTrace();
+		}
+		
+		ps1.close();
+		result_ps2.close();
+		
 		}catch(SQLException sqle){
 			sqle.printStackTrace();
 		}
+
 	    return JsonRenderer.renderDataTable(data, true, false, false).toString();
 	}
 
