@@ -1,0 +1,3 @@
+use case for login
+
+logout -> register new user -> login as newly registered user -> logout
