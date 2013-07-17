@@ -36,7 +36,7 @@ public class FacebookFriends{
 						FacebookFriend NewFriend = new FacebookFriend();
 						NewFriend.SetFirstName(FirstName);
 						NewFriend.SetLastName(LastName);
-						System.out.println(FirstName + " " + LastName);
+						//System.out.println(FirstName + " " + LastName);
 						//System.out.println(NewFriend.FirstName() + " " + NewFriend.LastName());
 						this.Friends.add(NewFriend);					
 				}

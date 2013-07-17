@@ -2,6 +2,7 @@ package com.google.gwt.sample.healthyeatingapp.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Cookies;
+import com.google.gwt.user.client.Window;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -22,10 +23,10 @@ public class HealthyEatingApp implements EntryPoint
 		String sessionID = Cookies.getCookie("sid");
 	    if (sessionID == null){
 	    	loginControl.loadLogin();
+	    	 
 	    }
 	 
-	    else{
-	    	
+	    else{	    	
 	    	loginControl.loadHomepage();
 	    }
 	    

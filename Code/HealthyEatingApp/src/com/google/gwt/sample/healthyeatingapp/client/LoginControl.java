@@ -152,6 +152,7 @@ public class LoginControl {
 						
 		}
 		public void loadHomepage() {
+			
 			 RootLayoutPanel.get().clear();
 			 homePageOrganizerPanel.clear();
 			 Homepage menubar = new Homepage();		 
@@ -232,9 +233,9 @@ public class LoginControl {
 				}
 				
 				else if (userLoginTrack.getLoggedIn()){
-					 
+					
 					loadHomepage();
-					 
+					
 					 //cookie stuff  *************************
 					 String sessionID = userLoginTrack.getSessionId();
 					 //set session cookie for 1 day expiry.

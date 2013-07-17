@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/mysql-connector-java-5.1.25-bin.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-servlet.jar"/>
 	<classpathentry kind="lib" path="lib/gwt-oauth2-0.2-alpha.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guava-r07.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

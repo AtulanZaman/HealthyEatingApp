@@ -1,5 +1,8 @@
 package com.google.gwt.sample.healthyeatingapp.client;
-
+/*
+Code taken and modified to this project's use from:
+http://www.marcusschiesser.de/2013/01/using-the-facebook-graph-api-from-your-gwt-application/
+*/
 import java.io.IOException;
 
 import com.google.api.gwt.oauth2.client.Auth;

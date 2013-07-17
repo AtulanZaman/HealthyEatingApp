@@ -26,6 +26,7 @@ import com.google.visualization.datasource.render.JsonRenderer;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Dictionary;
 import java.util.Hashtable;
@@ -186,7 +187,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
         if (session.getAttribute("user") != null)  
         {  
            User user = (User) session.getAttribute("user"); 
-           System.out.println(user.getUserName());
+           //System.out.println(user.getUserName());
            return user.getUserName();
         }  
         else   
@@ -341,21 +342,44 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	@Override
 	public String getUserCalories(String username){
-		DataTable data = new DataTable();	
+		DataTable data = new DataTable();
 		try{
-			System.out.println(username);
+			System.out.println("Inside getUserCalories " + username);
 			
-			PreparedStatement ps1 = conn.prepareStatement("SELECT FoodLog.date, FoodItems.calories FROM HealthyEatingApp.FoodLog, HealthyEatingApp.user, HealthyEatingApp.FoodItems where user.userName = \""+username+"\" and user.userID = FoodLog.userID and FoodLog.foodName = FoodItems.foodName;");
+			PreparedStatement ps1 = conn.prepareStatement("SELECT FoodLog.date, FoodItems.calories FROM HealthyEatingApp.FoodLog, HealthyEatingApp.user, HealthyEatingApp.FoodItems where user.userName = \""+username+"\" and user.userID = FoodLog.userID and FoodLog.foodName = FoodItems.foodName order by Foodlog.date asc;");
 			ResultSet result_ps2 = ps1.executeQuery();
 			
 			data.addColumn(new ColumnDescription("date", ValueType.TEXT, "date"));
 			data.addColumn(new ColumnDescription("calorie", ValueType.NUMBER, "calorie"));
 			
-			result_ps2.last();
+			Hashtable<Date, Integer> Temp = new Hashtable<Date, Integer>();
+			while(result_ps2.next()){
+			if(Temp.containsKey(result_ps2.getDate(1))){
+			int newVal = Temp.get(result_ps2.getDate(1)) + result_ps2.getInt(2);
+			Temp.remove(result_ps2.getDate(1));
+			Temp.put(result_ps2.getDate(1), newVal);
+			}
+			else{
+			Temp.put(result_ps2.getDate(1), result_ps2.getInt(2));
+			}
+			}
+			ArrayList<Date> DK = new ArrayList<Date>(Temp.keySet());
+			Collections.sort(DK);
+			for(int i=0; i<Temp.size(); i++){
+			try {
+			data.addRowFromValues(DK.get(i).toString(), Temp.get(DK.get(i)));
+			} catch (TypeMismatchException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			}
+			}
+			
+			/*result_ps2.last();
 			int size = result_ps2.getRow();
 			System.out.println("size was " + size);
 			result_ps2.first();
-		
+			
+			
 			Vector<Date> date_vector = new Vector<Date>();
 			Vector<Integer> calorie_vector = new Vector<Integer>();
 			
@@ -384,25 +408,23 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 						result_ps2.next();
 					}
 				}	
+			}*/
+			ps1.close();
+			result_ps2.close();
+			/*try{	
+				for(int i = 0; i < date_vector.size(); i++){
+					data.addRowFromValues(date_vector.elementAt(i).toString(), calorie_vector.elementAt(i));
+					System.out.println("Finally: " + calorie_vector + ", " + date_vector);
+				}
 			}
-			
-		try{	
-			for(int i = 0; i < date_vector.size(); i++){
-				data.addRowFromValues(date_vector.elementAt(i).toString(), calorie_vector.elementAt(i));
-				System.out.println("Finally: " + calorie_vector + ", " + date_vector);
-			}
-		}
-		catch(TypeMismatchException sqle){
-			sqle.printStackTrace();
-		}
+			catch(TypeMismatchException sqle){
+				//System.out.println(sqle.getMessage());
+			}	*/	
 		
-		ps1.close();
-		result_ps2.close();
-		
-		}catch(SQLException sqle){
-			sqle.printStackTrace();
 		}
-
+		catch(SQLException sqle){
+			//System.out.println(sqle.getMessage());
+		}
 	    return JsonRenderer.renderDataTable(data, true, false, false).toString();
 	}
 
