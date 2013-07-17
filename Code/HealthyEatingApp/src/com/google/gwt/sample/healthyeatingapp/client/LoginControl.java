@@ -39,6 +39,8 @@ public class LoginControl {
 		private User userLoginTrack;
 		private TextBox newusernameBox;
 		private TextBox newpasswordBox;
+		private TextBox newfirstnameBox;
+		private TextBox newlastnameBox;
 		private Label attentionLabel;
 		
 		public LoginControl(){
@@ -53,7 +55,42 @@ public class LoginControl {
 			attentionLabel = new Label("ATTENTION: you must enter a username and password!");
 
 			newusernameBox = new TextBox();
-			newpasswordBox = new TextBox();	
+			newusernameBox.setText("User Name");
+			newpasswordBox = new TextBox();
+			newpasswordBox.setText("Password");
+			newfirstnameBox = new TextBox();	
+			newfirstnameBox.setText("First Name");
+			newlastnameBox = new TextBox();
+			newlastnameBox.setText("Last Name");
+			
+			newusernameBox.addClickHandler(new ClickHandler(){				
+				@Override
+				public void onClick(ClickEvent event) {
+					// TODO Auto-generated method stub
+					newusernameBox.setText("");
+				}
+			});
+			newpasswordBox.addClickHandler(new ClickHandler(){				
+				@Override
+				public void onClick(ClickEvent event) {
+					// TODO Auto-generated method stub
+					newpasswordBox.setText("");
+				}
+			});
+			newfirstnameBox.addClickHandler(new ClickHandler(){				
+				@Override
+				public void onClick(ClickEvent event) {
+					// TODO Auto-generated method stub
+					newfirstnameBox.setText("");
+				}
+			});
+			newlastnameBox.addClickHandler(new ClickHandler(){				
+				@Override
+				public void onClick(ClickEvent event) {
+					// TODO Auto-generated method stub
+					newlastnameBox.setText("");
+				}
+			});
 			loginOrganizerPanel = new VerticalPanel();
 			homePageOrganizerPanel = new FlowPanel();
 		    rpcLogin = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
@@ -90,6 +127,8 @@ public class LoginControl {
 			public void onClick(ClickEvent event) {
 					
 				  System.out.println("in register event");
+				  loginOrganizerPanel.add(newfirstnameBox);
+				  loginOrganizerPanel.add(newlastnameBox);
 				  loginOrganizerPanel.add(newusernameBox);
 				  loginOrganizerPanel.add(newpasswordBox);
 				  loginOrganizerPanel.add(addMeButton);
@@ -106,7 +145,7 @@ public class LoginControl {
 					  loginOrganizerPanel.add(attentionLabel); 
 				  }
 				  else{
-					  rpcLogin.register(newusernameBox.getText(), newpasswordBox.getText(), new RegisterButtonCallback());			  
+					  rpcLogin.register(newusernameBox.getText(), newpasswordBox.getText(), newfirstnameBox.getText(), newlastnameBox.getText(), new RegisterButtonCallback());			  
 				  }
 			  }
 			});
@@ -134,60 +173,7 @@ public class LoginControl {
 		    System.out.println("in load login");
 			loginLabel.setText("Username or password was incorrect. Please try again");
 			 
-		}
-		
-		private void addFacebookAuth(VerticalPanel lp) {
-			 Button button = new Button("Authenticate with Facebook");
-			    button.addClickHandler(new ClickHandler() {
-			      @Override
-			      public void onClick(ClickEvent event) {
-			        
-			        	  FacebookGraph.getStaticObject().RequestAuthorizationAndQueryGraph("me", new Callback<JSONObject, Throwable>(){
-
-							@Override
-							public void onFailure(Throwable reason) {
-								// TODO Auto-generated method stub
-								System.out.println(reason.getMessage());
-							}
-
-							@Override
-							public void onSuccess(JSONObject result) {		
-								System.out.println("FB Logged In");
-								String Name = result.get("name").toString().replaceAll("\"", "");
-								String [] NameSegments = Name.split(" ");
-								String firstName = NameSegments[0];
-								String lastName = NameSegments[NameSegments.length - 1];
-								System.out.println(firstName + " " + lastName);
-								rpcLogin.authenticateFacebookUser(firstName, lastName, new FBLoginCallback());
-								//System.out.println(result.toString());
-								//System.out.println(Name);
-								//loadHomepage();
-							}
-			        		  
-			        	  });	        	  
-			        	  //loadHomepage();	            
-			          }	    
-			    	});
-			    lp.add(button);
-			}
-			private class FBLoginCallback implements AsyncCallback{
-
-				@Override
-				public void onFailure(Throwable caught) {
-					// TODO Auto-generated method stub
-					
-				}
-
-				@Override
-				public void onSuccess(Object result) {
-					User user = (User) result;
-					System.out.println(user.getUserName() + " " + user.getPassword());
-					rpcLogin.authenticateUser(user.getUserName(), user.getPassword(), new LoginButtonCallback());			
-				}
-				
-			}
-
-		//Callbacks methods  ***************************************************************************
+		}		
 
 		private class LogoutButtonCallback implements AsyncCallback {
 

@@ -43,12 +43,12 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 	
 	private Connection conn = null;
 	// private String status;
-	// private String url = "jdbc:mysql://localhost/healthyeatingapp";
-	private String url = "jdbc:mysql://eceweb.uwaterloo.ca:3306/hospital_n9ahmad";
-	// private String dbuser = "rrazdan";
-	private String dbuser = "user_n2ahmad";
-	// private String pass = "rrazdan";
-	private String pass = "ece356prj";
+	private String url = "jdbc:mysql://localhost/healthyeatingapp";
+	//private String url = "jdbc:mysql://eceweb.uwaterloo.ca:3306/hospital_n9ahmad";
+	private String dbuser = "rrazdan";
+	//private String dbuser = "user_n2ahmad";
+	private String pass = "rrazdan";
+	//private String pass = "ece356prj";
 	private String currentYear = "";
 	private String currentMonth = "";
 	private String currentDate = "";
@@ -192,23 +192,43 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
     }  
 
     @Override
-	public User register(String newusername, String newpassword) {
+	public User register(String newusername, String newpassword, String newfirstname, String newlastname) {
 		System.out.println("in register server side");
 		User IfExists = null;
 		try{
 			String hash = BCrypt.hashpw(newpassword, BCrypt.gensalt());
+			int userID = -1;
 			//check if duplicate
 			IfExists = authenticateUser(newusername, newpassword); 
 			PreparedStatement psRegister;
+			PreparedStatement psRegister2;
+			PreparedStatement psRegister1;
             //only insert new user if not a duplicate
             if(IfExists == null)
             {
 				psRegister = conn.prepareStatement("insert into Login(userName, password) values (?, ?);");
-				
 				psRegister.setString(1, newusername);
-				psRegister.setString(2, hash);
+				psRegister.setString(2, hash);				
 				psRegister.execute();
 				psRegister.close();
+				
+				psRegister2 = conn.prepareStatement("select * from Login where userName = \"" + newusername + "\"");
+				
+				ResultSet result_ps2 = psRegister2.executeQuery();
+				while(result_ps2.next()){
+					userID = result_ps2.getInt(3);
+				}
+				result_ps2.close();
+				psRegister2.close();
+				
+				psRegister1 = conn.prepareStatement("insert into User(userID, firstName, lastName, type, userName) values(?,?,?,?,?)");
+				psRegister1.setInt(1, userID);
+				psRegister1.setString(2, newfirstname);
+				psRegister1.setString(3, newlastname);
+				psRegister1.setString(4, "user");
+				psRegister1.setString(5, newusername);
+				psRegister1.execute();				
+				psRegister1.close();
             }
             
 		}

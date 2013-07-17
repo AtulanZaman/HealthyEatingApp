@@ -9,7 +9,7 @@ public interface DBConnectionServiceAsync {
 	public void authenticateFacebookUser(String firstName, String lastName, AsyncCallback<User> callback);
 	public void logout(AsyncCallback callback);
 
-	public void register(String newusername, String newpassword, AsyncCallback callback);
+	public void register(String newusername, String newpassword, String newfirstname, String newlastname, AsyncCallback callback);
 	public void GetFriendsPoints(String username, AsyncCallback<Points> callback);
 	public void getUserCalories(String username, AsyncCallback<String> callback);
 

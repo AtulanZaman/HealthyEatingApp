@@ -126,7 +126,7 @@ public class FoodLog extends Composite implements HasWidgets {
 			
 			
 			userNameTyped = result;
-			Window.alert(result);
+			//Window.alert(result);
 			
 		}}
 	
@@ -142,7 +142,7 @@ public class FoodLog extends Composite implements HasWidgets {
 
 		@Override
 		public void onSuccess(Object result) {
-			Window.alert("Inserted");
+			//Window.alert("Inserted");
 
 			// TODO Auto-generated method stub
 
