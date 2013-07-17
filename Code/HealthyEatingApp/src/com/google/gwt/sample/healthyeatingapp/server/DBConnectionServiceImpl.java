@@ -27,6 +27,11 @@ import com.google.visualization.datasource.render.JsonRenderer;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Dictionary;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -317,6 +322,30 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			data.addColumn(new ColumnDescription("date", ValueType.TEXT, "date"));
 			data.addColumn(new ColumnDescription("calorie", ValueType.NUMBER, "calorie"));
 			
+			Hashtable<Date, Integer> Temp = new Hashtable<Date, Integer>();
+			while(result_ps2.next()){
+				if(Temp.containsKey(result_ps2.getDate(1))){
+					int newVal = Temp.get(result_ps2.getDate(1)) + result_ps2.getInt(2);
+					Temp.remove(result_ps2.getDate(1));
+					Temp.put(result_ps2.getDate(1), newVal);
+				}
+				else{
+					Temp.put(result_ps2.getDate(1), result_ps2.getInt(2));
+				}					
+			}
+			ArrayList<Date> DK = new ArrayList<Date>(Temp.keySet());
+			for(int i=0; i<Temp.size(); i++){
+				try {
+					data.addRowFromValues(DK.get(i).toString(), Temp.get(DK.get(i)));
+				} catch (TypeMismatchException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+			/*data.addColumn(new ColumnDescription("date", ValueType.TEXT, "date"));
+			data.addColumn(new ColumnDescription("calorie", ValueType.NUMBER, "calorie"));
+			
 			result_ps2.last();
 			int size = result_ps2.getRow();
 			result_ps2.first();
@@ -330,7 +359,7 @@ public class DBConnectionServiceImpl extends RemoteServiceServlet implements DBC
 			catch(TypeMismatchException e){
 				e.printStackTrace();
 			}
-			
+			*/
 		}catch(SQLException sqle){
 			sqle.printStackTrace();
 		}

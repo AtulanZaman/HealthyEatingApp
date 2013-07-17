@@ -36,13 +36,14 @@ public class Homepage extends Composite  {
 		Runnable onLoadCallBack = new Runnable(){
 			@Override
 			public void run(){
-				String username = Cookies.getCookie("healthy_app_user");
+				String username = "rrazdan";
 				rpc.getUserCalories(username, new AsyncCallback<String>(){
 
 					@Override
 					public void onFailure(Throwable caught) {
 						// Show the RPC error message to the user
 						Window.alert("RPC Call Failure");
+						System.out.println(caught.getMessage());
 						
 					}
 
