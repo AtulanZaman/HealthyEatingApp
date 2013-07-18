@@ -61,7 +61,7 @@ public class LoginControl {
 			newfirstnameBox = new TextBox();	
 			newfirstnameBox.setText("First Name");
 			newlastnameBox = new TextBox();
-			newlastnameBox.setText("Last Name");
+			newlastnameBox.setText("Last Name");			
 			
 			newusernameBox.addClickHandler(new ClickHandler(){				
 				@Override
@@ -195,8 +195,11 @@ public class LoginControl {
 				Cookies.removeCookie("sid");	
 				Cookies.removeCookie("healthy_app_user");
 				String token = FacebookGraph.getStaticObject().getToken();
-				//Auth.get().clearAllTokens();	
-				Window.Location.replace("https://www.facebook.com/logout.php?next=http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997&access_token=" + token);
+				System.out.println(token);
+				//Auth.get().clearAllTokens();
+				if(token!=null){
+					Window.Location.replace("https://www.facebook.com/logout.php?next=http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997&access_token=" + token);
+				}
 				
 				/*Scheduler.get().scheduleDeferred(new ScheduledCommand() {
 
@@ -212,8 +215,7 @@ public class LoginControl {
 				
 				Auth.get().clearAllTokens();	
 				loadLogin();
-			}
-			
+			}			
 		}
 		
 		private class LoginButtonCallback implements AsyncCallback {
@@ -224,8 +226,8 @@ public class LoginControl {
 			}
 
 			@Override
-			public void onSuccess(Object result) {		 
-				Window.Location.replace("http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997");
+			public void onSuccess(Object result) {
+				
 				userLoginTrack = (User)result;
 				
 				if(userLoginTrack == null){

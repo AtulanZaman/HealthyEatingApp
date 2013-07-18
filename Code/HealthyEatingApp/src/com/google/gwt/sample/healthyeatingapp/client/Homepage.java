@@ -26,9 +26,8 @@ public class Homepage extends Composite  {
 	{
 		initWidget(tp);
 		// Add a home tab
-		tp.add(new FoodLog().onModuleLoad(), "Food Log");
-	    tp.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");	
-	    
+		tp.add(new FoodLog(tp).onModuleLoad(), "Food Log");
+	    tp.add(new SocialMedia().SocialMediaWebPageLoad(), "Social Media");	    
 		this.rpc = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 	 	ServiceDefTarget target = (ServiceDefTarget) rpc;
 		String moduleRelativeURL = GWT.getModuleBaseURL() + "DBConnectionServiceImpl";

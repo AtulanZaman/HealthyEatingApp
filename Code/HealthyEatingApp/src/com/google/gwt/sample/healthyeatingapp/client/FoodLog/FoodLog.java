@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dev.asm.Label;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -23,9 +23,11 @@ import com.google.gwt.sample.healthyeatingapp.client.DBConnectionService;
 import com.google.gwt.sample.healthyeatingapp.client.DBConnectionServiceAsync;
 import com.google.gwt.sample.healthyeatingapp.client.FoodLogData;
 import com.google.gwt.sample.healthyeatingapp.client.FoodLogItems;
+import com.google.gwt.sample.healthyeatingapp.client.Graph;
 import com.google.gwt.sample.healthyeatingapp.client.HealthyEatingApp;
 import com.google.gwt.sample.healthyeatingapp.client.Points;
 import com.google.gwt.sample.healthyeatingapp.server.DBConnectionServiceImpl;
+import com.google.gwt.user.client.Cookies;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
@@ -45,12 +47,19 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasWidgets;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DatePicker;
+import com.google.gwt.user.client.ui.TabPanel;
+import com.google.gwt.visualization.client.DataTable;
+import com.google.gwt.visualization.client.VisualizationUtils;
+import com.google.gwt.visualization.client.visualizations.corechart.CoreChart;
+import com.google.gwt.visualization.client.visualizations.corechart.LineChart;
 
 public class FoodLog extends Composite implements HasWidgets {
 
 	private final DBConnectionServiceAsync rpc;
+	private TabPanel tp;
 	ListBox lbFG;
 	ListBox lbFN;
+	Label SuccessLabel;
 	FlowPanel fp;
 	Button Btn;
 	FlexTable ft;
@@ -70,14 +79,17 @@ public class FoodLog extends Composite implements HasWidgets {
 	ArrayList<FoodLogData> foodEntries = new ArrayList<FoodLogData>();
 	String prevFoodData;
 	
-	public FoodLog() {
+	public FoodLog(TabPanel tp) {
 		// initWidget(this.fp);
+		this.tp = tp;
 		rpc = (DBConnectionServiceAsync) GWT.create(DBConnectionService.class);
 		ServiceDefTarget target = (ServiceDefTarget) rpc;
 		String moduleRelativeURL = GWT.getModuleBaseURL()
 				+ "DBConnectionServiceImpl";
 		target.setServiceEntryPoint(moduleRelativeURL);
-
+		SuccessLabel = new Label("New items successfully entered");
+		
+		
 		// fp.add(new LeaderboardWidget(this));
 		// SocialMediaWebPageLoad(HTML);
 	}
@@ -143,7 +155,35 @@ public class FoodLog extends Composite implements HasWidgets {
 		@Override
 		public void onSuccess(Object result) {
 			//Window.alert("Inserted");
+			//System.out.println("Inserted");
+			
+			Runnable onLoadCallBack = new Runnable(){
+				@Override
+				public void run(){
+					String username = Cookies.getCookie("healthy_app_user");
+					System.out.println("Graph update called");
+					rpc.getUserCalories(username, new AsyncCallback<String>(){
 
+						@Override
+						public void onFailure(Throwable caught) {
+							// Show the RPC error message to the user
+							Window.alert("No log records for user:"+Cookies.getCookie("healthy_app_user"));
+						}
+
+						@Override
+						public void onSuccess(String result) {
+							// TODO Auto-generated method stub
+							if(tp.getWidget(tp.getWidgetCount()-1).getClass().toString().contains("LineChart")){
+								tp.remove(tp.getWidgetCount()-1);
+							}
+							DataTable data = toDataTable(result);
+							LineChart newGraph = new Graph().returnGraph(data);
+							tp.add(newGraph, "Graph");
+						}
+					});
+				}
+			};
+			VisualizationUtils.loadVisualizationApi(onLoadCallBack, CoreChart.PACKAGE);
 			// TODO Auto-generated method stub
 
 		}
@@ -168,6 +208,9 @@ public class FoodLog extends Composite implements HasWidgets {
 		}
 	}
 
+	public static native DataTable toDataTable(String json) /*-{
+	  return new $wnd.google.visualization.DataTable(eval("(" + json + ")"));
+	}-*/; 
 
 	public FlowPanel onModuleLoad() {
 
@@ -184,7 +227,7 @@ public class FoodLog extends Composite implements HasWidgets {
 		lbFG = new ListBox();
 		lbFN = new ListBox();
 		submit = new Button("Submit");
-		cancel = new Button("Cancel");
+		cancel = new Button("Pick a New Date");
 
 		fp = new FlowPanel();
 		// Add some text
@@ -201,6 +244,7 @@ public class FoodLog extends Composite implements HasWidgets {
 
 			@Override
 			public void onChange(ChangeEvent event) {
+				fp.remove(SuccessLabel);
 				int selectedIndex = lbFG.getSelectedIndex();
 				int numRows = 0;
 
@@ -251,6 +295,7 @@ public class FoodLog extends Composite implements HasWidgets {
 		addRowButton.addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
+				fp.remove(SuccessLabel);
 				addRow(flexTable);
 			}
 		});
@@ -395,10 +440,13 @@ public class FoodLog extends Composite implements HasWidgets {
 		submit.addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
-
-				for (FoodLogData e : foodEntries) {
+				System.out.println("Submitting these items");
+				for (FoodLogData e : foodEntries) {					
+					System.out.println("Food name is " + e.getFoodName());
 					insertRpcCall(e.getUserName(), e.getFoodName(),e.getDate(), e.getCalories());
 				}
+				fp.add(SuccessLabel);
+				foodEntries.clear();
 			}
 
 		});
@@ -408,7 +456,7 @@ public class FoodLog extends Composite implements HasWidgets {
 			public void onClick(ClickEvent event) {
 
 				// TODO Auto-generated method stub
-
+				fp.remove(SuccessLabel);
 				Window.Location.reload();
 			}
 
@@ -482,19 +530,25 @@ public class FoodLog extends Composite implements HasWidgets {
 				FoodLogData e = new FoodLogData(userNameTyped, str3,
 						Integer.parseInt(str4), str2, selectedDate);
 				foodEntries.add(e);
+				//Kevin's code
+				flexTable.insertRow(flexTable.getRowCount());
+				numRows = flexTable.getRowCount();
+				flexTable.setText(numRows-2, 0, e.getFoodGroup());
+				flexTable.setText(numRows-2, 1, e.getFoodName());
+				flexTable.setText(numRows-2, 2, e.getCalories() + "");
+				flexTable.getFlexCellFormatter().setRowSpan(0, 1,
+						numRows + 1);
+				//Kevin's code ends
+				//Window.alert(""+numRows);
 				
-				
-				// Window.alert(""+numRows);
+				/*Nadeem's original code
 				flexTable.removeAllRows();
 				flexTable.insertRow(0);
 				numRows = flexTable.getRowCount();
 				
 				
 				int i = 0;
-				for (FoodLogData j : foodEntries) {
-					
-					
-					
+				for (FoodLogData j : foodEntries) {					
 					
 					flexTable.insertRow(i + 1);
 					numRows = flexTable.getRowCount();
@@ -508,7 +562,8 @@ public class FoodLog extends Composite implements HasWidgets {
 					
 					i++;
 
-				}
+				}*/
+				//Nadeem's code ends
 
 				numRows = flexTable.getRowCount();
 				lbFG.setSelectedIndex(0);

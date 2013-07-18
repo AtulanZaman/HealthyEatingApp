@@ -110,7 +110,9 @@ public class SocialMedia extends Composite implements HasWidgets{
 		    {
 		    	PointsList.clear();
 		    	ft.removeAllRows();
-		    	flexTableInitialize(ft);
+		    	ft.setText(0, 0, "Updating");
+				ft.getFlexCellFormatter().setColSpan(0, 0, 3);		
+				ft.getFlexCellFormatter().setHorizontalAlignment(0, 0, HasHorizontalAlignment.ALIGN_CENTER);
 		    	if(FBFriends.Friends.size()==0)
 		    	{		    		
 		    		System.out.println("Querying Facebook again");
@@ -173,6 +175,8 @@ public class SocialMedia extends Composite implements HasWidgets{
 				PointsList.add((Points) result);
 			}
 			SortPointsList();
+			ft.removeAllRows();
+	    	flexTableInitialize(ft);
 			flexTablePaint();			
 		}
 	}	

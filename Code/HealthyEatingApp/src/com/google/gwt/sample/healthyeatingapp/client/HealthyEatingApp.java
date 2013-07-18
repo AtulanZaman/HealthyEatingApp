@@ -21,6 +21,9 @@ public class HealthyEatingApp implements EntryPoint
 	public void onModuleLoad() 
 	{
 		String sessionID = Cookies.getCookie("sid");
+		if(Window.Location.getHref().contains("http://127.0.0.1:8888")){
+			Window.Location.replace("http://localhost:8888/HealthyEatingApp.html?gwt.codesvr=127.0.0.1:9997");
+		}
 	    if (sessionID == null){
 	    	loginControl.loadLogin();
 	    	 
