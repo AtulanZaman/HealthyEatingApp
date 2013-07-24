@@ -1,0 +1,43 @@
+=> Client
+
+
+User Interface Subsystem
+-------------------------
+-LoginControl 
+-HomePage
+-HealthyEatingApp
+-Graph
+-SocialMedia 
+-FoodLog
+
+
+
+
+=> Server
+
+SecurityManagement Subsystem
+-----------------------------
+-BCrypt 
+
+
+DatabaseManagement Subsystem
+-----------------------------
+-DBConnectionService (Interfaces)
+-DBConnectionServiceAsync (Interfaces)
+-DBConnectionServiceImpl
+
+
+SocialMedia Subsystem
+----------------------
+-FacebookFriend
+-FacebookFriends
+-FacebookGraph
+
+
+
+-FoodLogData
+-FoodLogItems
+-FriendUser
+-Points
+-User
+ 
