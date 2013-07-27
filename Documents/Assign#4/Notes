@@ -32,12 +32,19 @@ SocialMedia Subsystem
 -FacebookFriend
 -FacebookFriends
 -FacebookGraph
+-Points
 
 
 
+FoodLog Subsystem
+------------------
 -FoodLogData
 -FoodLogItems
 -FriendUser
--Points
--User
+
+
+
+ LoginManagement
+ ----------------
+  -User
  
